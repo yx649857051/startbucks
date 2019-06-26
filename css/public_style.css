@@ -1,0 +1,53 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+select,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding:0 ;
+}
+
+fieldset,
+img {
+	border: none;
+}
+
+img {
+	vertical-align: top;
+	border: 0;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+body {
+	font: 12px "SimSun", "微软雅黑", "Arial Narrow", HELVETICA;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix::after{content: "";clear: both;display: block;height: 0;overflow: hidden
+	;visibility: hidden;font-size: 1px;}

@@ -37,3 +37,12 @@ AMap.plugin(['AMap.ToolBar'], function() {
         liteStyle: true
     }));
 });
+
+$('.map_icon').click(function() {
+    // alert('首页');
+    location.href = "starbucks_home.html";
+});
+
+$('.map_menu_ic').click(function() {
+    alert('菜单');
+});

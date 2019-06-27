@@ -4,5 +4,5 @@ $('.home_icon').click(function() {
 });
 
 $('.home_menu_ic').click(function() {
-
+    alert('菜单');
 });

@@ -13,10 +13,46 @@ body {
 .map_sideNav {
     width: 30%;
     height: 100%;
-    background: green;
+    background: #fff;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.map_top_nav {
+    height: 72px;
+}
+
+.map_icon {
+    width: 36px;
+    height: 36px;
+    line-height: 72px;
+    margin-top: 18px;
+    margin-left: 16px;
+}
+
+.map_three_nav {
+    display: inline-block;
+    line-height: 72px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.map_mendian,
+.map_my_account,
+.map_menu {
+    font-size: 16px;
+    padding: 5px 10px 5px;
+    font-weight: 700;
+    font-family: '微软雅黑';
+}
+
+.map_menu_ic {
+    float: right;
+    width: 36px;
+    height: 24px;
+    margin-top: 22px;
+    margin-right: 16px;
 }
 
 .map_contain {

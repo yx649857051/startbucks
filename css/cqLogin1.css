@@ -1,0 +1,101 @@
+.cqHead_a{
+    width: 100%;
+}
+.cqHead_a_pic,.cqBanner_tip_pic,.cqVipGift,.cqPower,.cqStarParty{
+    width: 100%;
+}
+small,.small{
+    font-size: 12px;
+}
+
+/**************************欢迎来到星享俱乐部*******************************/
+.cqBanner{
+    background-color: #252525;
+    color: #ffffff;
+}
+.cqBanner_tit_pic,.cqVipGift_tit_pic{
+    width: 80%;
+    margin-top: 55px;
+    margin-left: 12%;
+}
+.cqmain{
+    overflow: hidden;
+    padding-top: 50px;
+}
+.cqItem_padded,.cqitem{
+    width: 24.5%;
+    float: left;
+    text-align: center;
+}
+.image img,.CQstar,.CQStarcn,.CQsrkit{
+    width: 55%;
+    margin-bottom: 10px;
+}
+.cqBanner .cqBanner_main .cqItem_padded h2{
+    margin-bottom: 8px;
+}
+.cqBanner .cqBanner_main .cqItem_padded p{
+    width: 170px;
+    display: inline-block;
+    line-height: 18px;
+}
+.cqwhite{
+    text-align: center;
+    margin-top: 35px;
+    padding-bottom: 10px;
+}
+.cqwhite a{
+    color: rgb(14, 167, 14);
+}
+
+/***************************************积星升级******************************************/
+.cqVipGift,.cqStarParty{
+    background-color: #f0eeec;
+}
+.cqitem{
+    width: 33%;
+    float: left;
+}
+.cqStarP{
+    font-size: 16px;
+    line-height: 28px;
+}
+.green{
+    color: rgb(14, 167, 14);
+}
+.gold{
+    color: #d4b868;
+}
+.silver{
+    color: #bcbcbd;
+}
+
+/**************************************会员权益*******************************************/
+.cqPower{
+    background-color: #f8f6f4;
+}
+.cqPowerUl{
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 54%;
+}
+.cqPowerUl li{
+    list-style-type: disc;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+}
+.cqPowerUl li span,.cqStarPartyUl li span{
+    color: #000;
+}
+
+/* *********************************星享俱乐部会员星礼包******************************** */
+.cqStarPartyUl li{
+    list-style-type: disc;
+    text-align: left;
+    font-size: 16px;
+}
+.cqStarPartyUl{
+    margin-left: 10%;
+
+}

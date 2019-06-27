@@ -10,9 +10,6 @@ body {
     background: pink;
 }
 
-
-/* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 .home_side_nav {
     width: 30%;
     height: 100%;
@@ -33,6 +30,9 @@ body {
     height: 100%;
     overflow: hidden;
 }
+
+
+/* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .home_top_nav {
     height: 72px;

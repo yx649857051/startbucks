@@ -10,6 +10,9 @@ body {
     background: pink;
 }
 
+
+/* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .home_side_nav {
     width: 30%;
     height: 100%;
@@ -33,7 +36,6 @@ body {
 
 .home_top_nav {
     height: 72px;
-    background: red;
 }
 
 .home_icon {
@@ -67,3 +69,48 @@ body {
     margin-top: 22px;
     margin-right: 16px;
 }
+
+.home_left_side_content {
+    width: 270px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home_slogan {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: '黑体';
+}
+
+.home_login_and_regist_parent {
+    margin-top: 24px;
+}
+
+.home_login {
+    height: 40px;
+}
+
+.home_login_icon {
+    margin-top: 6px;
+}
+
+.home_login_text {
+    color: #00a862;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.home_regist_text {
+    color: #00a862;
+    font-size: 16px;
+    border: solid 1px #00a862;
+    border-radius: 20px;
+    padding: 4px 10px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+
+/* 左侧菜单栏样式~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

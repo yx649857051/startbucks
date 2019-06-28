@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理我的星礼卡 | 星巴克</title>
+    <link rel="stylesheet" href="../css/public_style.css">
+    <link rel="stylesheet" href="../css/xlk_supervise.css">
+
+</head>
+
+<body>
+    <div class="xlk_wrap">
+        <div class="xlk_sideNav">
+            <div class='xlk_top_nav'>
+                <img class="xlk_icon" src="../images/home_icon.png" alt="">
+                <div class="xlk_three_nav">
+                    <span class="xlk_mendian">门店</span>
+                    <span class="xlk_my_account">我的账户</span>
+                    <span class="xlk_menu">菜单</span>
+                </div>
+                <img class="xlk_menu_ic" src="../images/home_menu.png" alt="">
+            </div>
+
+            <div class="xlk_left_side_content">
+
+
+            </div>
+        </div>
+
+        <!----- 左侧nav导航栏 xlk_top_nav end---->
+
+        <div class="xlk_contain">
+            <div class="xlk_inquire">
+                <div class="xlk_inquire_top">
+                    <div class="xlk_inquire_top_a">
+                        <a href="#" class="xlk_inquire_top_a1" id="xlk_a1">使用星礼卡密码查询</a>
+                        <a href="#" class="xlk_inquire_top_a2" id="xlk_a2">使用销售单号查询</a>
+                    </div>
+
+                </div>
+                <div class="xlk_inquire_main">
+                    <div class="xlk_inquire_main_top">
+                        <h1>查询我的星礼卡</h1>
+                    </div>
+                    <div class="xlk_inquire_main_kh">
+                        <p>请输入你的星礼卡卡号和密码查询星礼卡余额以及交易记录</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var xlk_a1 = document.getElementById('xlk_a1');
+        var xlk_a2 = document.getElementById('xlk_a2');
+        xlk_a2.onclick = function() {
+            xlk_a1.style.background = '#fff';
+            xlk_a1.style.color = '#00a862';
+            xlk_a2.style.background = '#00a862';
+            xlk_a2.style.color = '#fff';
+        }
+        xlk_a1.onclick = function() {
+            xlk_a1.style.background = '#00a862';
+            xlk_a1.style.color = '#fff';
+            xlk_a2.style.background = '#fff';
+            xlk_a2.style.color = '#00a862';
+        }
+    </script>
+</body>
+
+</html>

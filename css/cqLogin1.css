@@ -4,12 +4,9 @@
 .cqHead_a_pic,.cqBanner_tip_pic,.cqVipGift,.cqPower,.cqStarParty{
     width: 100%;
 }
-small,.small{
-    font-size: 12px;
-}
 
 /**************************欢迎来到星享俱乐部*******************************/
-.cqBanner{
+.cqBanner,.cqRound{
     background-color: #252525;
     color: #ffffff;
 }
@@ -49,7 +46,7 @@ small,.small{
 }
 
 /***************************************积星升级******************************************/
-.cqVipGift,.cqStarParty{
+.cqVipGift,.cqStarParty,.cqinpor{
     background-color: #f0eeec;
 }
 .cqitem{
@@ -94,8 +91,107 @@ small,.small{
     list-style-type: disc;
     text-align: left;
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 .cqStarPartyUl{
     margin-left: 10%;
+    width: 80%;
+}
+.cqStarPartyUl h3{
+    text-align: left;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.cqsmall{
+    font-size: 12px;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+.cqStarParty_pic1{
+    margin-top: 45%;
+    width: 80%;
+}
+.cqStarParty_pic2{
+    margin-top: 40%;
+    width: 95%;
+}
 
+/* **************************************获得星星的各种途径***************************************** */
+.cqRoundLfet{
+    height: 196px;
+    width: 60%;
+    float: left;
+    padding-top: 10px;
+}
+.cqRoundRight{
+    height: 196px;
+    width: 39%;
+    float: left;
+    padding-top: 10px;
+    border-left: #d4b868 1px solid;
+}
+.cqRoundLfet h2,.cqRoundRight h2{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.cq5Rou{
+    float: left;
+    margin-left: 5%;
+}
+.cq5RouR{
+    margin-left: 12%;
+}
+.cq5Rou p{
+    text-align: center;
+    font-size: 16px;
+}
+.cq5Rou_pic{
+    margin-bottom: 14px;
+}
+
+/* **********************************轻松注册会员****************************************** */
+.cqinporLeft{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.cqinporRight{
+    text-align: center;
+    width: 49.5%;
+    float: left;
+    border-left: #252525 1px solid;
+}
+.cqinporH2{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.cqinporP{
+    line-height: 20px;
+    color: #333;
+    font-size: 16px;
+}
+.cqNewButtom{
+    display: inline-block;
+    width: 102px;
+    height: 38px;
+    border: 1px solid rgb(14, 167, 14);
+    text-align: center;
+    line-height: 38px;
+    border-radius: 20px;
+    color: rgb(14, 167, 14);
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* *********************************常见问题*************************************** */
+.cqQuestion{
+    background-color: #ffffff;
 }

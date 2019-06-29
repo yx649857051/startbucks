@@ -1,71 +1,206 @@
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-.menus_wrap {
-    width: 100%;
-    height: 100%;
-    background: pink;
-}
-
-.menus_side_nav {
-    width: 30%;
-    height: 100%;
-    background: #ffffff;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.menus_contain {
-    margin-left: 30%;
-    position: relative;
-    /* left: auto;
-    padding-bottom: 24px;
-    padding-top: 24px; */
-    width: 70%;
-    background: yellowgreen;
-    overflow: hidden;
-    border-left: 1px solid #ccc;
-}
-
-.menus_ad {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 2px 6px;
-}
-
-.menus_wrapper {
-    padding: 30px 0;
-    margin: auto 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-.menus_wrapper h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 18px;
-}
-
-.menus_wrapper p {
-    margin: 0 157px;
-    padding: 0 20px;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.menus_item {
-    /* background-color: #fff; */
-}
-
-.menus_datu {
-    padding: 0 20px;
-}
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .menus_wrap {
+            width: 100%;
+            height: 100%;
+            background: pink;
+        }
+        
+        .menus_side_nav {
+            width: 30%;
+            height: 100%;
+            background: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        /* 右边栏 */
+        
+        .menus_contain {
+            margin-left: 30%;
+            position: relative;
+            /* left: auto;
+padding-bottom: 24px;
+padding-top: 24px; */
+            width: 70%;
+            background: #f7f7f7;
+            overflow: hidden;
+            border-left: 1px solid #ccc;
+        }
+        
+        .menus_ad {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 2px 6px;
+        }
+        
+        .menus_pic {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+        
+        .menus_wrapper {
+            text-align: center;
+            padding: 30px 0;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 768px;
+            width: 100%;
+        }
+        
+        .menus_wrapper h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+        
+        .menus_wrapper p {
+            padding: 0 20px;
+            font-size: 17px;
+            line-height: 25px;
+        }
+        /* 完美图片 */
+        
+        .menus_featued-item {
+            padding-bottom: 20px;
+            background-color: #fff;
+        }
+        
+        .menus_item {
+            padding-top: 20px;
+            background-color: #fff;
+        }
+        
+        .menus_datu a {
+            text-align: center;
+            display: block;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .menus_img {
+            width: calc(100% - 40px);
+            height: auto;
+            display: inline-block;
+        }
+        
+        .menus_datu {
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .menus_miaosu {
+            text-align: center;
+            padding: 0 24px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 768px;
+            width: 100%;
+            background-color: #fff;
+        }
+        
+        .menus_miaosu h2 {
+            margin-bottom: 18px;
+            font-size: 22px;
+        }
+        
+        .menus_miaosu p {
+            font-weight: 500;
+            margin-bottom: 24px;
+            font-size: 17px;
+            line-height: 24px;
+        }
+        
+        .menus_banner3 p {
+            font-size: 17px;
+            line-height: 24px;
+        }
+        
+        .menus_bnner4 p {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        /* 新品列表 */
+        
+        .menus_drink {
+            text-align: center;
+            padding: 40px 24px 0 24px;
+            background-color: #f7f7f7;
+            ;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 768px;
+            width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+        
+        .menus_all {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 18px;
+            font-weight: 600;
+            color: #000;
+        }
+        
+        .menus_tel {
+            overflow: hidden;
+            text-align: center;
+            display: block;
+        }
+        
+        .menus_tu {
+            padding: 18px;
+            height: 309px;
+            width: 33.333%;
+            box-sizing: border-box;
+            float: left;
+            overflow: hidden;
+        }
+        
+        .menus_tu img {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+        
+        .menus_tu p {
+            font-size: 17px;
+            color: #000;
+            margin: 0 0 24px;
+            text-align: center;
+        }
+        /* 搜索菜单 */
+        
+        .menus_btn {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 996;
+            border-color: #00A862;
+            box-sizing: border-box;
+            background-color: #00A862;
+            border-radius: 25px;
+            padding: 12px 18px;
+        }
+        
+        .menus_search {
+            border-color: #00A862;
+            background-color: #00A862;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            border-style: none;
+            position: relative;
+            align-items: flex-start;
+        }

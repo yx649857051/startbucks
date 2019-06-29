@@ -154,6 +154,7 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         color: #00a862;
+        background: #ffffff;
     }
     /* -----------xlk_inquire_top end -------------------*/
     
@@ -175,4 +176,66 @@
         line-height: 70px;
         font-size: 22px;
         margin-left: 25px;
+    }
+    /*--------------- xlk_inquire_main_top end -----------------*/
+    
+    .xlk_inquire_main_kh {
+        width: 100%;
+        height: 70px;
+    }
+    
+    .xlk_inquire_main_kh p {
+        color: #707070;
+        font-size: 16px;
+        line-height: 60px;
+        margin-left: 27px;
+    }
+    
+    .xlk_inquire_main_inp1,
+    .xlk_inquire_main_inp2 {
+        border: none;
+        border-bottom: 1px solid#E0E0E0;
+        width: 93%;
+        display: block;
+        margin: 0 auto;
+        outline: none;
+        font-size: 16px;
+        padding-bottom: 5px;
+        height: 30px;
+        font-weight: 600;
+        font-family: '8emArial';
+    }
+    
+    .xlk_inquire_main_lb1,
+    .xlk_inquire_main_lb2 {
+        font-size: 16px;
+        color: #9E9E9E;
+        position: relative;
+        left: 27px;
+        top: 8px;
+    }
+    
+    .xlk_inquire_main_p1,
+    .xlk_inquire_main_p2 {
+        font-size: 16px;
+        color: #9E9E9E;
+        margin: 5px 0 0 25px;
+        display: none;
+    }
+    
+    .xlk_inquire_main_p1 span,
+    .xlk_inquire_main_p2 span {
+        display: block;
+        float: left;
+        color: #E75D54;
+        font-size: 24px;
+        margin: -6px 7px 0 0;
+    }
+    
+    .xlk_inquire_main_form1 {
+        margin-bottom: 40px;
+    }
+    
+    .xlk_inquire_main_lb2 {
+        padding-top: 20px;
     }

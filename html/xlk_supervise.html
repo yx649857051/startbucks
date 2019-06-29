@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/public_style.css">
     <link rel="stylesheet" href="../css/xlk_supervise.css">
 
+
 </head>
 
 <body>
@@ -46,31 +47,38 @@
                         <h1>查询我的星礼卡</h1>
                     </div>
                     <div class="xlk_inquire_main_kh">
-                        <p>请输入你的星礼卡卡号和密码查询星礼卡余额以及交易记录</p>
+                        <p id="kh_p">请输入你的星礼卡卡号和密码查询星礼卡余额以及交易记录</p>
                     </div>
+
+                    <div class="xlk_inquire_main_dl">
+                        <form class="xlk_inquire_main_form1" id="inquire_form1">
+                            <label for="inpt1" class="xlk_inquire_main_lb1" id="lb1">卡号</label>
+                            <input type="text" class="xlk_inquire_main_inp1" id="inp1">
+                            <p class="xlk_inquire_main_p1" id="p1"><span> × </span>请输入卡片背面16/19位卡号（没有空格和下划线）</p>
+                        </form>
+
+                        <form class="xlk_inquire_main_form2" id="inquire_form2">
+                            <label for="inpt2" class="xlk_inquire_main_lb2" id="lb2">输入密码</label>
+                            <input type="text" class="xlk_inquire_main_inp2" id="inp2">
+                            <p class="xlk_inquire_main_p2" id="p2"><span> × </span>请输入6位PIN密码。您可以在卡片背面刮开涂层获得密码</p>
+                        </form>
+
+                    </div>
+
+
+
+
                 </div>
+
+
             </div>
 
         </div>
 
     </div>
-
-    <script>
-        var xlk_a1 = document.getElementById('xlk_a1');
-        var xlk_a2 = document.getElementById('xlk_a2');
-        xlk_a2.onclick = function() {
-            xlk_a1.style.background = '#fff';
-            xlk_a1.style.color = '#00a862';
-            xlk_a2.style.background = '#00a862';
-            xlk_a2.style.color = '#fff';
-        }
-        xlk_a1.onclick = function() {
-            xlk_a1.style.background = '#00a862';
-            xlk_a1.style.color = '#fff';
-            xlk_a2.style.background = '#fff';
-            xlk_a2.style.color = '#00a862';
-        }
-    </script>
+    <script src="../jquery-1.8.3/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/xlk_supervise.js"></script>
 </body>
 
 </html>

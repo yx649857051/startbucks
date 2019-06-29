@@ -123,3 +123,26 @@ $('.map_menu_parent').on('click', "li", function() {
     }
 
 });
+
+
+
+// 添加定位信息列表，从json获取数据
+$(function() {
+
+    $.ajax({
+        url: '../data/map.json',
+        type: 'get',
+        dataType: 'json',
+        success: function(json) {
+            // console.log(json);
+            var result = '';
+            $.each(json, function(index, val) {
+                // console.log(index, val);
+
+                result += '<li><div class="number"><span>' + val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
+                // console.log(result);
+            });
+            $('.map_locate_list').html(result);
+        }
+    })
+})

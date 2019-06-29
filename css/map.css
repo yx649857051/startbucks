@@ -161,14 +161,13 @@ body {
 /* 左侧区域定位部分开始 */
 
 .map_locate_body {
-    /* background-color: yellowgreen; */
     width: 100%;
-    /* min-height: 280px; */
+    overflow-y: auto;
+    height: 100%;
 }
 
 .map_locate_contain {
     background: #fff;
-    overflow: hidden;
 }
 
 .map_locate_nav {
@@ -211,8 +210,6 @@ body {
     box-sizing: border-box;
     padding: 4px 0;
     font-size: 16px;
-    /* transition-property: border;
-    transition-duration: 0.2s; */
 }
 
 .map_ipt .iconfont {
@@ -220,18 +217,17 @@ body {
 }
 
 .map_locate_list {
-    /* overflow: auto; */
     display: block;
-    height: 100%;
+    /* height: 100%; */
+    margin-top: 100px;
 }
 
 .map_locate_list li {
     box-sizing: border-box;
     cursor: pointer;
-    padding: 16px 30px;
+    padding: 25px 30px;
     width: 100%;
     position: relative;
-    /* height: 100%; */
     display: block;
     height: 137px;
 }
@@ -258,13 +254,13 @@ body {
 .map_locate_list .number i {
     position: relative;
     right: auto;
-    top: 0;
+    top: 20px;
     font-size: 36px !important;
     color: #B3B3B3;
 }
 
 .map_text {
-    margin-left: 35px;
+    margin-left: 30px;
     float: left;
 }
 
@@ -291,12 +287,12 @@ body {
     color: #5C5C5C;
 }
 
-.map_locate_list li i {
+.map_locate_list li .notice {
     float: right;
     font-size: 30px !important;
     color: #00A862;
     font-weight: bold !important;
-    margin-top: 20px;
+    padding-top: 16px;
 }
 
 

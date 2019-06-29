@@ -3,6 +3,30 @@
  * 2019/6/28
  */
 
+$.getJSON('http://localhost/yxh/startbucks/data/home.json', function(data) {
+    console.log(data, $('.swiper-slide'));
+    var length = data.banner.length;
+    for (var i = 0; i < length; i++) {
+        var div = document.createElement('div');
+
+        var img = new Image();
+        img.style.width = "100%";
+        img.style.height = "400px";
+        $(img).css({
+            "width": "100%",
+            "height": "400px",
+        });
+        $('.swiper-slide').append(img);
+        console.log(data.banner[i]);
+        img.src = data.banner[i];
+    }
+
+    $('.swiper-wrapper').on('click', 'img', function() {
+
+    });
+
+});
+
 //logo点击事件
 $('.home_icon').click(function() {
     // alert('首页');

@@ -46,7 +46,7 @@ body {
 
 .xlk_three_nav {
     /* display: inline-block; */
-    width: 250px;
+    width: 200px;
     height: 72px;
     margin-right: 10px;
     float: left;
@@ -66,7 +66,7 @@ body {
     width: 36px;
     height: 24px;
     margin-top: 30px;
-    margin-right: 16px;
+    margin-right: 30px;
 }
 
 .xlk_left_side_content {

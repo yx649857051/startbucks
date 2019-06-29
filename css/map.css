@@ -35,7 +35,8 @@ body {
 }
 
 .map_top_nav {
-    height: 72px;
+    height: 99px;
+    /* background: #00a862; */
 }
 
 .map_icon {
@@ -49,7 +50,7 @@ body {
 
 .map_three_nav {
     /* display: inline-block; */
-    width: 250px;
+    width: 200px;
     height: 72px;
     margin-right: 10px;
     float: left;
@@ -69,7 +70,7 @@ body {
     width: 36px;
     height: 24px;
     margin-top: 30px;
-    margin-right: 16px;
+    margin-right: 30px;
 }
 
 .map_login {
@@ -154,6 +155,148 @@ body {
     width: 16px;
     height: 16px;
     display: inline-block;
+}
+
+
+/* 左侧区域定位部分开始 */
+
+.map_locate_body {
+    /* background-color: yellowgreen; */
+    width: 100%;
+    /* min-height: 280px; */
+}
+
+.map_locate_contain {
+    background: #fff;
+    overflow: hidden;
+}
+
+.map_locate_nav {
+    margin: 24px 0 0 0;
+}
+
+.filter {
+    color: #00A862;
+    font-size: 17px;
+    margin-top: 28px;
+    float: right;
+    margin-right: 40px;
+    font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.map_locate_search {
+    float: left;
+}
+
+.map_locate_icon {
+    margin-left: 20px;
+}
+
+.map_locate_switch i {
+    font-style: normal;
+    padding-right: 5px;
+}
+
+.map_ipt {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-left: 24px;
+    padding: 4px 0;
+    margin-bottom: 15px;
+}
+
+.map_ipt_search {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 4px 0;
+    font-size: 16px;
+    /* transition-property: border;
+    transition-duration: 0.2s; */
+}
+
+.map_ipt .iconfont {
+    font-size: 22px !important;
+}
+
+.map_locate_list {
+    /* overflow: auto; */
+    display: block;
+    height: 100%;
+}
+
+.map_locate_list li {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px 30px;
+    width: 100%;
+    position: relative;
+    /* height: 100%; */
+    display: block;
+    height: 137px;
+}
+
+.map_locate_list li:hover {
+    background-color: #eee;
+}
+
+.map_locate_list .number {
+    position: absolute;
+    left: 24px;
+    top: 10%;
+}
+
+.map_locate_list .number span {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 100%;
+    z-index: 1;
+}
+
+.map_locate_list .number i {
+    position: relative;
+    right: auto;
+    top: 0;
+    font-size: 36px !important;
+    color: #B3B3B3;
+}
+
+.map_text {
+    margin-left: 35px;
+    float: left;
+}
+
+.map_store {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.map_delivery {
+    width: 28px;
+}
+
+.map_address {
+    display: block;
+    width: 270px;
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    color: #707070;
+    line-height: 160%;
+}
+
+.map_distance {
+    color: #5C5C5C;
+}
+
+.map_locate_list li i {
+    float: right;
+    font-size: 30px !important;
+    color: #00A862;
+    font-weight: bold !important;
+    margin-top: 20px;
 }
 
 

@@ -1,7 +1,7 @@
 .cqHead_a{
     width: 100%;
 }
-.cqHead_a_pic,.cqBanner_tip_pic,.cqVipGift,.cqPower,.cqStarParty{
+.cqHead_a_pic,.cqBanner_tip_pic,.cqVipGift,.cqPower,.cqStarParty,.cqQuestion{
     width: 100%;
 }
 
@@ -28,8 +28,8 @@
     width: 55%;
     margin-bottom: 10px;
 }
-.cqBanner .cqBanner_main .cqItem_padded h2{
-    margin-bottom: 8px;
+.cqBanner h2{
+    line-height: 30px;
 }
 .cqBanner .cqBanner_main .cqItem_padded p{
     width: 170px;
@@ -41,8 +41,11 @@
     margin-top: 35px;
     padding-bottom: 10px;
 }
-.cqwhite a{
+.cqwhite a,.cqQueAueser a{
     color: rgb(14, 167, 14);
+}
+.cqBanner p{
+    line-height: 18px;
 }
 
 /***************************************积星升级******************************************/
@@ -194,4 +197,71 @@
 /* *********************************常见问题*************************************** */
 .cqQuestion{
     background-color: #ffffff;
+}
+.cqFaq{
+    width: 6%;
+    margin: 0 4%;
+    line-height: 130px;
+    margin-top: 20px;
+    float: left;
+}
+.cqQuestion_wrap h2{
+    line-height: 130px;
+    font-size: 20px;
+    float: left;
+}
+.cqQuestion_wrap span{
+    float: right;
+    margin-right: 4%;
+    line-height: 130px;
+}
+.cqQuestion1,.cqQuestion2,.cqQuestion3{
+    display: block;
+    width: 100%; height: 130px;
+}
+.cqQuestion2,.cqQueAueser2{
+    background-color: #ece9e7
+}
+.cqQueAueser{
+    padding: 0 4% 20px 4%;
+    display: none;
+}
+.cqQueAueser p,.cqQueAueser ul{
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.cqQueAueser ul li{
+    list-style: disc;
+    margin-left: 16px;
+}
+.cqpadding2em{
+    margin-left: 4%;
+}
+.cqclickQuestion{
+    cursor: pointer;
+}
+
+/*****************************************底部**********************************************/
+.cqfooter{
+    width: 100%;
+    background: url(../images/CQfooter.png);
+    background-size: 100%;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 50px 0;
+}
+.cqfooter a{
+    color: #fff;
+    font-size: 14px;
+}
+.cqfooter p{
+    margin-bottom: 14px;
+}
+.cqfooter b{
+    font-weight: 100;
+}
+.cqfooter img{
+    margin-top: 3px;
 }

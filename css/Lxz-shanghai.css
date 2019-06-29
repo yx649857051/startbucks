@@ -1,0 +1,63 @@
+
+.Lxz-roastery-head{
+    width: 100%;
+    height: 52px;
+    background-color: #000000;
+}
+
+.Lxz-roastery-container{
+    width: 962px;
+    height: 52px;
+    background-color: #000000;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Lxz-roastery-hidden{
+    width: 150px;
+    height: 49px;
+    background-color: #000000;
+    padding-left:  95px; 
+    float: left;
+    
+}
+.Lxz-roastery-hidden a{
+    display: block;
+    color: #bd6d47;
+    font-size: 10px;
+    line-height: 40px;
+}
+.Lxz-roastery-container ul{
+    line-height: 53px;
+    float: right;
+}
+.Lxz-roastery-btn1{
+    background-color: #000000;
+    color: #422619;
+    border: solid 1px #422619;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px 10px 10px 10px; 
+}
+.Lxz-roastery-btn2{
+    background-color: #000000;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    width: 118px;
+    height: 20px;
+    border-radius: 10px 10px 10px 10px; 
+    font-size: 10px;
+}
+.Lxz-roastery-head2{
+    width: 62px;
+    height: 58px;
+    background-color: #000000;
+    border-bottom:solid 4px #bd6d47;
+    position: absolute;
+}
+.Lxz-roastery-head2 a{
+    align-content: center;
+    line-height: 58px;
+    display: block;
+    padding: 10px 14px;
+}

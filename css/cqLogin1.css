@@ -265,3 +265,108 @@
 .cqfooter img{
     margin-top: 3px;
 }
+
+
+/*************************************注册页面********************************************/
+.cqNewHeaderPic,.cqNewHeaderPic_pic,.cqNewMain{
+    width: 100%;
+}
+.cqNewMainLeft,.cqNewMainRight{
+    float: left;
+}
+.cqNewMainLeft{
+    width: 65%;
+    padding-top: 180px;
+}
+.cqNewMainRight{
+    width: 35%;
+    padding: 32px 0 56px 0;
+}
+.cqregister_download_app_image_cn{
+    width: 58%;
+}
+.cqNewMainLeft h2,.cqNewMainLeft p{
+    margin: 0 5% 0 20%;
+}
+.cqNewMainLeft h2{
+    margin-bottom: 28px;
+    font-size: 22px;
+}
+.cqNewMainLeft p{
+    font-size: 16px;
+}
+
+
+/************************************** 登录页面 ********************************/
+/*************************二维码**********************/
+.cqLogindiffcut1{
+    padding-left: 28%;
+    overflow: hidden;
+}
+.cqLogindiffcut1 h2{
+    font-size: 16px;
+    margin-top: 30px;
+    float: left;
+}
+.cqQRlogin{
+    width: 100px; height: 100px;
+    background: url(../images/cqemail-login-tip.png) no-repeat;
+    background-size: 100%;
+    float: right;
+    cursor: pointer;
+}
+.cqQRlogin p{
+    margin: 8px 0 0 38px;
+}
+.cqErweima{
+    padding-top: 140px;
+}
+.cqqrcode{
+    display: inline-block;
+    padding: 6px;
+    border: 8px solid #ccc;
+    float: left;
+    margin-top: 16px;
+    margin-right: 6%;
+}
+.cqphone_with_scanner{
+    float: left;
+    width: 23%;
+    margin-bottom: 100px;
+}
+/************************账户 密码*************************/
+
+
+
+
+
+
+
+
+
+
+/************* 登录页面 底部 ******************/
+.cqfootLogin2{
+    background: url(../images/cqaccount-join-bg.png) no-repeat;
+    background-size: 100%;
+    padding-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+.cqfootLogin2 h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+.cqfootLogin2 p{
+    line-height: 60px;
+    font-size: 16px;
+}
+.cqfootLogin2 a{
+    display: block;
+    width: 50px; height: 28px;
+    padding: 10px 0 0 18px;
+    border: 1px solid #d4b868;
+    border-radius: 19px;
+    font-size: 16px;
+}

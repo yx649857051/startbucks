@@ -11,3 +11,9 @@ $('.cqclickQuestion').each(function(index,target){
         });
     });
 });
+jQuery('#qrcode').qrcode({
+    render: "canvas", //也可以替换为table
+    width: 208,
+    height: 208,
+    text: "http://www.jq22.com"
+});

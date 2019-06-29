@@ -28,7 +28,7 @@ body {
     padding-top: 24px; */
     width: 70%;
     background: yellowgreen;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
 }
 
@@ -212,7 +212,24 @@ body {
     align-items: center;
 }
 
-.swiper-slide img {
+
+/* .swiper-slide img {
     width: 100%;
     height: 400px;
+} */
+
+.home_content_part1 {
+    width: 100%;
+    padding: 24px;
+}
+
+.home_content_part1_li {
+    float: left;
+    padding-right: 24px;
+}
+
+.home_content_part1_li_img {
+    width: 264px;
+    height: 166px;
+    display: inline-block;
 }

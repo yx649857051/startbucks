@@ -201,3 +201,22 @@ $('.swiper-wrapper').on('click', 'div', function(target) {
     location.href = data.banner[$(this).index()].toUrl;
 
 });
+
+$(".home_content_part1").on('click', "li", function(target) {
+    // console.log(1);
+    alert($(this).index());
+    switch ($(this).index()) {
+        case 0:
+            location.href = "http://www.baidu.com";
+            break;
+        case 1:
+            location.href = "http://www.baidu.com";
+            break;
+        case 2:
+            location.href = "http://www.baidu.com";
+            break;
+        default:
+            location.href = "http://www.baidu.com";
+            break;
+    }
+});

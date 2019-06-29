@@ -2,36 +2,32 @@
  * author:yx 
  * 2019/6/28
  */
+var data = null;
 
 $.getJSON('http://localhost/yxh/startbucks/data/home.json', function(data) {
-    console.log(data, $('.swiper-slide'));
+    // console.log(data, $('.swiper-slide'));
+    window.data = data;
     var length = data.banner.length;
     for (var i = 0; i < length; i++) {
         var div = document.createElement('div');
-
+        div.className = 'swiper-slide';
         var img = new Image();
-        img.style.width = "100%";
-        img.style.height = "400px";
         $(img).css({
             "width": "100%",
             "height": "400px",
         });
-        $('.swiper-slide').append(img);
-        console.log(data.banner[i]);
-        img.src = data.banner[i];
+        $(div).append(img);
+
+        $(".swiper-wrapper").append(div);
+        // console.log(data.banner[i]);
+        img.src = data.banner[i].imgUrl;
     }
-
-    $('.swiper-wrapper').on('click', 'img', function() {
-
-    });
-
 });
 
 //logo点击事件
 $('.home_icon').click(function() {
     // alert('首页');
     location.href = "starbucks_home.html";
-
 });
 
 //左侧栏右边的菜单按钮事件
@@ -115,69 +111,69 @@ $('.home_menu_parent').on('click', "li", function() {
 
 //右侧内容区start-------------------
 
-var myPlugin = {
-    name: 'debugger',
-    params: {
-        debugger: false,
-    },
-    on: {
-        init: function() {
-            if (!this.params.debugger) return;
-            console.log('init');
-        },
-        click: function(e) {
-            if (!this.params.debugger) return;
-            console.log('click');
-        },
-        tap: function(e) {
-            if (!this.params.debugger) return;
-            console.log('tap');
-        },
-        doubleTap: function(e) {
-            if (!this.params.debugger) return;
-            console.log('doubleTap');
-        },
-        sliderMove: function(e) {
-            if (!this.params.debugger) return;
-            console.log('sliderMove');
-        },
-        slideChange: function() {
-            if (!this.params.debugger) return;
-            console.log('slideChange', this.previousIndex, '->', this.activeIndex);
-        },
-        slideChangeTransitionStart: function() {
-            if (!this.params.debugger) return;
-            console.log('slideChangeTransitionStart');
-        },
-        slideChangeTransitionEnd: function() {
-            if (!this.params.debugger) return;
-            console.log('slideChangeTransitionEnd');
-        },
-        transitionStart: function() {
-            if (!this.params.debugger) return;
-            console.log('transitionStart');
-        },
-        transitionEnd: function() {
-            if (!this.params.debugger) return;
-            console.log('transitionEnd');
-        },
-        fromEdge: function() {
-            if (!this.params.debugger) return;
-            console.log('fromEdge');
-        },
-        reachBeginning: function() {
-            if (!this.params.debugger) return;
-            console.log('reachBeginning');
-        },
-        reachEnd: function() {
-            if (!this.params.debugger) return;
-            console.log('reachEnd');
-        },
-    },
-};
+// var myPlugin = {
+//     name: 'debugger',
+//     params: {
+//         debugger: false,
+//     },
+//     on: {
+//         init: function() {
+//             if (!this.params.debugger) return;
+//             console.log('init');
+//         },
+//         click: function(e) {
+//             if (!this.params.debugger) return;
+//             console.log('click');
+//         },
+//         tap: function(e) {
+//             if (!this.params.debugger) return;
+//             console.log('tap');
+//         },
+//         doubleTap: function(e) {
+//             if (!this.params.debugger) return;
+//             console.log('doubleTap');
+//         },
+//         sliderMove: function(e) {
+//             if (!this.params.debugger) return;
+//             console.log('sliderMove');
+//         },
+//         slideChange: function() {
+//             if (!this.params.debugger) return;
+//             console.log('slideChange', this.previousIndex, '->', this.activeIndex);
+//         },
+//         slideChangeTransitionStart: function() {
+//             if (!this.params.debugger) return;
+//             console.log('slideChangeTransitionStart');
+//         },
+//         slideChangeTransitionEnd: function() {
+//             if (!this.params.debugger) return;
+//             console.log('slideChangeTransitionEnd');
+//         },
+//         transitionStart: function() {
+//             if (!this.params.debugger) return;
+//             console.log('transitionStart');
+//         },
+//         transitionEnd: function() {
+//             if (!this.params.debugger) return;
+//             console.log('transitionEnd');
+//         },
+//         fromEdge: function() {
+//             if (!this.params.debugger) return;
+//             console.log('fromEdge');
+//         },
+//         reachBeginning: function() {
+//             if (!this.params.debugger) return;
+//             console.log('reachBeginning');
+//         },
+//         reachEnd: function() {
+//             if (!this.params.debugger) return;
+//             console.log('reachEnd');
+//         },
+//     },
+// };
 
 // Install Plugin To Swiper
-Swiper.use(myPlugin);
+// Swiper.use(myPlugin);
 
 // Init Swiper
 var swiper = new Swiper('.swiper-container', {
@@ -198,6 +194,10 @@ var swiper = new Swiper('.swiper-container', {
     debugger: true,
 });
 
-$('.swiper-wrapper').on('click', 'div', function() {
-    alert(1);
+$('.swiper-wrapper').on('click', 'div', function(target) {
+    // alert($(this).index());
+    console.log(data.banner[$(this).index()].toUrl);
+
+    location.href = data.banner[$(this).index()].toUrl;
+
 });

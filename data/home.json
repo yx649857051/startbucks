@@ -1,19 +1,24 @@
 {
     "banner": [{
-            "imgUrl": "C:\\wamp\\www\\yxh\\startbucks\\images\\home_banner_1.gif",
-            "id": "1"
+
+            "imgUrl": "../images/home_banner_1.gif",
+            "id": "0",
+            "toUrl": "https://android.myapp.com/myapp/detail.htm?apkName=com.starbucks.cn&ADTAG=mobile"
         },
         {
-            "imgUrl": "C:\\wamp\\www\\yxh\\startbucks\\images\\home_banner_2.jpg",
-            "id": "2"
+            "imgUrl": "../images/home_banner_2.jpg",
+            "id": "1",
+            "toUrl": "http://www.baidu.com"
         },
         {
-            "imgUrl": "C:\\wamp\\www\\yxh\\startbucks\\images\\home_banner_3.jpg",
-            "id": "3"
+            "imgUrl": "../images/home_banner_3.jpg",
+            "id": "2",
+            "toUrl": "https://android.myapp.com/myapp/detail.htm?apkName=com.starbucks.cn&ADTAG=mobile"
         },
         {
-            "imgUrl": "C:\\wamp\\www\\yxh\\startbucks\\images\\home_banner_4.jpg",
-            "id": "4"
+            "imgUrl": "../images/home_banner_4.jpg",
+            "id": "3",
+            "toUrl": "https://android.myapp.com/myapp/detail.htm?apkName=com.starbucks.cn&ADTAG=mobile"
         }
     ]
 

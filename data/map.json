@@ -1,9 +1,21 @@
-[
-    { "code": "1", "title": "深圳华强北茂业店", "address": "深圳市 深圳市福田区 茂业百货二层C01号铺 华强北路2005-2006号", "distance": "203 m" },
-    { "code": "2", "title": "深圳华强广场酒店店", "address": "深圳市 福田区 华强广场酒店大堂 华强北路", "distance": "329 m" },
-    { "code": "3", "title": "深圳鼎诚国际店", "address": "深圳市 福田区 中航苑鼎诚大厦裙楼101C 振华路", "distance": "511 m" },
-    { "code": "4", "title": "深圳华强北九方店", "address": "深圳市 福田区 九方购物中心三楼L355、L361 华强北华富路", "distance": "537 m" },
-    { "code": "5", "title": "深圳电子科技大厦分店", "address": "深圳市 福田区 中电广场大厦第一层的DF1-N001单元 深南中路和华发路交汇处", "distance": "590 m" },
-    { "code": "5", "title": "深圳电子科技大厦分店", "address": "深圳市 福田区 中电广场大厦第一层的DF1-N001单元 深南中路和华发路交汇处", "distance": "590 m" }
+{
+    "map_locate": [
+        { "code": "1", "title": "深圳华强北茂业店", "address": "深圳市 深圳市福田区 茂业百货二层C01号铺 华强北路2005-2006号", "distance": "203 m" },
+        { "code": "2", "title": "深圳华强广场酒店店", "address": "深圳市 福田区 华强广场酒店大堂 华强北路", "distance": "329 m" },
+        { "code": "3", "title": "深圳鼎诚国际店", "address": "深圳市 福田区 中航苑鼎诚大厦裙楼101C 振华路", "distance": "511 m" },
+        { "code": "4", "title": "深圳华强北九方店", "address": "深圳市 福田区 九方购物中心三楼L355、L361 华强北华富路", "distance": "537 m" },
+        { "code": "5", "title": "深圳电子科技大厦分店", "address": "深圳市 福田区 中电广场大厦第一层的DF1-N001单元 深南中路和华发路交汇处", "distance": "590 m" },
+        { "code": "5", "title": "深圳世纪汇分店", "address": "深圳市 福田区 九方购物中心三楼L355、L361 华强北华富路", "distance": "537 m" }
 
-]
+    ],
+    "map_coffee": [
+        { "url": "../images/map_coffer1.png", "text": "星巴克臻选™" },
+        { "url": "../images/map_coffer2.png", "text": "星巴克臻选™特调饮品" },
+        { "url": "../images/map_coffer3.png", "text": "星巴克冰淇淋系列" },
+        { "url": "../images/map_coffer4.png", "text": "气致™冷萃咖啡" },
+        { "url": "../images/map_coffer5.png", "text": "手冲咖啡" },
+        { "url": "../images/map_coffer6.png", "text": "啡快™ – 在线点 到店取" },
+        { "url": "../images/map_coffer7.png", "text": "专星送™" }
+    ]
+
+}

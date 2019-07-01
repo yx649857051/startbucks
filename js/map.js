@@ -135,14 +135,47 @@ $(function() {
         dataType: 'json',
         success: function(json) {
             // console.log(json);
+            var map_locate = json.map_locate;
             var result = '';
-            $.each(json, function(index, val) {
-                // console.log(index, val);
+            $.each(map_locate, function(index, val) {
+                console.log(index, val);
 
                 result += '<li><div class="number"><span>' + val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
                 // console.log(result);
             });
             $('.map_locate_list').html(result);
+        }
+    })
+});
+// 给筛选添加点击显示隐藏事件
+$('.map_filter_btn').click(function() {
+    $('.map_overlay_inner').show();
+    $('.map_locate_body').hide();
+})
+
+$('.map_close_btn').click(function() {
+    $('.map_overlay_inner').hide();
+    $('.map_locate_body').show();
+})
+
+//从json获取筛选点击弹出框中的信息
+$(function() {
+
+    $.ajax({
+        url: '../data/map.json',
+        type: 'get',
+        dataType: 'json',
+        success: function(json) {
+            // console.log(json);
+            var map_coffee = json.map_coffee;
+            var result = '';
+            $.each(map_coffee, function(index, val) {
+                console.log(index, val);
+                // console.log(val.url);
+                result += "<li><img src=" + val.url + "><span>" + val.text + "</span></li>"
+                    // result += '<li><div class="number"><span>' + map_locate.val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + map_locate.val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + map_locate.val.address + '</small><span class="map_distance">' + map_locate.val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
+            });
+            $('.map_coffer_list').html(result);
         }
     })
 })

@@ -386,6 +386,10 @@ body {
     overflow-x: hidden;
 }
 
+.home_content_part4_div {
+    overflow: scroll;
+}
+
 .home_content_part4_div_ul {
     padding-left: 90px;
     padding-right: 36px;
@@ -429,4 +433,6 @@ body {
     height: 28px;
     border-radius: 14px;
     background: red;
+    position: absolute;
+    transform: translateY(-200px);
 }

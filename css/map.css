@@ -276,7 +276,7 @@ body {
 
 .map_address {
     display: block;
-    width: 270px;
+    width: 240px;
     margin: 4px 0 0 0;
     font-size: 14px;
     color: #707070;
@@ -293,6 +293,73 @@ body {
     color: #00A862;
     font-weight: bold !important;
     padding-top: 16px;
+}
+
+.map_overlay_inner {
+    background: yellowgreen;
+    position: fixed;
+    left: 0;
+    top: 99px;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 30%;
+}
+
+.map_inner_contain {
+    display: table !important;
+    width: 100%;
+}
+
+.map_inner_head {
+    height: 60px;
+    background: #00A862;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    float: right;
+}
+
+.map_inner_head span {
+    padding: 20px 20px 0 0;
+    float: right;
+    height: 48px;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+.map_coffee_body {
+    background: pink;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.map_coffee_contain {
+    overflow-y: auto;
+    width: 100%;
+}
+
+.map_coffee_head {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-top: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.map_coffee_head h2 {
+    font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 26px;
+    padding-left: 20px;
+    line-height: 140%;
+}
+
+.map_coffee_head p {
+    font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+    line-height: 140%;
+    padding: 10px 0 30px 20px;
 }
 
 

@@ -20,6 +20,41 @@
             "id": "3",
             "toUrl": "https://android.myapp.com/myapp/detail.htm?apkName=com.starbucks.cn&ADTAG=mobile"
         }
-    ]
+    ],
+
+    "starbucksSelection": {
+        "title": "星巴克精选",
+        "description": "在星巴克天猫旗舰店发现更多咖啡心意",
+        "content": [{
+                "name": "会员星礼包",
+                "text": "星享卡新升级<br/>更多心意好礼",
+                "more": "了解更多 >",
+                "imgUrl": "../images/home_tmall_card_01.png",
+                "toUrl": "https://starbucks.tmall.com/p/rd796757.htm"
+            },
+            {
+                "name": "星礼卡",
+                "text": "用一份心礼<br/>让心意相随",
+                "more": "了解更多 >",
+                "imgUrl": "../images/home_tmall_card_02.png",
+                "toUrl": "https://starbucks.tmall.com/p/rd993825.htm?spm=a1z10.1-b-s.w5001-14489348230.6.MtuIoi"
+            },
+            {
+                "name": "电子产品劵",
+                "text": "心意<br/>从这一杯开始",
+                "more": "了解更多 >",
+                "imgUrl": "../images/home_tmall_card_03.png",
+                "toUrl": "https://starbucks.tmall.com/p/rd103766.htm?spm=a1z10.1-b-s.w5001-14489348230.8.MtuIoi"
+            },
+            {
+                "name": "咖啡生活",
+                "text": "星巴克<br/>用心制作",
+                "more": "了解更多 >",
+                "imgUrl": "../images/home_tmall_card_04.png",
+                "toUrl": "https://starbucks.tmall.com/category-1141443816.htm?spm=a1z10.1-b-s.w4006-14489348233.10.MtuIoi"
+            }
+
+        ]
+    }
 
 }

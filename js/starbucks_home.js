@@ -3,26 +3,62 @@
  * 2019/6/28
  */
 var data = null;
+init();
 
-$.getJSON('http://localhost/yxh/startbucks/data/home.json', function(data) {
-    // console.log(data, $('.swiper-slide'));
-    window.data = data;
-    var length = data.banner.length;
-    for (var i = 0; i < length; i++) {
-        var div = document.createElement('div');
-        div.className = 'swiper-slide';
-        var img = new Image();
-        $(img).css({
-            "width": "100%",
-            "height": "400px",
+function init() {
+    $.getJSON('../data/home.json', function(data) {
+        // console.log(data, $('.swiper-slide'));
+        window.data = data;
+        console.log(data);
+
+        var length = data.banner.length;
+        for (var i = 0; i < length; i++) {
+            var div = document.createElement('div');
+            div.className = 'swiper-slide';
+            var img = new Image();
+            $(img).css({
+                "width": "100%",
+                "height": "400px",
+            });
+            $(div).append(img);
+
+            $(".swiper-wrapper").append(div);
+            // console.log(data.banner[i]);
+            img.src = data.banner[i].imgUrl;
+        }
+
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                // prevEl: '.swiper-button-prev',
+            },
+            // Enable debugger
+            debugger: true,
         });
-        $(div).append(img);
 
-        $(".swiper-wrapper").append(div);
-        // console.log(data.banner[i]);
-        img.src = data.banner[i].imgUrl;
-    }
-});
+        var starbucksSelection = data.starbucksSelection;
+        $('.home_content_part3_wrapper_h2').text(starbucksSelection.title);
+        $('.home_content_part3_wrapper_p').text(starbucksSelection.description);
+
+        var starbucksSelectionHtml = '';
+        $.each(starbucksSelection.content, function(index, value) {
+            starbucksSelectionHtml += '<li class="home_content_part3_wrapper_ul_li"><img class="home_content_part3_wrapper_ul_li_img" src="' + value.imgUrl + '"></img><div class="home_content_part3_wrapper_ul_li_div"><p class="home_content_part3_wrapper_ul_li_div_name">' + value.name + '</p><p class="home_content_part3_wrapper_ul_li_div_text">' + value.text + '</p><p class="home_content_part3_wrapper_ul_li_div_more">' + value.more + '</i></div></li>';
+
+            $(".home_content_part3_wrapper_ul").html(starbucksSelectionHtml);
+        });
+
+
+
+    });
+}
 
 //logo点击事件
 $('.home_icon').click(function() {
@@ -71,18 +107,26 @@ $('.home_three_nav').on('click', 'li', function(event) {
     }
 });
 
-//登录事件
-$('.home_login').click(function() {
+//登录事件  以下有两遍是因为有不一样的样式
+$('.home_login' || '.home_login_2').click(function() {
+    alert('login');
+});
+
+$('.home_login_2').click(function() {
     alert('login');
 });
 
 //注册事件
-$('.home_regist_text').click(function() {
+$('.home_regist_text' || ".home_regist_2").click(function() {
+    alert('regist');
+});
+
+$(".home_regist_2").click(function() {
     alert('regist');
 });
 
 //左侧竖排导航栏事件
-$('.home_menu_parent').on('click', "li", function() {
+$('.home_menu_parent').on('click', "li", function(event) {
     var target = event.target;
     if (target.getAttribute('class') != 'home_menu_line') {
         switch (target.getAttribute('class')) {
@@ -176,25 +220,25 @@ $('.home_menu_parent').on('click', "li", function() {
 // Swiper.use(myPlugin);
 
 // Init Swiper
-var swiper = new Swiper('.swiper-container', {
-    loop: true,
-    autoplay: {
-        disableOnInteraction: false,
-    },
+// var swiper = new Swiper('.swiper-container', {
+//     loop: true,
+//     autoplay: {
+//         disableOnInteraction: false,
+//     },
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        // prevEl: '.swiper-button-prev',
-    },
-    // Enable debugger
-    debugger: true,
-});
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         // prevEl: '.swiper-button-prev',
+//     },
+//     // Enable debugger
+//     debugger: true,
+// });
 
-$('.swiper-wrapper').on('click', 'div', function(target) {
+$('.swiper-wrapper').on('click', 'div', function() {
     // alert($(this).index());
     console.log(data.banner[$(this).index()].toUrl);
 
@@ -202,7 +246,7 @@ $('.swiper-wrapper').on('click', 'div', function(target) {
 
 });
 
-$(".home_content_part1").on('click', "li", function(target) {
+$(".home_content_part1").on('click', "li", function() {
     // console.log(1);
     alert($(this).index());
     switch ($(this).index()) {
@@ -219,4 +263,15 @@ $(".home_content_part1").on('click', "li", function(target) {
             location.href = "http://www.baidu.com";
             break;
     }
+});
+
+$('.home_content_part2_left_div_p_span').click(function(event) {
+    var target = event.target;
+    alert($(target).text());
+});
+
+$('.home_content_part3_wrapper_ul').on('click', "li", function(event) {
+    var target = event.target;
+
+    window.open(data.starbucksSelection.content[$(target).index()].toUrl, "_blank")
 });

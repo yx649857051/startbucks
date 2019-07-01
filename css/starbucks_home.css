@@ -300,11 +300,13 @@ body {
     background: #F7F7F7;
 }
 
-.home_content_part3_wrapper {
+.home_content_part3_wrapper,
+.home_content_part4_wrapper {
     padding: 36px 84px;
 }
 
-.home_content_part3_wrapper_h2 {
+.home_content_part3_wrapper_h2,
+.home_content_part4_wrapper_h2 {
     font-size: 22px;
     margin-bottom: 18px;
     text-align: center;
@@ -312,7 +314,8 @@ body {
     font-family: "Gotham";
 }
 
-.home_content_part3_wrapper_p {
+.home_content_part3_wrapper_p,
+.home_content_part4_wrapper_p {
     text-align: center;
     margin-bottom: 24px;
     color: #6C6C6C;
@@ -376,4 +379,54 @@ body {
     padding-bottom: 24px;
     text-align: center;
     color: #D5C192;
+}
+
+.home_content_part4 {
+    background: #FCFCFC;
+    overflow-x: hidden;
+}
+
+.home_content_part4_div_ul {
+    padding-left: 90px;
+    padding-right: 36px;
+    height: 270px;
+    display: inline-block;
+    white-space: nowrap;
+    /* overflow: hidden; */
+}
+
+.home_content_part4_div_ul_li {
+    width: auto;
+    height: 100%;
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin-right: 20px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.home_content_part4_ul_div_li:hover {
+    transform: translate(0, -5px);
+}
+
+.home_content_part4_div_ul_li_p {
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: 16px;
+    color: #272727;
+    font-family: "Gotham";
+    padding-top: 20px;
+    padding-left: 20px;
+    border: solid 1px #eee;
+    box-shadow: 0 2px 3px #cccccc;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.home_content_part4_div_span {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background: red;
 }

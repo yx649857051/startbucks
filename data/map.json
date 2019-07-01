@@ -9,13 +9,13 @@
 
     ],
     "map_coffee": [
-        { "url": "../images/map_coffer1.png", "text": "星巴克臻选™" },
-        { "url": "../images/map_coffer2.png", "text": "星巴克臻选™特调饮品" },
-        { "url": "../images/map_coffer3.png", "text": "星巴克冰淇淋系列" },
-        { "url": "../images/map_coffer4.png", "text": "气致™冷萃咖啡" },
-        { "url": "../images/map_coffer5.png", "text": "手冲咖啡" },
-        { "url": "../images/map_coffer6.png", "text": "啡快™ – 在线点 到店取" },
-        { "url": "../images/map_coffer7.png", "text": "专星送™" }
+        { "url": "../images/map_coffee1.png", "text": "星巴克臻选™" },
+        { "url": "../images/map_coffee2.png", "text": "星巴克臻选™特调饮品" },
+        { "url": "../images/map_coffee3.png", "text": "星巴克冰淇淋系列" },
+        { "url": "../images/map_coffee4.png", "text": "气致™冷萃咖啡" },
+        { "url": "../images/map_coffee5.png", "text": "手冲咖啡" },
+        { "url": "../images/map_coffee6.png", "text": "啡快™ – 在线点 到店取" },
+        { "url": "../images/map_coffee7.png", "text": "专星送™" }
     ]
 
 }

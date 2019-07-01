@@ -4,9 +4,9 @@ var map = new AMap.Map('container', {
 });
 var options = {
     'showButton': true, //是否显示定位按钮
-    'buttonPosition': 'LB', //定位按钮的位置
+    'buttonPosition': 'RB', //定位按钮的位置
     /* LT LB RT RB */
-    'buttonOffset': new AMap.Pixel(10, 20), //定位按钮距离对应角落的距离
+    'buttonOffset': new AMap.Pixel(14, 140), //定位按钮距离对应角落的距离
     'showMarker': true, //是否显示定位点
     'markerOptions': { //自定义定位点样式，同Marker的Options
         'offset': new AMap.Pixel(-18, -36),
@@ -37,6 +37,72 @@ AMap.plugin(['AMap.ToolBar'], function() {
         liteStyle: true
     }));
 });
+
+
+
+//增加地图搜索地点查询
+var placeSearch = null;
+AMap.service(["AMap.PlaceSearch"], function() {
+    //构造地点查询类
+    placeSearch = new AMap.PlaceSearch({
+        pageSize: 100, // 单页显示结果条数
+        pageIndex: 1, // 页码
+        // city: "010", // 兴趣点城市
+        citylimit: false, //是否强制限制在设置的城市内搜索
+        map: map, // 展现结果的地图实例
+        // panel: "panel", // 结果列表将在此容器中进行展示。
+        autoFitView: true // 是否自动调整地图视野使绘制的 Marker点都处于视口的可见范围
+    });
+    //关键字查询
+    // placeSearch.search();
+
+});
+$('.map_search_btn').click(function() {
+    // placeSearch.search().html($('.map_ipt_search').val() + "星巴克");
+    console.log($('.map_ipt_search').val() + "星巴克咖啡");
+    placeSearch.search($('.map_ipt_search').val() + "星巴克咖啡");
+})
+
+//输入提示功能
+AMap.plugin('AMap.Autocomplete', function() {
+    // 实例化Autocomplete
+    var autoOptions = {
+        // input 为绑定输入提示功能的input的DOM ID
+        input: 'map_ipt_search_btn'
+    }
+    var autoComplete = new AMap.Autocomplete(autoOptions);
+    // 无需再手动执行search方法，autoComplete会根据传入input对应的DOM动态触发search
+})
+
+
+//获取搜索信息
+var data = '';
+
+function autoInput() {
+    var keywords = null;
+
+    AMap.plugin('AMap.PlaceSearch', function() {
+        var autoOptions = {
+            city: '全国'
+        }
+
+        var placeSearch = new AMap.PlaceSearch(autoOptions);
+        placeSearch.search(keywords, function(status, result) {
+            // 搜索成功时，result即是对应的匹配数据
+            var node = new PrettyJSON.view.Node({
+                el: document.querySelector("#input-info"),
+                data: result
+            });
+            console.log(node);
+        })
+    })
+}
+autoInput();
+
+
+
+
+
 
 // 地图JS结束-->-->-->地图JS结束-->-->-->地图JS结束-->-->-->地图JS结束-->-->-->
 
@@ -138,15 +204,17 @@ $(function() {
             var map_locate = json.map_locate;
             var result = '';
             $.each(map_locate, function(index, val) {
-                console.log(index, val);
-
+                // console.log(index, val);
                 result += '<li><div class="number"><span>' + val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
+
                 // console.log(result);
             });
             $('.map_locate_list').html(result);
         }
     })
 });
+
+
 // 给筛选添加点击显示隐藏事件
 $('.map_filter_btn').click(function() {
     $('.map_overlay_inner').show();
@@ -170,7 +238,7 @@ $(function() {
             var map_coffee = json.map_coffee;
             var result = '';
             $.each(map_coffee, function(index, val) {
-                console.log(index, val);
+                // console.log(index, val);
                 // console.log(val.url);
                 result += "<li><img src=" + val.url + "><span>" + val.text + "</span></li>"
                     // result += '<li><div class="number"><span>' + map_locate.val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + map_locate.val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + map_locate.val.address + '</small><span class="map_distance">' + map_locate.val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
@@ -178,4 +246,4 @@ $(function() {
             $('.map_coffer_list').html(result);
         }
     })
-})
+});

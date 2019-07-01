@@ -54,6 +54,7 @@ body {
     height: 72px;
     margin-right: 10px;
     float: left;
+    cursor: pointer;
 }
 
 .map_three_nav li {
@@ -63,6 +64,7 @@ body {
     font-weight: 700;
     font-family: '微软雅黑';
     float: left;
+    cursor: pointer;
 }
 
 .map_menu_ic {
@@ -71,6 +73,7 @@ body {
     height: 24px;
     margin-top: 30px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .map_login {
@@ -80,6 +83,7 @@ body {
 
 .map_login_icon {
     margin-top: 6px;
+    cursor: pointer;
 }
 
 .map_login_text {
@@ -108,6 +112,7 @@ body {
     float: right;
     margin-top: 30px;
     margin-right: 22px;
+    cursor: pointer;
 }
 
 .map_menu_parent {
@@ -124,6 +129,7 @@ body {
     color: #000;
     display: block;
     height: 28px;
+    cursor: pointer;
 }
 
 .map_menu_line {
@@ -201,6 +207,10 @@ body {
     margin-left: 24px;
     padding: 4px 0;
     margin-bottom: 15px;
+}
+
+.map_ipt .map_search_btn {
+    cursor: pointer;
 }
 
 .map_ipt:hover {
@@ -396,4 +406,15 @@ body {
 #container {
     width: 100%;
     height: 100%;
+    ;
+}
+
+#panel {
+    position: absolute;
+    background-color: white;
+    max-height: 90%;
+    overflow-y: auto;
+    top: 10px;
+    right: 10px;
+    width: 280px;
 }

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>登录 | 星享俱乐部</title>
     <link rel="stylesheet" href="../css/public_style.css">
     <link rel="stylesheet" href="../css/cq.css">
     <link rel="stylesheet" href="../css/cqLogin1.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1267547_8bk1x1zgq46.css">
 </head>
 
 <body>
@@ -19,6 +20,8 @@
             <div class="cqNewHeaderPic">
                 <img src="../images/cqheader_cn.jpg" alt="" class="cqNewHeaderPic_pic">
             </div>
+
+            <!-- ****************** 扫码登录*********************** -->
             <div class="cqLogindiffcut1">
                 <h2>打开<a href="#" class="green">星巴克App</a>，在“我”页面右上角点开扫描二维码图标。</h2>
                 <div class="cqQRlogin">
@@ -26,16 +29,43 @@
                 </div>
                 <div class="cqErweima">
                     <div class="cqqrcode">
-                        <div id="qrcode"></div>
+                        <div class="qrcode"></div>
                     </div>
                     <img src="../images/cqphone-with-scanner.png" alt="" class="cqphone_with_scanner">
                 </div>
             </div>
 
-            <!-- ****************** 登录部分*********************** -->
+            <!-- ****************** 账号密码登录*********************** -->
             <div class="cqLogindiffcut2">
-
-
+                <div class="cqPWlogin">
+                    <p>扫码登录</p>
+                </div>
+                <div class="cqForm">
+                    <div class="cqUser">
+                        <input type="text" placeholder="用户名或者电子邮箱" class="cqUserName cqinput">
+                        <label class="cqlabel">用户名或者电子邮箱</label>
+                        <div class="cqNoEmpty">
+                            <strong class="cqcha iconfont">&#xe61b;</strong>&ensp;此栏不可为空
+                        </div>
+                    </div>
+                    <div class="cqWord">
+                        <input type="password" placeholder="密码" class="cqPassWord cqinput">
+                        <label class="cqlabel">密码</label>
+                        <div class="cqNoEmpty">
+                            <strong class="cqcha iconfont">&#xe61b;</strong>&ensp;此栏不可为空
+                        </div>
+                        <i class="cqBuKeJian iconfont">&#xe649;</i>
+                        <i class="cqKeJian iconfont">&#xe67c;</i>
+                    </div>
+                    <div class="cq_Remenber_or_Forget">
+                        <input type="checkbox" class="cqRemenber" name="chk">
+                        <div class="cq_Remenber_jia unchecked">
+                            <span class="cq_radiobox-content iconfont" onselectstart="return false">&#xe61a;</span>
+                        </div>
+                        <b>&ensp;下次自动登录</b>
+                        <a class="green" href="#">忘记密码？</a>
+                    </div>
+                </div>
 
 
 
@@ -59,4 +89,11 @@
 <script src="../jquery-1.8.3/jquery-1.8.3.min.js"></script>
 <script src="../js/cqrount.min.js"></script>
 <script src="../js/cqL1.js"></script>
+<script>
+    // 复选框点击事件
+    $(document).ready(function () {
+        $(".cqRemenber").labelauty("cqRemenber", "check");
+    });
+</script>
+
 </html>

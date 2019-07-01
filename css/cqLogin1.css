@@ -42,7 +42,7 @@
     padding-bottom: 10px;
 }
 .cqwhite a,.cqQueAueser a{
-    color: rgb(14, 167, 14);
+    color: #20b275;
 }
 .cqBanner p{
     line-height: 18px;
@@ -61,7 +61,7 @@
     line-height: 28px;
 }
 .green{
-    color: rgb(14, 167, 14);
+    color: #20b275;
 }
 .gold{
     color: #d4b868;
@@ -184,11 +184,11 @@
     display: inline-block;
     width: 102px;
     height: 38px;
-    border: 1px solid rgb(14, 167, 14);
+    border: 1px solid #20b275;
     text-align: center;
     line-height: 38px;
     border-radius: 20px;
-    color: rgb(14, 167, 14);
+    color: #20b275;
     margin-top: 20px;
     font-size: 16px;
     margin-bottom: 10px;
@@ -302,6 +302,7 @@
 .cqLogindiffcut1{
     padding-left: 28%;
     overflow: hidden;
+    display: none;
 }
 .cqLogindiffcut1 h2{
     font-size: 16px;
@@ -309,14 +310,20 @@
     float: left;
 }
 .cqQRlogin{
-    width: 100px; height: 100px;
     background: url(../images/cqemail-login-tip.png) no-repeat;
+}
+.cqPWlogin{
+    background: url(../images/cqqrcode-login-tip.png) no-repeat;
+}
+.cqQRlogin,.cqPWlogin{
+    width: 100px; height: 100px;
     background-size: 100%;
     float: right;
     cursor: pointer;
 }
-.cqQRlogin p{
-    margin: 8px 0 0 38px;
+.cqQRlogin p,.cqPWlogin p{
+    margin: 5px 0 0 38px;
+    -webkit-user-select:none;
 }
 .cqErweima{
     padding-top: 140px;
@@ -335,14 +342,110 @@
     margin-bottom: 100px;
 }
 /************************账户 密码*************************/
-
-
-
-
-
-
-
-
+.cqLogindiffcut2{
+    padding-left: 26%;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+.cqForm{
+    margin-top: 30px;
+}
+.cqUser,.cqWord,.cq_Remenber_or_Forget{
+    padding-top: 25px;
+    overflow: hidden;
+}
+.cqUserName,.cqPassWord{
+    width: 432px; height: 34px;
+    padding: 4px 0 0 0;
+    background:none; 
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+.cqinput::-webkit-input-placeholder{
+    font-size: 16px;
+    color: #aaa;
+}
+.cqinput::-ms-input-placeholder{
+    font-size: 16px;
+    color: #aaa;
+}
+.cqinput{
+    font-size: 18px;
+    color: #333;
+}
+.cqForm label{
+    font-size: 16px;
+    position: relative;
+    left: -438px;
+    color: #999;
+    display:none;
+}
+.cqRemenber{
+    display: none;
+}
+.cq_Remenber_jia{
+    display: inline-block;
+    border: #20b275 1px solid;
+    color: #fff;
+    width: 32px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+    float: left;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.checked {
+    background-color: #20b275;
+}
+.cq_Remenber_or_Forget{
+    width: 432px;
+}
+.cq_Remenber_or_Forget b{
+    color: #777;
+    float: left;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.cq_Remenber_or_Forget a{
+    float: right;
+    font-size: 16px;
+    margin-top: 6px;
+}
+.cqNoEmpty{
+    font-size: 16px;
+    color: #777;
+    margin-top: 8px;
+    display: none;
+}
+.cqcha{
+    color: rgb(247, 56, 56);
+}
+.cqWord i{
+    font-size: 22px;
+    color: #777;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.cqWord{
+    position: relative;
+}
+.cqWord .cqBuKeJian{
+    position: absolute;
+    left: 400px;
+    top: 34px;
+}
+.cqWord .cqKeJian{
+    position: absolute;
+    left: 400px;
+    top: 34px;
+    display: none;
+}
 
 
 /************* 登录页面 底部 ******************/

@@ -55,6 +55,29 @@
             }
 
         ]
+    },
+
+    "coffeeKnowledge": {
+        "title": "1912 派克街 | 咖啡星讲堂",
+        "description": "了解更多星巴克咖啡文化",
+        "content": [{
+            "text": "咖啡的起源与培植",
+            "imgUrl": "../images/home_coffee_knowledge_01.png",
+            "toUrl": "http://www.baidu.com"
+        }, {
+            "text": "咖啡调制",
+            "imgUrl": "../images/home_coffee_knowledge_02.png",
+            "toUrl": "http://www.baidu.com"
+        }, {
+            "text": "咖啡烘焙",
+            "imgUrl": "../images/home_coffee_knowledge_03.png",
+            "toUrl": "http://www.baidu.com"
+        }, {
+            "text": "手冲咖啡",
+            "imgUrl": "../images/home_coffee_knowledge_04.png",
+            "toUrl": "http://www.baidu.com"
+        }]
     }
+
 
 }

@@ -1,4 +1,22 @@
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container',{
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  a11y : {
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+    firstSlideMessage: 'This is the first slide',
+    lastSlideMessage: 'This is the last slide',
+    paginationBulletMessage: 'Go to slide {{index}}',
+    notificationClass: 'swiper-notification',
+  },
+}) ;
+$(".ani").onloadAnimate(function () {
+  var mySwiper = new Swiper ('.swiper-container', {
     on:{
       init: function(){
         swiperAnimateCache(this); //隐藏动画元素 
@@ -10,3 +28,4 @@ var mySwiper = new Swiper ('.swiper-container', {
       } 
     }
   }) 
+})

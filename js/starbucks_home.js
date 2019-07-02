@@ -184,7 +184,9 @@ $(document).ready(function() {
                 case 'home_shanghai_hpf':
                     location.href = 'Lxz-roastery.html';
                     break;
-
+                case 'home_menu_reserve':
+                    location.href = 'starbucks_reserve.html';
+                    break;
 
                 default:
                     alert($(target).text());

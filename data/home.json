@@ -8,7 +8,7 @@
         {
             "imgUrl": "../images/home_banner_2.jpg",
             "id": "1",
-            "toUrl": "http://www.baidu.com"
+            "toUrl": "../html/gfMenu.html"
         },
         {
             "imgUrl": "../images/home_banner_3.jpg",

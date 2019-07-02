@@ -33,6 +33,7 @@ $(document).ready(function() {
             for (var i = 0; i < bannerLength; i++) {
                 var div = document.createElement('div');
                 div.className = 'swiper-slide';
+                $(div).attr("tag", i + "");
                 var img = new Image();
                 $(img).css({
                     "width": "100%",
@@ -59,7 +60,9 @@ $(document).ready(function() {
                     // prevEl: '.swiper-button-prev',
                 },
                 // Enable debugger
-                debugger: true,
+                // debugger: true,
+
+
             });
 
             var starbucksSelection = data.starbucksSelection;
@@ -68,7 +71,7 @@ $(document).ready(function() {
 
             var starbucksSelectionHtml = '';
             $.each(starbucksSelection.content, function(index, value) {
-                starbucksSelectionHtml += '<li class="home_content_part3_wrapper_ul_li"><img class="home_content_part3_wrapper_ul_li_img" src="' + value.imgUrl + '"></img><div class="home_content_part3_wrapper_ul_li_div"><p class="home_content_part3_wrapper_ul_li_div_name">' + value.name + '</p><p class="home_content_part3_wrapper_ul_li_div_text">' + value.text + '</p><p class="home_content_part3_wrapper_ul_li_div_more">' + value.more + '</i></div></li>';
+                starbucksSelectionHtml += '<li class="home_content_part3_wrapper_ul_li" tag="' + index + '"><img class="home_content_part3_wrapper_ul_li_img" src="' + value.imgUrl + '"></img><div class="home_content_part3_wrapper_ul_li_div"><p class="home_content_part3_wrapper_ul_li_div_name">' + value.name + '</p><p class="home_content_part3_wrapper_ul_li_div_text">' + value.text + '</p><p class="home_content_part3_wrapper_ul_li_div_more">' + value.more + '</i></div></li>';
 
             });
             $(".home_content_part3_wrapper_ul").html(starbucksSelectionHtml);
@@ -79,7 +82,7 @@ $(document).ready(function() {
             $('.home_content_part4_wrapper_p').text(coffeeKnowledge.description);
 
             $.each(coffeeKnowledge.content, function(index, val) {
-                coffeeKnowledgeHtml += '<li class="home_content_part4_div_ul_li"><img class="home_content_part4_div_ul_li_img" src="' + val.imgUrl + '" /><p class="home_content_part4_div_ul_li_p"> ' + val.text + '</p> </li>'
+                coffeeKnowledgeHtml += '<li class="home_content_part4_div_ul_li" tag="' + index + '"><img class="home_content_part4_div_ul_li_img" src="' + val.imgUrl + '" /><p class="home_content_part4_div_ul_li_p"> ' + val.text + '</p> </li>'
             });
             $('.home_content_part4_div_ul').html(coffeeKnowledgeHtml);
         });
@@ -124,30 +127,36 @@ $(document).ready(function() {
                 break;
             case 'home_my_account':
 
-                alert($(target).text());
+                // alert($(target).text());
+                location.href = "cqLogin2.html";
                 break;
             case 'home_menu':
-                alert($(target).text());
+                // alert($(target).text());
+                location.href = "gfMenu.html";
                 break;
         }
     });
 
     //登录事件  以下有两遍是因为有不一样的样式
     $('.home_login' || '.home_login_2').click(function() {
-        alert('login');
+        // alert('login');
+        location.href = "cqLogin2.html";
     });
 
     $('.home_login_2').click(function() {
-        alert('login');
+        // alert('login');
+        location.href = "cqLogin2.html";
     });
 
     //注册事件
     $('.home_regist_text' || ".home_regist_2").click(function() {
-        alert('regist');
+        // alert('regist');
+        location.href = "cqNew.html";
     });
 
     $(".home_regist_2").click(function() {
-        alert('regist');
+        // alert('regist');
+        location.href = "cqNew.html";
     });
 
     //左侧竖排导航栏事件
@@ -156,19 +165,27 @@ $(document).ready(function() {
         if (target.getAttribute('class') != 'home_menu_line') {
             switch (target.getAttribute('class')) {
                 case 'home_menu_mendian':
-                    alert($(target).text());
+                    // alert($(target).text());
                     location.href = "map.html";
                     break;
                 case 'home_menu_xxjlb':
 
-                    alert($(target).text());
+                    // alert($(target).text());
+                    location.href = "cqLogin1.html";
                     break;
                 case 'home_menu':
-                    alert($(target).text());
+                    // alert($(target).text());
+                    location.href = "gfMenu.html";
                     break;
                 case 'home_menu_xlk':
                     location.href = 'xlk.html';
                     break;
+
+                case 'home_shanghai_hpf':
+                    location.href = 'Lxz-roastery.html';
+                    break;
+
+
                 default:
                     alert($(target).text());
                     break;
@@ -180,125 +197,46 @@ $(document).ready(function() {
 
     //右侧内容区start-------------------
 
-    // var myPlugin = {
-    //     name: 'debugger',
-    //     params: {
-    //         debugger: false,
-    //     },
-    //     on: {
-    //         init: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('init');
-    //         },
-    //         click: function(e) {
-    //             if (!this.params.debugger) return;
-    //             console.log('click');
-    //         },
-    //         tap: function(e) {
-    //             if (!this.params.debugger) return;
-    //             console.log('tap');
-    //         },
-    //         doubleTap: function(e) {
-    //             if (!this.params.debugger) return;
-    //             console.log('doubleTap');
-    //         },
-    //         sliderMove: function(e) {
-    //             if (!this.params.debugger) return;
-    //             console.log('sliderMove');
-    //         },
-    //         slideChange: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('slideChange', this.previousIndex, '->', this.activeIndex);
-    //         },
-    //         slideChangeTransitionStart: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('slideChangeTransitionStart');
-    //         },
-    //         slideChangeTransitionEnd: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('slideChangeTransitionEnd');
-    //         },
-    //         transitionStart: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('transitionStart');
-    //         },
-    //         transitionEnd: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('transitionEnd');
-    //         },
-    //         fromEdge: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('fromEdge');
-    //         },
-    //         reachBeginning: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('reachBeginning');
-    //         },
-    //         reachEnd: function() {
-    //             if (!this.params.debugger) return;
-    //             console.log('reachEnd');
-    //         },
-    //     },
-    // };
+    /**
+     * banner点击事件
+     */
+    $('.swiper-container').on('click', 'div', function(event) {
 
-    // Install Plugin To Swiper
-    // Swiper.use(myPlugin);
-
-    // Init Swiper
-    // var swiper = new Swiper('.swiper-container', {
-    //     loop: true,
-    //     autoplay: {
-    //         disableOnInteraction: false,
-    //     },
-
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         // prevEl: '.swiper-button-prev',
-    //     },
-    //     // Enable debugger
-    //     debugger: true,
-    // });
-
-    $('.swiper-wrapper').on('click', 'div', function() {
-        // alert($(this).index());
-        console.log(data.banner[$(this).index()].toUrl);
-
-        location.href = data.banner[$(this).index()].toUrl;
+        location.href = data.banner[$(this).attr("tag")].toUrl;
 
     });
 
-    $(".home_content_part1").on('click', "li", function() {
-        // console.log(1);
-        alert($(this).index());
-        switch ($(this).index()) {
-            case 0:
+    $(".home_content_part1").on('click', "li", function(event) {
+
+
+        // alert($(this).attr("tag"));
+
+        switch ($(this).attr("tag")) {
+            case "0":
+                location.href = "https://starbucks.tmall.com/p/rd841488.htm";
+                break;
+            case "1":
+                location.href = "https://www.starbucks.com.cn/design-studio/";
+                break;
+            case "2":
                 location.href = "http://www.baidu.com";
                 break;
-            case 1:
-                location.href = "http://www.baidu.com";
-                break;
-            case 2:
-                location.href = "http://www.baidu.com";
-                break;
-            default:
-                location.href = "http://www.baidu.com";
-                break;
+                // default:
+                //     location.href = "http://www.baidu.com";
+                //     break;
         }
     });
 
-    $('.home_content_part2_left_div_p_span').click(function(event) {
-        var target = event.target;
-        alert($(target).text());
-    });
+    // //了解更多
+    // $('.home_content_part2_left_div_p_span').click(function(event) {
+    //     var target = event.target;
+    //     alert($(target).text());
+    // });
 
     $('.home_content_part3_wrapper_ul').on('click', "li", function(event) {
-        var target = event.target;
 
-        window.open(data.starbucksSelection.content[$(target).index()].toUrl, "_blank")
+        // alert($(this).attr("tag"));
+        window.open(data.starbucksSelection.content[$(this).attr("tag")].toUrl, "_blank")
     });
 
     $(".home_content_part4_div").scroll(function() {
@@ -340,8 +278,9 @@ $(document).ready(function() {
     });
 
     $('.home_content_part4_div_ul').on('click', 'li', function(event) {
-        var target = event.target;
-        window.open(data.coffeeKnowledge.content[$(target).index()].toUrl, "_blank")
+
+        // alert($(this).attr("tag"));
+        window.open(data.coffeeKnowledge.content[$(this).attr("tag")].toUrl, "_blank")
     });
 
 });

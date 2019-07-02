@@ -59,7 +59,7 @@ AMap.service(["AMap.PlaceSearch"], function() {
 });
 $('.map_search_btn').click(function() {
     // placeSearch.search().html($('.map_ipt_search').val() + "星巴克");
-    console.log($('.map_ipt_search').val() + "星巴克咖啡");
+    // console.log($('.map_ipt_search').val() + "星巴克咖啡");
     placeSearch.search($('.map_ipt_search').val() + "星巴克咖啡");
 })
 
@@ -75,29 +75,11 @@ AMap.plugin('AMap.Autocomplete', function() {
 })
 
 
-//获取搜索信息
-var data = '';
 
-function autoInput() {
-    var keywords = null;
+// 获取输入提示信息
 
-    AMap.plugin('AMap.PlaceSearch', function() {
-        var autoOptions = {
-            city: '全国'
-        }
 
-        var placeSearch = new AMap.PlaceSearch(autoOptions);
-        placeSearch.search(keywords, function(status, result) {
-            // 搜索成功时，result即是对应的匹配数据
-            var node = new PrettyJSON.view.Node({
-                el: document.querySelector("#input-info"),
-                data: result
-            });
-            console.log(node);
-        })
-    })
-}
-autoInput();
+
 
 
 
@@ -215,7 +197,7 @@ $(function() {
 });
 
 
-// 给筛选添加点击显示隐藏事件
+// 给筛选内容区添加点击显示隐藏事件
 $('.map_filter_btn').click(function() {
     $('.map_overlay_inner').show();
     $('.map_locate_body').hide();
@@ -225,6 +207,23 @@ $('.map_close_btn').click(function() {
     $('.map_overlay_inner').hide();
     $('.map_locate_body').show();
 })
+
+//给筛选项目li添加点击事件（勾选 清除 确认）
+$('.map_coffer_list').on('click', 'li', function(event) {
+
+    // var target = event.target;
+    // var index = $(target).index();
+    // console.log(index);
+
+    alert($(this).text());
+    // $('.map_coffee_clear').show();
+    // $('.map_coffee_confirm').show();
+
+    $('#map_coffee_check').toggle();
+
+});
+//点击清除，将所有勾选清除
+//点击确认，将所选项推送至定位列表
 
 //从json获取筛选点击弹出框中的信息
 $(function() {
@@ -240,8 +239,8 @@ $(function() {
             $.each(map_coffee, function(index, val) {
                 // console.log(index, val);
                 // console.log(val.url);
-                result += "<li><img src=" + val.url + "><span>" + val.text + "</span></li>"
-                    // result += '<li><div class="number"><span>' + map_locate.val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + map_locate.val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + map_locate.val.address + '</small><span class="map_distance">' + map_locate.val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
+                result += "<li><img src=" + val.url + "><span>" + val.text + "</span><i class=" + "iconfont" + " id=" + "map_coffee_check" + ">&#xe630;</i></li>"
+                    // console.log(result)
             });
             $('.map_coffer_list').html(result);
         }

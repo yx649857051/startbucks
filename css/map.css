@@ -46,10 +46,10 @@ body {
     margin-top: 18px;
     margin-left: 16px;
     float: left;
+    cursor: pointer;
 }
 
 .map_three_nav {
-    /* display: inline-block; */
     width: 200px;
     height: 72px;
     margin-right: 10px;
@@ -204,9 +204,10 @@ body {
 
 .map_ipt {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    margin-left: 24px;
+    margin-left: 20px;
     padding: 4px 0;
     margin-bottom: 15px;
+    /* width: 300px; */
 }
 
 .map_ipt .map_search_btn {
@@ -222,7 +223,7 @@ body {
     outline: none;
     border-radius: 0;
     box-sizing: border-box;
-    padding: 4px 0;
+    /* padding: 4px 0; */
     font-size: 16px;
 }
 
@@ -232,7 +233,6 @@ body {
 
 .map_locate_list {
     display: block;
-    /* height: 100%; */
     margin-top: 100px;
 }
 
@@ -369,6 +369,7 @@ body {
     line-height: 140%;
     padding: 10px 0 30px 20px;
     font-size: 16px;
+    display: inline-block;
 }
 
 .map_coffer_list {
@@ -395,9 +396,47 @@ body {
 .map_coffer_list li span {
     font-size: 17px;
     line-height: 160%;
-    /* color: inherit; */
     color: rgba(0, 0, 0, 0.56);
     font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.map_coffee_clear {
+    font-size: 16px;
+    color: #00A862;
+    font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    padding-left: 30%;
+    display: none;
+}
+
+
+/* .map_coffer_list li .iconfont  */
+
+#map_coffee_check {
+    float: right;
+    padding-right: 10%;
+    /* padding-top: 5px; */
+    font-size: 16px;
+    color: #00A862;
+    font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.map_coffee_confirm {
+    background: #00A862;
+    color: white;
+    font-family: "Gotham";
+    padding: 15px;
+    width: 50px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 20px;
+    position: fixed;
+    bottom: 5%;
+    left: 22%;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
 }
 
 
@@ -406,15 +445,4 @@ body {
 #container {
     width: 100%;
     height: 100%;
-    ;
-}
-
-#panel {
-    position: absolute;
-    background-color: white;
-    max-height: 90%;
-    overflow-y: auto;
-    top: 10px;
-    right: 10px;
-    width: 280px;
 }

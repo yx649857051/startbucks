@@ -33,6 +33,7 @@
                     </div>
                     <img src="../images/cqphone-with-scanner.png" alt="" class="cqphone_with_scanner">
                 </div>
+                <div class="cqZhuceOver">注册</div>
             </div>
 
             <!-- ****************** 账号密码登录*********************** -->
@@ -62,16 +63,23 @@
                         <div class="cq_Remenber_jia unchecked">
                             <span class="cq_radiobox-content iconfont" onselectstart="return false">&#xe61a;</span>
                         </div>
-                        <b>&ensp;下次自动登录</b>
-                        <a class="green" href="#">忘记密码？</a>
+                        <b>&ensp;记住密码</b>
+                        <a class="green" href="https://www.starbucks.com.cn/account/forgot-password">忘记密码？</a>
                     </div>
                 </div>
-
-
-
-
-
-
+                <!-- ********** 滑块验证 *********** -->
+                <div class="cqcontainer">
+                    <a href="https://support.qq.com/products/2136?clientInfo=chrome&clientVersion=75.0.3770.100&os=other&osVersion=pc&netType=1253432169&imei=0&customInfo=custominfo:clientIP:1903446519"
+                        class="cqFankui" style="color: #bcbcbd;">反馈</a>
+                    <div class="cqrefreshIcon">刷新</div>
+                    <div id="captcha" style="position: relative"></div>
+                    <div id="msg"></div>
+                </div>
+                <div class="cqyanzhenghou iconfont green">
+                    &#xe61a; 已验证
+                </div>
+                <!-- *********** 登陆按钮 ************* -->
+                <div class="cqLoginOver">登陆</div>
             </div>
             <!-- ***************** 登录部分 完 ******************** -->
 
@@ -81,7 +89,6 @@
                 <a href="cqNew.html" class="gold">注册</a>
             </div>
 
-
         </div>
         <!-- 右侧内容栏 -->
     </div>
@@ -89,11 +96,4 @@
 <script src="../jquery-1.8.3/jquery-1.8.3.min.js"></script>
 <script src="../js/cqrount.min.js"></script>
 <script src="../js/cqL1.js"></script>
-<script>
-    // 复选框点击事件
-    $(document).ready(function () {
-        $(".cqRemenber").labelauty("cqRemenber", "check");
-    });
-</script>
-
 </html>

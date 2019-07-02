@@ -410,6 +410,9 @@
     margin-top: 8px;
     font-size: 14px;
     font-weight: 100;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -ms-user-select:none;
 }
 .cq_Remenber_or_Forget a{
     float: right;
@@ -472,4 +475,118 @@
     border: 1px solid #d4b868;
     border-radius: 19px;
     font-size: 16px;
+}
+
+
+/************* 滑块验证 *****************/
+.cqcontainer {
+    width: 310px;
+    margin-left : 9%;
+    margin-top: 20px;
+  }
+#msg {
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.cqblock {
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.cqsliderContainer {
+	position: relative;
+	width: 310px;
+	height: 14px;
+	border-radius: 7px;
+	margin-top: 16px;
+	background: #eee;
+}
+.cqsliderContainer_fail .cqslider {
+	width: 54px;
+	height: 34px;
+	top: -10px;
+	border-radius: 17px;
+	background-color: rgb(228, 23, 23);
+	box-shadow: 0 0 24px rgba(165, 5, 5, 1);
+}
+.cqsliderContainer_active .cqsliderText,
+.cqsliderContainer_success .cqsliderText,
+.cqsliderContainer_fail .cqsliderText {
+	display: none;
+}
+.cqslider {/*滑块阴影*/
+	position: absolute;
+	top: -10px;
+	left: 15px;
+	width: 52px;
+	height: 34px;
+	border-radius: 17px;
+	background: #20b275;
+	box-shadow: 0 0 12px rgba(0, 141, 59, 0.795);
+	cursor: pointer;
+}
+.cqsliderIcon {
+	position: absolute;
+	top: 12px;
+	left: 18px;
+	width: 14px;
+	height: 10px;
+    background: url(http://cstaticdun.126.net//2.6.3/images/icon_light.f13cff3.png) 0 -13px;
+}
+.cqrefreshIcon{
+    cursor: pointer;
+    float: right;
+    color: #bcbcbd;
+}
+.cqyanzhenghou{
+    margin-left: 25%;
+    line-height: 204px;
+    display: none;
+}
+
+/******************** 登陆按钮 *****************************/
+.cqLoginOver{
+    width: 82px; height: 52px;
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 20px;
+    border-radius: 48px;
+    background-color: #eee;
+    box-shadow: 0 3px 4px 2px #ccc;
+    color: #999;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    line-height: 52px;
+    cursor: not-allowed;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.cqZhuceOver{
+    width: 82px; height: 52px;
+    display: inline-block;
+    border-radius: 48px;
+    background-color: #20b275;
+    box-shadow: 0 3px 4px 2px #ccc;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    line-height: 52px;
+    margin: 100px 0 0 50px;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.cqZhuceOver:hover{
+    background-color: #34bd84;
+}
+.cqafter{
+    background-color: #20b275;
+    color: #fff;
+}
+.cqafter:hover{
+    background-color: #34bd84;
 }

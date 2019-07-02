@@ -30,6 +30,7 @@ padding-top: 24px; */
             background: #f7f7f7;
             overflow: hidden;
             border-left: 1px solid #ccc;
+            box-sizing: border-box;
         }
         
         .menus_ad {
@@ -47,6 +48,7 @@ padding-top: 24px; */
             width: 100%;
             height: auto;
             display: inline-block;
+            box-sizing: border-box;
         }
         
         .menus_wrapper {
@@ -203,4 +205,129 @@ padding-top: 24px; */
             border-style: none;
             position: relative;
             align-items: flex-start;
+            outline: none;
+        }
+        /* 菜单里面 */
+        
+        .menus_search_interior {
+            border-style: none;
+            position: fixed;
+            background-color: #fff;
+            border-left: 1px solid #ccc;
+            height: 100%;
+            box-sizing: border-box;
+            min-width: 70%;
+        }
+        
+        .menus_heade {
+            padding: 24px;
+        }
+        
+        .menus_close {
+            font-size: 22px;
+            float: right;
+            background-color: #fff;
+            margin: -12px;
+            border-style: none;
+            outline: none;
+        }
+        
+        .menus_middle {
+            max-width: 480px;
+            padding: 24px;
+            visibility: visible;
+            text-align: center;
+            margin: auto;
+            background-color: #fff;
+        }
+        
+        .menus_fielu {
+            display: block;
+            margin-bottom: 18px;
+            position: relative;
+        }
+        
+        .menus_bton {
+            position: absolute;
+            right: 12px;
+            top: 14px;
+            border-style: none;
+            display: block;
+            font-size: 18px;
+        }
+        
+        .menus_ipt {
+            border-style: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            padding: 4px 0;
+            width: 100%;
+            outline: none;
+            font-size: 18px;
+        }
+        
+        .menus_biaoq {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+        
+        .menus_tag {
+            padding: 4px 12px;
+            color: #fff;
+            font-size: 16px;
+            display: inline-block;
+            background: #00A862;
+        }
+        
+        .menus_grid li {
+            padding: 12px;
+            box-sizing: border-box;
+            float: left;
+            width: 25%;
+            -webkit-transition: all 0.3s
+        }
+        
+        .menus_grid li:hover {
+            transform: translateY(-5px);
+        }
+        
+        .menus_chaolian {
+            display: block;
+        }
+        
+        .menus_chaolian p {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: #000;
+        }
+        
+        .menus_xiaotu {
+            background-image: url(../images/menus-caramel-macchiato.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            margin: 0 6px auto;
+            display: inline-block;
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+        }
+        
+        .menus_ture {
+            background-image: url(../images/product_mezzo_h.png);
+            width: 86px;
+            height: 86px;
+        }
+        
+        .menus_three {
+            background-image: url(../images/product_mezzo_d.jpg);
+            width: 86px;
+            height: 86px;
+        }
+        
+        .menus_foru {
+            background-image: url(../images/product_mezzo_c.png);
+            width: 86px;
+            height: 86px;
         }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>滑动拼图验证码</title>
+    <link rel="stylesheet" href="../css/xlk_testing.css">
+    <link rel="stylesheet" href="../css/xlk_supervise.css">
+    <style>
+        .container {
+            width: 310px;
+            margin: 100px auto;
+        }
+        
+        input {
+            display: block;
+            width: 290px;
+            line-height: 40px;
+            margin: 10px 0;
+            padding: 0 10px;
+            outline: none;
+            border: 1px solid #c8cccf;
+            border-radius: 4px;
+            color: #6a6f77;
+        }
+        
+        #msg {
+            width: 100%;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            margin-left: 100px;
+            color: #0366D6;
+        }
+        
+        .xlk_mbc {
+            width: 310px;
+            height: 155px;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+            display: none;
+        }
+        
+        .xlk_mbc p {
+            color: #00a862;
+            text-align: center;
+            line-height: 155px;
+        }
+        
+        .xlk_pro {
+            margin-bottom: 3px;
+        }
+        
+        .xlk_pro span {
+            font-size: 14px;
+        }
+        
+        .xlk_pro a {
+            font-size: 12px;
+            color: #B3B3B3;
+            margin-left: 0;
+        }
+        
+        .pro_a {
+            display: inline-block;
+            float: right;
+        }
+        
+        .xlk_pro a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test_suc" id="test_suc">
+        <p>
+            <span>✔</span> 已验证
+        </p>
+    </div>
+    <div class="container" id="con">
+        <div class="xlk_pro">
+            <span id="pro_span">拖动下方滑块完成拼图</span>
+            <div class="pro_a">
+                <a href="https://support.qq.com/products/2136?clientInfo=chrome&clientVersion=75.0.3770.100&os=other&osVersion=pc&netType=1253432169&imei=0&customInfo=custominfo:clientIP:1901878652" target="_Blank">反馈</a>
+            </div>
+        </div>
+        <div id="captcha" style="position: relative">
+            <div class="xlk_mbc" id="mbc">
+                <p>对的真准！速度真快！</p>
+            </div>
+        </div>
+        <div id="msg"></div>
+    </div>
+
+
+
+    <script src="../js/xlk_testing.js"></script>
+
+
+</body>
+
+</html>

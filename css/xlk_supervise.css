@@ -160,9 +160,10 @@
     
     .xlk_inquire_main {
         width: 100%;
-        height: 640px;
+        /* height: 640px; */
         background: #ffffff;
         box-shadow: 0 2px 2px #cccccc;
+        overflow: hidden;
     }
     
     .xlk_inquire_main_top {
@@ -200,10 +201,10 @@
         margin: 0 auto;
         outline: none;
         font-size: 16px;
-        padding-bottom: 5px;
-        height: 30px;
+        height: 20px;
         font-weight: 600;
         font-family: '8emArial';
+        padding-bottom: 8px;
     }
     
     .xlk_inquire_main_lb1,
@@ -212,7 +213,7 @@
         color: #9E9E9E;
         position: relative;
         left: 27px;
-        top: 8px;
+        top: 10px;
     }
     
     .xlk_inquire_main_p1,
@@ -238,4 +239,88 @@
     
     .xlk_inquire_main_lb2 {
         padding-top: 20px;
+    }
+    /*------------ 滑动验证CSS -----------*/
+    
+    .container {
+        width: 310px;
+        margin: 30px auto;
+    }
+    
+    #msg {
+        width: 100%;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .xlk_mbc {
+        width: 310px;
+        height: 155px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 2;
+        display: none;
+    }
+    
+    .xlk_mbc p {
+        color: #00a862;
+        text-align: center;
+        line-height: 155px;
+        font-size: 16px;
+    }
+    
+    .xlk_pro {
+        margin-bottom: 3px;
+    }
+    
+    .xlk_pro span {
+        font-size: 14px;
+        color: #333;
+    }
+    
+    .xlk_pro a {
+        font-size: 12px;
+        color: #B3B3B3;
+        margin-left: 0;
+    }
+    
+    .pro_a {
+        display: inline-block;
+        float: right;
+    }
+    
+    .xlk_pro a:hover {
+        color: #666;
+    }
+    
+    .test_suc {
+        display: none;
+        margin-top: 80px;
+    }
+    
+    .test_suc p {
+        font-size: 20px;
+        color: #00a862;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .test_suc p span {
+        font-size: 24px;
+    }
+    
+    .xlk_lasta {
+        display: block;
+        width: 80px;
+        height: 50px;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 50px;
+        background: #F7F7F7;
+        font-size: 16px;
+        font-weight: 600;
+        color: #999999;
+        box-shadow: 0 2px 2px 1px #cccccc;
+        margin: 50px 0 20px 620px;
     }

@@ -230,6 +230,7 @@ body {
     background: #F7F7F7;
     /* height: 100%; */
     overflow: hidden;
+    border: solid 2px #F2F2F2;
 }
 
 .inChina_right_img {
@@ -339,6 +340,7 @@ body {
     margin-bottom: 15px;
     margin-left: -19px;
     color: #333333;
+    margin-left: 17px;
 }
 
 .mission_main_left_span {

@@ -230,6 +230,7 @@ body {
     background: #F7F7F7;
     height: 100%;
     overflow: hidden;
+    border: solid 2px #F2F2F2;
 }
 
 .bills_right_main {

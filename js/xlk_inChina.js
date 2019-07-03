@@ -5,6 +5,18 @@ $('.xlk_icon').click(function() {
 
 });
 
+$('.xlk_inChina_link1').click(function() {
+
+    location.href = "xlk.html";
+
+});
+
+$('.xlk_inChina_link2').click(function() {
+
+    location.href = "xlk_contacts.html";
+
+});
+
 //左侧栏右边的菜单按钮事件
 $('.xlk_menu_ic').click(function() {
 

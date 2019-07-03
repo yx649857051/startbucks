@@ -4,9 +4,9 @@ var map = new AMap.Map('container', {
 });
 var options = {
     'showButton': true, //是否显示定位按钮
-    'buttonPosition': 'RB', //定位按钮的位置
+    'buttonPosition': 'LB', //定位按钮的位置
     /* LT LB RT RB */
-    'buttonOffset': new AMap.Pixel(14, 140), //定位按钮距离对应角落的距离
+    'buttonOffset': new AMap.Pixel(14, 10), //定位按钮距离对应角落的距离
     'showMarker': true, //是否显示定位点
     'markerOptions': { //自定义定位点样式，同Marker的Options
         'offset': new AMap.Pixel(-18, -36),
@@ -14,7 +14,7 @@ var options = {
     },
     'showCircle': true, //是否显示定位精度圈
     'circleOptions': { //定位精度圈的样式
-        'strokeColor': '#0093FF',
+        'strokeColor': '#045D38',
         'noSelect': true,
         'strokeOpacity': 0.5,
         'strokeWeight': 1,
@@ -220,20 +220,8 @@ $('.map_close_btn').click(function() {
 })
 
 //给筛选项目li添加点击事件（勾选 清除 确认）
-// var i = 0
+
 $('.map_coffer_list').on('click', 'li', function() {
-
-    // var target = event.target;
-    // var index = $(target).index();
-    // console.log(index);
-    // i++
-    // console.log(i)
-    // if (i % 2 == 1) {
-    //     ($(this).children())[2].style.display = 'block'
-    // } else {
-    //     ($(this).children())[2].style.display = 'none'
-    // }
-
     $(this).children().eq(2).toggle();
     // console.log($(this).children().eq(2));
     $('.map_coffee_clear').show();

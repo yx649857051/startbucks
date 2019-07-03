@@ -272,7 +272,7 @@
         
         .mobile_bot_contain {
             width: 94%;
-            text-align: center;
+            /* text-align: center; */
             height: 100%;
         }
         
@@ -290,6 +290,7 @@
             width: 25%;
             border-bottom: 1px solid #D9D9D9;
             padding-bottom: 25px;
+            text-align: center;
         }
         
         .mobile_slide_list li:hover {
@@ -350,6 +351,7 @@
             font-family: "Gotham";
             overflow: hidden;
             /* padding-top: 8%; */
+            text-align: center;
         }
         
         .mobile_link_store a {
@@ -375,6 +377,7 @@
             width: 160px;
             height: 160px;
             padding-top: 30px;
+            padding-left: 40%;
         }
         
         .mobile_event_notice {
@@ -383,4 +386,5 @@
             padding-top: 30px;
             font-family: "Gotham";
             padding-bottom: 100px;
+            text-align: center;
         }

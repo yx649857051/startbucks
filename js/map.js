@@ -209,21 +209,32 @@ $('.map_close_btn').click(function() {
 })
 
 //给筛选项目li添加点击事件（勾选 清除 确认）
-$('.map_coffer_list').on('click', 'li', function(event) {
+// var i = 0
+$('.map_coffer_list').on('click', 'li', function() {
 
     // var target = event.target;
     // var index = $(target).index();
     // console.log(index);
+    // i++
+    // console.log(i)
+    // if (i % 2 == 1) {
+    //     ($(this).children())[2].style.display = 'block'
+    // } else {
+    //     ($(this).children())[2].style.display = 'none'
+    // }
 
-    alert($(this).text());
-    // $('.map_coffee_clear').show();
-    // $('.map_coffee_confirm').show();
-
-    $('#map_coffee_check').toggle();
-
+    $(this).children().eq(2).toggle();
+    // console.log($(this).children().eq(2));
+    $('.map_coffee_clear').show();
+    $('.map_coffee_confirm').show();
 });
 //点击清除，将所有勾选清除
-//点击确认，将所选项推送至定位列表
+$('.map_coffee_clear').on('click', function() {
+    // alert(11);
+
+    console.log($('.map_coffer_list').children().children().eq(2));
+})
+
 
 //从json获取筛选点击弹出框中的信息
 $(function() {

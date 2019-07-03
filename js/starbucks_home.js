@@ -173,10 +173,7 @@ $(document).ready(function() {
                     // alert($(target).text());
                     location.href = "cqLogin1.html";
                     break;
-                case 'home_menu':
-                    // alert($(target).text());
-                    location.href = "gfMenu.html";
-                    break;
+
                 case 'home_menu_xlk':
                     location.href = 'xlk.html';
                     break;
@@ -187,7 +184,12 @@ $(document).ready(function() {
                 case 'home_menu_reserve':
                     location.href = 'starbucks_reserve.html';
                     break;
-
+                case 'home_menu_mobile':
+                    location.href = 'mobile.html';
+                    break;
+                case 'home_menu_module':
+                    location.href = 'gfMenu.html';
+                    break;
                 default:
                     alert($(target).text());
                     break;

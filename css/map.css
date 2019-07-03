@@ -262,13 +262,14 @@ body {
     z-index: 1;
 }
 
-.map_locate_list .number i {
+
+/* .map_locate_list .number i {
     position: relative;
     right: auto;
     top: 20px;
     font-size: 36px !important;
     color: #B3B3B3;
-}
+} */
 
 .map_text {
     margin-left: 30px;

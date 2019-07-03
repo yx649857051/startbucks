@@ -58,11 +58,36 @@ AMap.service(["AMap.PlaceSearch"], function() {
 
 });
 
-//实现输入地点进行星巴克搜索
+//实现输入地点进行星巴克搜索并返回地址数据进行显示
 $('.map_search_btn').click(function() {
     // placeSearch.search().html($('.map_ipt_search').val() + "星巴克");
     // console.log($('.map_ipt_search').val() + "星巴克咖啡");
     placeSearch.search($('.map_ipt_search').val() + "星巴克咖啡");
+
+
+
+    var search_words = $('.map_ipt_search').val() + "星巴克咖啡";
+    // var placeSearch = new AMap.PlaceSearch({
+    //     // city 指定搜索所在城市，支持传入格式有：城市名、citycode和adcode
+    //     city: '全国'
+    // })
+
+    placeSearch.search(search_words, function(status, result) {
+        // 查询成功时，result即对应匹配的POI信息
+        // console.log(result);
+        // console.log(result.poiList.pois);
+        var locate_result = '';
+        var resultJson = result.poiList.pois;
+        // console.log(resultJson);
+        var i = 0;
+        $.each(resultJson, function(index, val) {
+            i++;
+            locate_result += '<li><div class="number"><span>' + i + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.name + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.tel + '</span></div></li>';
+        });
+        // console.log(locate_result);
+
+        $('.map_locate_list').html(locate_result);
+    });
 })
 
 //输入提示功能
@@ -76,21 +101,7 @@ AMap.plugin('AMap.Autocomplete', function() {
     // 无需再手动执行search方法，autoComplete会根据传入input对应的DOM动态触发search
 })
 
-
-
-// 获取输入提示信息
-
-
-
-
-
-
-
-
-
 // 地图JS结束-->-->-->地图JS结束-->-->-->地图JS结束-->-->-->地图JS结束-->-->-->
-
-
 
 // 左侧导航js
 $('.map_icon').click(function() {
@@ -176,36 +187,24 @@ $('.map_menu_parent').on('click', "li", function() {
                 location.href = "mobile.html";
                 // alert($(target).text());
                 break;
+            case 'map_menu_reserve':
+                location.href = "starbucks_reserve.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_Lxz-roastery':
+                location.href = "Lxz-roastery.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_kakuai':
+                location.href = "kakuai.html";
+                // alert($(target).text());
+                break;
             default:
                 alert($(target).text());
                 break;
         }
     }
 
-});
-
-
-
-// 添加定位信息列表，从json获取数据
-$(function() {
-
-    $.ajax({
-        url: '../data/map.json',
-        type: 'get',
-        dataType: 'json',
-        success: function(json) {
-            // console.log(json);
-            var map_locate = json.map_locate;
-            var result = '';
-            $.each(map_locate, function(index, val) {
-                // console.log(index, val);
-                result += '<li><div class="number"><span>' + val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
-
-                // console.log(result);
-            });
-            $('.map_locate_list').html(result);
-        }
-    })
 });
 
 

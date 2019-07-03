@@ -139,14 +139,7 @@
     height: 483px;
     margin: 40px auto;
 }
-.swiper-container {
-    width: 965px;
-    height: 483px;
-} 
-.swiper-container img{
-    width: 950px;
-    height: 483px;
-}
+
 /* 轮播1结束 */
 .Lxz-roastery-content-luobo2-wz{
     width: 100%;
@@ -177,11 +170,8 @@
     height: 483px;
     margin: 40px auto;
 }
-.swiper-container {
-    width: 965px;
-    height: 483px;
-} 
-.swiper-container img{
+
+.Lxz-roastery-content-luobo-img{
     width: 950px;
     height: 483px;
 }

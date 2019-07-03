@@ -23,6 +23,7 @@
     .reserve_contain {
         margin-left: 30%;
         position: relative;
+        border: solid 2px #F2F2F2;
         /* left: auto;
     padding-bottom: 24px;
     padding-top: 24px; */

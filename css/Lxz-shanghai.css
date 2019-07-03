@@ -66,10 +66,31 @@
     padding: 10px 14px;
 }
 /* 头部结束 */
+.Lxz-roastery-content-crtp{
+    position: relative;
+
+}
+.Lxz-roastery-content-crtp1 img{
+    width: 40%;
+    display: block;
+    position: absolute;
+    top: 870px;
+    left: 0px;
+    z-index: -1;
+}
+.Lxz-roastery-content-crtp2 img{
+    width: 40%;
+    display: block;
+    position: absolute;
+    top: 1600px;
+    right: 0px;
+    z-index: -1;
+}
+/* 插入两张背景图 */
 .Lxz-roastery-banner{
     width: 100%;
     height: 550px;
-    background: url("../images/Lxz-shanghai-1\ \(30\).webp") no-repeat;
+    background: url("../images/Lxz-shanghai-1\ -30.webp") no-repeat;
     background-size: 100% 100%;
 }
 .Lxz-roastery-banner-wz1{
@@ -587,5 +608,114 @@ overflow: hidden;
     position: absolute;
     bottom: 0px;
     left: 100px;
+    z-index: 3;
+    
+}
+.Lxz-roastery-wbk{
+    width: 481px;
+    height: 327px;
+    position: absolute;
+    top: 110px;
+    left: 480px;
+    z-index: 3;
+}
+.Lxz-roastery-wbk h1{
+    font-size: 50px;
+    color: #333333;
+    
+}
+.Lxz-roastery-wbk p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #333333;
+    position: absolute;
+    top: 95px;
+}
+.Lxz-roastery-wbk img{
+    width: 153px;
+    height: 153px;
+    position: absolute;
+    top: 165px;
+}
+/* video结束 */
+.Lxz-roastery-address{
+    width: 100%;
+    height: 186px;
+    position: relative;
+    background-color: #292023;
+}
+.Lxz-roastery-address-img img{
+    width: 1349px;
+    height: 185px;
+    position: absolute;
+    z-index: 1;
+}
+.Lxz-roastery-address-zjk{
+    width: 962px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 200px;
     z-index: 2;
+}
+.Lxz-roastery-address-zjk p{
+    font-size: 18px;
+    color: #dedede;
+    text-align: center;
+    line-height: 150px;
+}
+.Lxz-roastery-address-zjk img{
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    left: 400px;
+    top:125px;
+    z-index: 2;
+}
+/* address结束 */
+.Lxz-roastery-bottom{
+    width: 100%;
+    height: 243px;
+    background-color: #000000;
+}
+.Lxz-roastery-bottom-zjk{
+    width: 962px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+.Lxz-roastery-bottom-wzk{
+    padding: 85px 35px 0 0;
+}
+.Lxz-roastery-bottom-zjk h3 a{
+    font-size: 12px;
+    color: #ffffff;
+}
+.Lxz-roastery-bottom-zjk h3 .hh3{
+    border-right: solid 2px #ffffff;
+    padding-right:10px;
+}
+.Lxz-roastery-bottom-zjk h3 .hh4{
+    padding-left:10px;
+}
+.Lxz-roastery-bottom-wzk p{
+    font-size: 14px;
+    padding-top: 30px;
+}
+.Lxz-roastery-bottom-zjk ul a{
+    font-size: 14px;
+    color: #9b9b9b;
+    padding:10px;
+    line-height: 35px;
+}
+.Lxz-roastery-bottom-zjk h2 a{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+}
+.Lxz-roastery-bottom-zjk h2 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
 }

@@ -28,4 +28,32 @@ $(".ani").onloadAnimate(function () {
       } 
     }
   }) 
-})
+});
+
+$(window).scroll(function () { 
+  if ($(window).scrollTop() > 20) { 
+
+  $('.Lxz-1912-search-zjk').width(1349);
+  $('.Lxz-1912-search').css({
+    "position" : 'fixed',
+    'top' : -30,
+    // 'width' : 1349
+  });
+  }else{
+  $('.Lxz-1912-search-zjk').width(1080);
+  $('.Lxz-1912-search').css({
+    'position':'relative',
+    'top' : 0,
+    // 'width' : 1080
+  });
+  }
+  });
+  // 结束头部动画
+  $('.Lxz-1912-content-btn button').on('click',function(){
+    $('.Lxz-1912-content-btn img').css('display','block');
+    $('.Lxz-1912-content-btn button').css("display","none");
+  });
+  $('.Lxz-1912-content-btn img').on('click',function(){
+    $('.Lxz-1912-content-btn button').css('display','block');
+    $('.Lxz-1912-content-btn img').css("display","none");
+  });

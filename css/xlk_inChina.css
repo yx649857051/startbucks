@@ -42,6 +42,7 @@ body {
     margin-top: 18px;
     margin-left: 16px;
     float: left;
+    cursor: pointer;
 }
 
 .xlk_three_nav {
@@ -50,6 +51,7 @@ body {
     height: 72px;
     margin-right: 10px;
     float: left;
+    cursor: pointer;
 }
 
 .xlk_three_nav li {
@@ -67,6 +69,7 @@ body {
     height: 24px;
     margin-top: 30px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .xlk_left_side_content {
@@ -84,6 +87,7 @@ body {
 .xlk_login {
     height: 40px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .xlk_login_icon {
@@ -104,6 +108,7 @@ body {
     padding: 4px 10px;
     line-height: 40px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .xlk_side_all_menu {
@@ -116,6 +121,7 @@ body {
     float: right;
     margin-top: 30px;
     margin-right: 22px;
+    cursor: pointer;
 }
 
 .xlk_menu_parent {
@@ -132,6 +138,7 @@ body {
     color: #000;
     display: block;
     height: 28px;
+    cursor: pointer;
 }
 
 .xlk_menu_line {
@@ -221,7 +228,7 @@ body {
     padding-top: 24px; */
     width: 70%;
     background: #F7F7F7;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
 }
 
@@ -233,11 +240,294 @@ body {
     width: 68%;
     height: 100%;
     margin: 0 auto;
-    background: #9E9E9E;
+    overflow: hidden;
 }
 
-.inChina_threeBlock div {
-    width: 30%;
-    height: 100px;
-    background: #00A862;
+.inChina_threeBlock1,
+.inChina_threeBlock2,
+.inChina_threeBlock3 {
+    width: 31%;
+    float: left;
+    margin: 0 25px 0 0;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.inChina_threeBlock3 {
+    margin: 0;
+    float: right;
+}
+
+.threeBlock1_top,
+.threeBlock2_top,
+.threeBlock3_top {
+    display: block;
+    width: 100%;
+    height: 65px;
+    background: #F7F7F7;
+}
+
+.inChina_threeBlock div span {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #00A862;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+.inChina_threeBlock img {
+    width: 100%;
+}
+
+.threeBlock1_text,
+.threeBlock2_text,
+.threeBlock3_text {
+    width: 100%;
+    height: 330px;
+    background: #ffffff;
+}
+
+.inChina_threeBlock p {
+    font-size: 16px;
+    color: #212121;
+    line-height: 28px;
+    padding: 20px 18px 0 18px;
+}
+
+.inChina_right_mission {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.mission_main {
+    width: 68%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.mission_main h1 {
+    color: #C2A661;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.mission_main_left {
+    width: 45%;
+    float: left;
+}
+
+.mission_main_right {
+    width: 50%;
+    float: right;
+}
+
+.mission_main_left p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.mission_main_left ul li {
+    list-style-type: disc;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-left: -19px;
+    color: #333333;
+}
+
+.mission_main_left_span {
+    font-size: 16px;
+    color: #00A862;
+    display: block;
+    border: 1px solid #00A862;
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.mission_main_left_span:hover {
+    background: rgba(47, 178, 95, 0.1);
+}
+
+.mission_main_right img {
+    width: 100%;
+    margin-top: 110px;
+}
+
+.inChina_right_news {
+    width: 100%;
+    overflow: hidden;
+    background: #FCFCFC;
+}
+
+.inChina_right_news h1 {
+    color: #C2A661;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.right_news_box1,
+.right_news_box2,
+.right_news_box3 {
+    width: 68%;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 1px 0 #ccc;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: block;
+    cursor: pointer;
+}
+
+.right_news_box1:hover {
+    transform: translate(5px, 0);
+    box-shadow: 0 2px 3px #cccccc;
+}
+
+.right_news_box2:hover {
+    transform: translate(5px, 0);
+    box-shadow: 0 2px 3px #cccccc;
+}
+
+.right_news_box3:hover {
+    transform: translate(5px, 0);
+    box-shadow: 0 2px 3px #cccccc;
+}
+
+.right_news_box1 {
+    height: 220px;
+}
+
+.right_news_box2 {
+    height: 190px;
+}
+
+.right_news_box3 {
+    height: 280px;
+}
+
+.right_news_box1 img {
+    width: 140px;
+    margin: 40px 0 0 40px;
+}
+
+.right_news_box2 img {
+    width: 220px;
+    margin: 50px 0 0 5px;
+}
+
+.right_news_box3 img {
+    height: 100%;
+}
+
+.news_box1_text,
+.news_box2_text,
+.news_box3_text {
+    height: 100%;
+    width: 64%;
+    float: right;
+    overflow: hidden;
+}
+
+.inChina_right_news p {
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 15px;
+}
+
+.inChina_right_news span {
+    font-size: 16px;
+    padding-top: 20px;
+    display: block;
+    line-height: 26px;
+}
+
+.inChina_right_news a {
+    display: block;
+    width: 100px;
+    height: 37px;
+    border: 1px solid #00A862;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: #00A862;
+    line-height: 35px;
+    border-radius: 40px;
+}
+
+.inChina_right_news a:hover {
+    background: rgba(47, 178, 95, 0.1);
+}
+
+.inChina_right_us {
+    width: 100%;
+    /* height: 620px; */
+    overflow: hidden;
+}
+
+.inChina_right_us h1 {
+    color: #C2A661;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.right_us_box1,
+.right_us_box2,
+.right_us_box3 {
+    width: 68%;
+    height: 110px;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.inChina_right_us h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 15px 0 30px 15px;
+    display: block;
+}
+
+.inChina_right_us p {
+    font-size: 16px;
+    color: #535252;
+    margin: 0 15px 15px 15px;
+    line-height: 30px;
+}
+
+.us_box1_mbc,
+.us_box2_mbc,
+.us_box3_mbc {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 10px;
+}
+
+.inChina_right_bot {
+    width: 100%;
+    height: 130px;
+    margin-top: 40px;
+}
+
+.inChina_right_bot img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
 }

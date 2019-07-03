@@ -83,115 +83,126 @@ $('.xlk_menu_parent').on('click', "li", function() {
 
 });
 
-var xlk_a1 = document.getElementById('xlk_a1');
-var xlk_a2 = document.getElementById('xlk_a2');
-var lb1 = document.getElementById('lb1')
-var inp1 = document.getElementById('inp1')
-var lb2 = document.getElementById('lb2')
-var inp2 = document.getElementById('inp2')
-var p1 = document.getElementById('p1');
-var p2 = document.getElementById('p2');
-var kh_p = document.getElementById('kh_p');
-var inquire_form1 = document.getElementById('inquire_form1');
-var inquire_form2 = document.getElementById('inquire_form2');
+
+
+
 var bills_right_box1 = document.getElementById('bills_right_box1')
 var bills_right_box2 = document.getElementById('bills_right_box2')
 var bills_right_option_a1 = document.getElementById('bills_right_option_a1');
 var bills_right_option_a2 = document.getElementById('bills_right_option_a2');
 
+var lb1 = document.getElementsByClassName('lb1')[0];
+var inp1 = document.getElementsByClassName('inp1')[0];
+var lb2 = document.getElementsByClassName('lb2')[0];
+var inp2 = document.getElementsByClassName('inp2')[0];
+var p1 = document.getElementsByClassName('p1')[0];
+var p2 = document.getElementsByClassName('p2')[0];
+
+var lb1_b = document.getElementsByClassName('lb1_b')[0];
+var inp1_b = document.getElementsByClassName('inp1_b')[0];
+var lb2_b = document.getElementsByClassName('lb2_b')[0];
+var inp2_b = document.getElementsByClassName('inp2_b')[0];
+var p1_b = document.getElementsByClassName('p1_b')[0];
+var p2_b = document.getElementsByClassName('p2_b')[0];
+
+
+
+
+
 bills_right_option_a1.onclick = function() {
-    bills_right_option_a2.style.fontWeight = '100';
-    bills_right_option_a2.style.color = '#707070';
-    bills_right_option_a2.style.border = 'none';
-    bills_right_option_a1.style.fontWeight = '600';
-    bills_right_option_a1.style.color = '#000';
-    bills_right_option_a1.style.borderBottom = '3px solid #00a862';
-    bills_right_box1.style.display = 'block';
-    bills_right_box2.style.display = 'none';
+    aOnclick(bills_right_option_a1, bills_right_option_a2, bills_right_box1, bills_right_box2);
 }
 
 bills_right_option_a2.onclick = function() {
-    bills_right_option_a1.style.fontWeight = '100';
-    bills_right_option_a1.style.color = '#707070';
-    bills_right_option_a1.style.border = 'none';
-    bills_right_option_a2.style.fontWeight = '600';
-    bills_right_option_a2.style.color = '#000';
-    bills_right_option_a2.style.borderBottom = '3px solid #00a862';
-    bills_right_box1.style.display = 'none';
-    bills_right_box2.style.display = 'block';
+    aOnclick(bills_right_option_a2, bills_right_option_a1, bills_right_box2, bills_right_box1);
 }
 
-var inp1Reg = /^\d+$/;
 
-function checkInp1() {
-    var i1Val = inp1.value;
-    return inp1Reg.test(i1Val);
+function aOnclick(a1, a2, box1, box2) {
+    a2.style.cssText = 'font-weight:400;color:#707070;border:none';
+    a1.style.cssText = 'font-weight:600;color:#333;border-bottom:3px solid #00a862';
+    box1.style.display = 'block';
+    box2.style.display = 'none';
 }
+
 
 inp1.onfocus = function() {
-    animate(lb1, -10 + 'px', 10);
-    lb1.style.color = '#9E9E9E';
-    inp1.style.borderBottom = '1px solid #00A862';
-
+    onFocus(lb1, inp1);
 }
 
 inp1.onblur = function() {
-    inp1.style.borderBottom = '1px solid #E0E0E0';
-    if (checkInp1()) {
-        p1.style.display = 'none';
-        lb1.style.color = '#00A862';
-        lb1.style.top = -10 + 'px';
-    } else if (inp1.value == '') {
-        animate(lb1, 10 + 'px', 10)
-        p1.style.display = 'block';
-        p1.innerHTML = '<span> × </span>此栏不能为空';
-        lb1.style.color = '#E75D54';
-        lb1.style.top = 10 + 'px';
-
-    } else {
-        p1.style.display = 'block';
-        lb1.style.color = '#E75D54';
-        p1.innerHTML = '<span> × </span>请输入正确的数字';
-    }
-}
-
-
-
-
-
-function checkInp2() {
-    var i1Va2 = inp2.value;
-    return inp1Reg.test(i1Va2);
-}
+    onBlur(inp1, p1, lb1);
+};
 
 inp2.onfocus = function() {
-    animate(lb2, -10 + 'px', 10);
-    lb2.style.color = '#9E9E9E';
-    inp2.style.borderBottom = '1px solid #00A862';
-
+    onFocus(lb2, inp2);
 }
 
 inp2.onblur = function() {
-    inp2.style.borderBottom = '1px solid #E0E0E0';
-    if (checkInp2()) {
-        p2.style.display = 'none';
-        lb2.style.color = '#00A862';
-        lb2.style.top = -10 + 'px';
-
-    } else if (inp2.value == '') {
-        animate(lb2, 10 + 'px', 10)
-        p2.style.display = 'block';
-        lb2.style.color = '#E75D54';
-        p2.innerHTML = '<span> × </span>此栏不能为空';
-        lb2.style.top = 10 + 'px';
-
-    } else {
-        p2.style.display = 'block';
-        lb2.style.color = '#E75D54';
-        p2.innerHTML = '<span> × </span>请输入正确的数字';
-    }
-
+    onBlur(inp2, p2, lb2);
 }
+
+inp1_b.onfocus = function() {
+    onFocus(lb1_b, inp1_b);
+}
+
+inp1_b.onblur = function() {
+    onBlur(inp1_b, p1_b, lb1_b);
+};
+
+inp2_b.onfocus = function() {
+    onFocus(lb2_b, inp2_b);
+}
+
+inp2_b.onblur = function() {
+    onBlur(inp2_b, p2_b, lb2_b);
+};
+
+
+function onFocus(lb, inp) {
+    animate(lb, -10 + 'px', 10);
+    lb.style.color = '#9E9E9E';
+    inp.style.borderBottom = '1px solid #00A862';
+}
+
+
+function onBlur(inp, p, lb) {
+    inp.style.borderBottom = '1px solid #E0E0E0';
+    if (inp.value == '') {
+        animate(lb, 10 + 'px', 10);
+        p.style.display = 'block';
+        p.innerHTML = '<span> × </span>此栏不能为空';
+        lb.style.cssText = 'color:#E75D54; top:10px';
+
+    } else if (!isNaN(inp.value)) {
+        p.style.display = 'none';
+        lb.style.cssText = 'color:#00A862;top:-10px';
+    } else {
+        p.style.display = 'block';
+        lb.style.color = '#E75D54';
+        p.innerHTML = '<span> × </span>请输入正确的数字';
+    }
+}
+
+// $('.divA').on('click', '.input', function() {
+//     alert(111);
+
+// })
+
+$(function() {
+    $(document).on('click', '.inp1', function() {
+        /*需要注意的就是事件里边的$(this)指的就是被点击的元素而不是$(document)*/
+        // alert(111);
+        // console.log(this);
+        // animate(lb, -10 + 'px', 10);
+        // lb1.style.top = -10 + 'px';
+        // lb1.style.color = '#9E9E9E';
+        this.prev('label').css('color', '#9E9E9E')
+        this.style.borderBottom = '1px solid #00A862';
+
+    })
+})
+
 
 
 
@@ -208,4 +219,24 @@ function animate(ele, target, speedTime) {
             ele.style.top = offsetTop + speed + 'px';
         }
     }, speedTime);
+}
+
+
+var addData = document.getElementById('addData');
+
+$("#addData").mouseover(function() {
+    $(this).css("cursor", "pointer");
+});
+
+$('.bills_right_next').mouseover(function() {
+    $(this).css('cursor', 'pointer');
+})
+
+addData.onclick = function() {
+    var fm1 = bills_right_box1.children[0].children[2].cloneNode(true);
+    var fm2 = bills_right_box1.children[0].children[3].cloneNode(true);
+    bills_right_box1.children[0].appendChild(fm1);
+    bills_right_box1.children[0].appendChild(fm2);
+    // p1.style.display = 'none';
+    // p2.style.display = 'none';
 }

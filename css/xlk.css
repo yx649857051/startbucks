@@ -165,6 +165,45 @@ body {
     display: inline-block;
 }
 
+.xlk_content {
+    margin-top: -107px;
+}
+
+.xlk_content h1 {
+    font-size: 26px;
+    color: #333333;
+}
+
+.xlk_content p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #8d8c8c;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.xlk_content p:nth-of-type(1) {
+    font-weight: 600;
+    width: 85px;
+    color: #333333;
+    border-bottom: 3px solid #00A862;
+}
+
+.xlk_content p:nth-of-type(2) {
+    width: 85px;
+}
+
+.xlk_content p:nth-of-type(2):hover {
+    color: #333333;
+}
+
+.xlk_content p:nth-of-type(3):hover {
+    color: #333333;
+}
+
 
 /*--------------------- xlk_sideNav end ---------------------*/
 

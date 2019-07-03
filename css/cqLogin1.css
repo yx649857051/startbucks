@@ -590,3 +590,29 @@
     background-color: #34bd84;
     color: #fff;
 }
+
+
+/*********************** 左边导航--登录、注册、关于星享俱乐部  ********************/
+
+/* 登陆 */
+.cq_left_login span{
+    font-size: 16px;
+    color: #333;
+    border-bottom: #20b275 solid 3px;
+    line-height: 48px;
+    padding-bottom: 7px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.cq_left_new,.cq_left_about{
+    font-size: 16px;
+    color: #888;
+    line-height: 36px;
+}
+.cq_left_new:hover{
+    color: #333;
+}
+.cq_left_about:hover{
+    color: #333;
+}
+/* 注册 */

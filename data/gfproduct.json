@@ -1,0 +1,17 @@
+ [
+     { "id": 1, "phoh": "../images/product_mezzo_a.jpg", "explain": "星巴克®凤舞祥云综合咖啡豆" },
+     { "id": 2, "phoh": "../images/product_mezzo_b.png", "explain": "星巴克®派克市场烘焙咖啡豆" },
+     { "id": 3, "phoh": "../images/product_mezzo_c.png", "explain": "星巴克®肯亚咖啡豆" },
+     { "id": 4, "phoh": "../images/product_mezzo_d.jpg", "explain": "星巴克®首选咖啡豆" },
+     { "id": 5, "phoh": "../images/product_mezzo_e.jpg", "explain": "星巴克®危地马拉安提瓜咖啡豆" },
+     { "id": 6, "phoh": "../images/product_mezzo_f.png", "explain": "星巴克®埃塞俄比亚咖啡豆" },
+     { "id": 7, "phoh": "../images/product_mezzo_h.png", "explain": "星巴克®哥伦比亚咖啡豆" },
+     { "id": 8, "phoh": "../images/product_mezzo-g.jpg", "explain": "星巴克®早餐综合咖啡豆" },
+     { "id": 9, "phoh": "../images/porduct_depth_a.png", "explain": "星巴克®苏门答腊咖啡豆" },
+     { "id": 10, "phoh": "../images/porduct_depth_b.png", "explain": "星巴克®低因祥龙综合咖啡豆" },
+     { "id": 2, "phoh": "../images/porduct_depth_c.png", "explain": "星巴克®意式烘焙咖啡豆" },
+     { "id": 2, "phoh": "../images/porduct_depth_d.png", "explain": "星巴克®浓缩烘焙咖啡豆" },
+     { "id": 2, "phoh": "../images/porduct_depth_e.png", "explain": "星巴克®佛罗娜咖啡豆" },
+     { "id": 2, "phoh": "../images/product_dalry_a.jpg", "explain": "星巴克VIA®香草拿铁风味免煮咖啡固体饮料" },
+     { "id": 2, "phoh": "../images/product_dalry_b.jpg", "explain": "星巴克VIA®摩卡风味免煮咖啡固体饮料" }
+ ]

@@ -31,7 +31,284 @@ body {
 padding-bottom: 24px;
 padding-top: 24px; */
     width: 70%;
+    left: auto;
     background: #f7f7f7;
     overflow: hidden;
     border-left: 1px solid #ccc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.product_tag_log {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 6px;
+    line-height: 169%;
+}
+
+.product_middle_cof {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.product_margin {
+    max-width: 100%;
+    margin-bottom: 24px !important;
+}
+
+.product_caption {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.product_gather {
+    margin: -16px;
+    overflow: hidden;
+}
+
+.product_gather li {
+    float: left;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.product_gather li:hover {
+    transform: translateY(-5px);
+}
+
+.product_thumb {
+    /* margin-right: 16px; */
+    vertical-align: top;
+    text-align: center;
+    display: block;
+}
+
+.product_thumb p {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    line-height: 160%;
+    color: #000;
+    text-decoration: none;
+}
+
+.product_pho {
+    /* background-image: url(../images/porduct_depth_a.png); */
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto 6px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+hr {
+    margin: 36px auto;
+    background: rgba(0, 0, 0, 0.12);
+    border: 0;
+    height: 1px;
+}
+
+.product_depth {
+    /* background-image: url(../images/porduct_depth_a.png); */
+    height: 150px;
+    max-width: 150px;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto 6px;
+}
+
+.product_via {
+    background-image: url(../images/product_dalry_a.jpg);
+}
+
+.product_keke {
+    background-image: url(../images/product_sift-a.jpg);
+}
+
+.product_weiyi {
+    background-image: url(../images/product_pike-place.jpg);
+}
+
+.product_dow {
+    background-image: url(../images/product_origami-verona.jpg);
+}
+
+
+/* 搜索菜单 */
+
+.product_btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 996;
+    border-color: #00A862;
+    box-sizing: border-box;
+    background-color: #00A862;
+    border-radius: 25px;
+    padding: 12px 18px;
+}
+
+.product_search {
+    border-color: #00A862;
+    background-color: #00A862;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border-style: none;
+    position: relative;
+    align-items: flex-start;
+    outline: none;
+}
+
+
+/* 菜单里面 */
+
+.product_search_interior {
+    border-style: none;
+    position: fixed;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    height: 100%;
+    box-sizing: border-box;
+    min-width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.product_heade {
+    padding: 24px;
+}
+
+.product_close {
+    font-size: 22px;
+    float: right;
+    background-color: #fff;
+    margin: -12px;
+    border-style: none;
+    outline: none;
+    transition: all 0.1s linear;
+}
+
+.product_middle {
+    max-width: 480px;
+    padding: 24px;
+    visibility: visible;
+    text-align: center;
+    margin: auto;
+    background-color: #fff;
+}
+
+.product_fielu {
+    display: block;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.product_bton {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    border-style: none;
+    display: block;
+    font-size: 18px;
+}
+
+.product_ipt {
+    border-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 4px 0;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+}
+
+.product_biaoq {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.product_tag {
+    padding: 4px 12px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    background: #00A862;
+}
+
+.product_grid li {
+    padding: 12px;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    -webkit-transition: all 0.3s
+}
+
+.product_grid li:hover {
+    transform: translateY(-5px);
+}
+
+.product_chaolian {
+    display: block;
+}
+
+.product_chaolian p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+}
+
+.product_xiaotu {
+    background-image: url(../images/menus-caramel-macchiato.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 6px auto;
+    display: inline-block;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+}
+
+.product_ture {
+    background-image: url(../images/product_mezzo_h.png);
+    width: 86px;
+    height: 86px;
+}
+
+.product_three {
+    background-image: url(../images/product_mezzo_c.png);
+    width: 86px;
+    height: 86px;
+}
+
+.product_foru {
+    background-image: url(../images/porduct_depth_e.png);
+    width: 86px;
+    height: 86px;
 }

@@ -1,29 +1,22 @@
 // 添加图片定位，从json获取
 $(function() {
-        $.ajax({
-            url: '../data/gfMenus.json',
-            type: 'get',
-            dataType: 'json',
-            success: function(json) {
-                // console.log(json);
-                var result = '';
-                $.each(json, function(index, val) {
-                    // console.log(index, val);
+    $.ajax({
+        url: '../data/gfMenus.json',
+        type: 'get',
+        dataType: 'json',
+        success: function(json) {
+            // console.log(json);
+            var result = '';
+            $.each(json, function(index, val) {
+                // console.log(index, val);
 
-                    result += '<li class="menus_tu "><img src="' + val.picture + '" alt="" /><p>' + val.text + '</p></li>';
-                    // console.log(result);
-                });
-                $('.menus_tel').html(result);
-            }
-        })
+                result += '<li class="menus_tu "><img src="' + val.picture + '" alt="" /><p>' + val.text + '</p></li>';
+                // console.log(result);
+            });
+            $('.menus_tel').html(result);
+        }
     })
-    // 大图点击跳转
-    // $('.menus_img').click(function() {
-
-// })
-
-
-// menus_drink
+})
 
 
 

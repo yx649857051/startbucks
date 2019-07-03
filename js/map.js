@@ -57,6 +57,8 @@ AMap.service(["AMap.PlaceSearch"], function() {
     // placeSearch.search();
 
 });
+
+//实现输入地点进行星巴克搜索
 $('.map_search_btn').click(function() {
     // placeSearch.search().html($('.map_ipt_search').val() + "星巴克");
     // console.log($('.map_ipt_search').val() + "星巴克咖啡");
@@ -129,11 +131,12 @@ $('.map_three_nav').on('click', 'li', function(event) {
             location.href = "map.html";
             break;
         case 'map_my_account':
-
-            alert($(target).text());
+            location.href = "cqlogin2.html";
+            // alert($(target).text());
             break;
         case 'map_menu':
-            alert($(target).text());
+            // alert($(target).text());
+            location.href = "gfMenu.html";
             break;
     }
 });
@@ -154,15 +157,24 @@ $('.map_menu_parent').on('click', "li", function() {
     if (target.getAttribute('class') != 'map_menu_line') {
         switch (target.getAttribute('class')) {
             case 'map_menu_mendian':
-                alert($(target).text());
+                // alert($(target).text());
                 location.href = "map.html";
                 break;
             case 'map_menu_xxjlb':
-
-                alert($(target).text());
+                location.href = "cqlogin1.html";
+                // alert($(target).text());
                 break;
-            case 'map_menu':
-                alert($(target).text());
+            case 'map_menu_module':
+                location.href = "gfMenu.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_xlk':
+                location.href = "xlk.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_mobile':
+                location.href = "mobile.html";
+                // alert($(target).text());
                 break;
             default:
                 alert($(target).text());

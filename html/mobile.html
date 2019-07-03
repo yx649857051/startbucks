@@ -8,6 +8,9 @@
     <title>星巴克移动应用</title>
     <link rel="stylesheet" href="../css/public_style.css">
     <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1267547_7hmml9qz8fh.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
 </head>
 
 <body>
@@ -31,10 +34,10 @@
 
                     <div class='mobile_content'>
                         <p class='mobile_title'>星巴克移动应用</p>
-                        <ul class="mobile_text">
+                        <!-- <ul class="mobile_text">
                             <li><a href="#">星巴克移动应用</a></li>
                             <li><a href="#">星巴克 Apple Watch</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -127,30 +130,92 @@
                 <div class="mobile_bot_contain">
                     <ul class="mobile_slide_list">
                         <li>
-                            <div>
-                                <img src="../images/mobile_star.png" alt="">
+                            <div class="mobile_list_contain">
+                                <span class="iconfont">&#xe81a;</span>
                                 <p>星享俱乐部</p>
                             </div>
                         </li>
                         <li>
-                            <div>
-                                <img src="../images/mobile_card.png" alt="">
+                            <div class="mobile_list_contain">
+                                <span class="iconfont">&#xe6a0;</span>
                                 <p>星礼卡</p>
                             </div>
                         </li>
                         <li>
-                            <div>
-                                <img src="../images/mobile_house.png" alt="">
+                            <div class="mobile_list_contain">
+                                <span class="iconfont">&#xe60e;</span>
                                 <p>查找新门店</p>
                             </div>
                         </li>
                         <li>
-                            <div>
-                                <img src="../images/mobile_email.png" alt="">
+                            <div class="mobile_list_contain">
+                                <span class="iconfont">&#xe6af;</span>
                                 <p>了解星信息</p>
                             </div>
                         </li>
                     </ul>
+                    <!-- 轮播图 -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="mobile_slide_text">
+                                    <h2>星享俱乐部</h2>
+                                    <p>在门店展示我的二维码可积星星攒好礼</p>
+                                </div>
+                                <div class="mobile_slide_pic">
+                                    <img src="../images/mobile_slide1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mobile_slide_text">
+                                    <h2>星礼卡</h2>
+                                    <p>在app中可绑定实体星礼卡，或随心挑选和购买星礼卡。</p>
+                                </div>
+                                <div class="mobile_slide_pic">
+                                    <img src="../images/mobile_slide2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mobile_slide_text">
+                                    <h2>查找星门店</h2>
+                                    <p>快速找到离您最近的星巴克门店，了解门店营业时间，并接收门店精确位置</p>
+                                </div>
+                                <div class="mobile_slide_pic">
+                                    <img src="../images/mobile_slide3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mobile_slide_text">
+                                    <h2>实时了解星消息</h2>
+                                    <p>实时接收星巴克最新的产品及促销信息</p>
+                                </div>
+                                <div class="mobile_slide_pic">
+                                    <img src="../images/mobile_slide4.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                    <div class="mobile_bot_link">
+                        <p class="mobile_link_store">星巴克手机应用目前在<a href="https://apps.apple.com/cn/app/xing-ba-ke-zhong-guo/id499819758?ls=1">App Store</a>和以下安卓平台均有下载</p>
+                        <ul class="mobile_store_list">
+                            <li><a href="https://android.myapp.com/myapp/detail.htm?apkName=com.starbucks.cn">应用宝 |</a></li>
+                            <li><a href="http://app.mi.com/details?id=com.starbucks.cn">小米商店 |</a></li>
+                            <li><a href="http://zhushou.360.cn/detail/index/soft_id/1803619?recrefer=SE_D_%E6%98%9F%E5%B7%B4%E5%85%8B%E4%B8%AD%E5%9B%BD">360手机助手 |</a></li>
+                            <li><a href="https://shouji.baidu.com/software/25974739.html">百度手机助手 |</a></li>
+                            <li><a href="http://app.flyme.cn/apps/public/detail?package_name=com.starbucks.cn">魅族 |</a></li>
+                            <li><a href="https://www.wandoujia.com/apps/com.starbucks.cn">豌豆荚应用安装 |</a></li>
+                            <li><a href="https://appstore.huawei.com/app/C100108223">华为应用市场 </a></li>
+
+                        </ul>
+
+                        <img src="../images/mobile_qr.jpg" class="mobile_qr">
+                        <p class="mobile_event_notice">如果您有任何问题，请查看常见问题，也可以直接与我们联系</p>
+                    </div>
                 </div>
             </div>
 
@@ -158,21 +223,9 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="../jquery-1.8.3/jquery-1.8.3.js"></script>
+    <script src="../js/swiper.animate1.0.3.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
     <script src="../js/mobile.js"></script>
 </body>
 

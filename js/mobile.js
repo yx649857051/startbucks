@@ -34,14 +34,15 @@ $('.mobile_three_nav').on('click', 'li', function(event) {
     switch (target.getAttribute('class')) {
         case 'mobile_mendian':
             // alert($(target).text());
-            location.href = "mobile.html";
+            location.href = "map.html";
             break;
         case 'mobile_my_account':
-
-            alert($(target).text());
+            location.href = "cqlogin2.html";
+            // alert($(target).text());
             break;
         case 'mobile_menu':
-            alert($(target).text());
+            location.href = "gfMenu.html";
+            // alert($(target).text());
             break;
     }
 });
@@ -63,14 +64,15 @@ $('.mobile_menu_parent').on('click', "li", function() {
         switch (target.getAttribute('class')) {
             case 'mobile_menu_mendian':
                 alert($(target).text());
-                location.href = "mobile.html";
+                location.href = "map.html";
                 break;
             case 'mobile_menu_xxjlb':
 
                 alert($(target).text());
                 break;
             case 'mobile_menu':
-                alert($(target).text());
+                // alert($(target).text());
+                location.href = "gfMenu.html ";
                 break;
             default:
                 alert($(target).text());
@@ -79,3 +81,19 @@ $('.mobile_menu_parent').on('click', "li", function() {
     }
 
 });
+
+
+
+// 初始化swiper
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})

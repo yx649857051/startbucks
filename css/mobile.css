@@ -1,290 +1,386 @@
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .mobile_wrap {
-        width: 100%;
-        height: 100%;
-        background: #fff;
-    }
-    
-    .mobile_side_nav {
-        width: 30%;
-        height: 100%;
-        background: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    
-    .mobile_side_all_default {
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-    
-    .mobile_top_nav {
-        height: 99px;
-        /* background: #00a862; */
-    }
-    
-    .mobile_icon {
-        /* width: 36px;
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .mobile_wrap {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+        
+        .mobile_side_nav {
+            width: 30%;
+            height: 100%;
+            background: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        .mobile_side_all_default {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .mobile_top_nav {
+            height: 99px;
+            /* background: #00a862; */
+        }
+        
+        .mobile_icon {
+            /* width: 36px;
     height: 36px; */
-        line-height: 72px;
-        margin-top: 18px;
-        margin-left: 16px;
-        float: left;
-        cursor: pointer;
-    }
-    
-    .mobile_three_nav {
-        width: 200px;
-        height: 72px;
-        margin-right: 10px;
-        float: left;
-        cursor: pointer;
-    }
-    
-    .mobile_three_nav li {
-        line-height: 72px;
-        font-size: 16px;
-        padding: 5px 10px 5px;
-        font-weight: 700;
-        font-family: '微软雅黑';
-        float: left;
-        cursor: pointer;
-    }
-    
-    .mobile_menu_ic {
-        float: right;
-        width: 36px;
-        height: 24px;
-        margin-top: 30px;
-        margin-right: 30px;
-        cursor: pointer;
-    }
-    
-    .mobile_left_side_content {
-        width: 100%;
-        height: 80%;
-        margin-top: 50%;
-        margin-left: 20%;
-    }
-    
-    .mobile_title {
-        font-size: 26px;
-        font-weight: 700;
-        font-family: "Gotham";
-        padding: 20px 0;
-    }
-    
-    .mobile_text li {
-        padding-top: 8px;
-    }
-    
-    .mobile_text li a {
-        font-size: 16px;
-        font-weight: 400;
-        font-family: "Gotham";
-        padding-bottom: 3px;
-        /* border-bottom: 3px solid #00A862; */
-        color: rgba(0, 0, 0, 0.87);
-    }
-    
-    .mobile_text li a:visited {
-        border-bottom: 3px solid #00A862;
-    }
-    
-    .mobile_login {
-        height: 40px;
-        display: inline-block;
-    }
-    
-    .mobile_login_icon {
-        margin-top: 6px;
-        cursor: pointer;
-    }
-    
-    .mobile_login_text {
-        color: #00a862;
-        font-size: 16px;
-        line-height: 40px;
-    }
-    
-    .mobile_regist_text {
-        color: #00a862;
-        font-size: 16px;
-        border: solid 1px #00a862;
-        border-radius: 20px;
-        padding: 4px 10px;
-        line-height: 40px;
-        margin-left: 20px;
-    }
-    
-    .mobile_side_all_menu {
-        display: none;
-        overflow-y: auto;
-        height: 100%;
-    }
-    
-    .mobile_menu_close {
-        float: right;
-        margin-top: 30px;
-        margin-right: 22px;
-        cursor: pointer;
-    }
-    
-    .mobile_menu_parent {
-        box-sizing: border-box;
-        padding: 0px 24px 0px 84px;
-    }
-    
-    .mobile_menu_parent li {
-        font-size: 18px;
-        font-weight: 700;
-        font-family: '黑体';
-        display: inline-block;
-        padding-bottom: 10px;
-        color: #000;
-        display: block;
-        height: 28px;
-        cursor: pointer;
-    }
-    
-    .mobile_menu_line {
-        height: 1px !important;
-        width: 100%;
-        background: #E0E0E0;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        padding-bottom: 0px !important;
-    }
-    
-    .mobile_menu_footer {
-        width: 200px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        line-height: 16px;
-    }
-    
-    .mobile_menu_footer span,
-    .mobile_gongan_a,
-    .mobile_copy {
-        font-size: 14px;
-        color: #9E9E9E;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-        line-height: 20px;
-    }
-    
-    .mobile_gongan {
-        width: 16px;
-        height: 16px;
-        display: inline-block;
-    }
-    /* *******************左侧导航区结束*********************** */
-    
-    .mobile_contain {
-        margin-left: 30%;
-        position: relative;
-        width: 70%;
-        background: pink;
-        height: 100%;
-        overflow: auto;
-    }
-    
-    .mobile_load {
-        width: 100%;
-        height: 60%;
-        background: yellowgreen;
-        background: url(../images/mobile-bg-top.jpg) no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        box-sizing: border-box;
-    }
-    
-    .mobile_title_top {
-        font-size: 32px;
-        color: white;
-        text-align: center;
-        padding-top: 70px;
-        font-family: "Gotham";
-        font-weight: 400;
-    }
-    
-    .mobile_text_top {
-        font-family: "Gotham";
-        font-size: 16px;
-        padding-right: 300px;
-        color: white;
-        width: 40%;
-        padding-left: 15%;
-        padding-top: 7%;
-        line-height: 160%;
-    }
-    
-    .mobile_media {
-        /* background: #00A862; */
-        width: 300px;
-        height: 590px;
-        position: absolute;
-        right: 10%;
-        top: 40%;
-    }
-    
-    .mobile_mockup_bg img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-    }
-    
-    .mobile_mockup {
-        width: 258px;
-        padding: 0px 24px;
-        z-index: 2;
-        position: absolute;
-        bottom: 15px;
-    }
-    
-    .mobile_load_pic {
-        width: 160px;
-        position: absolute;
-        left: 15%;
-        top: 87%
-    }
-    
-    .mobile_load_pic img {
-        height: 52px;
-        padding-top: 20px;
-    }
-    
-    .mobile_bot {
-        margin: 280px 30px 0 30px;
-        background: #F7F7F7;
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    
-    .mobile_bot_contain {
-        width: 94%;
-        text-align: center;
-        height: 100%;
-    }
-    
-    .mobile_slide_list {
-        width: 100%;
-        position: absolute;
-        top: 160px;
-        left: 0;
-        right: 0;
-    }
-    
-    .mobile_slide_list li {
-        float: left;
-        width: 25%;
-    }
+            line-height: 72px;
+            margin-top: 18px;
+            margin-left: 16px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        .mobile_three_nav {
+            width: 200px;
+            height: 72px;
+            margin-right: 10px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        .mobile_three_nav li {
+            line-height: 72px;
+            font-size: 16px;
+            padding: 5px 10px 5px;
+            font-weight: 700;
+            font-family: '微软雅黑';
+            float: left;
+            cursor: pointer;
+        }
+        
+        .mobile_menu_ic {
+            float: right;
+            width: 36px;
+            height: 24px;
+            margin-top: 30px;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        
+        .mobile_left_side_content {
+            width: 100%;
+            height: 80%;
+            margin-top: 50%;
+            margin-left: 20%;
+        }
+        
+        .mobile_title {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: "Gotham";
+            padding: 20px 0;
+        }
+        
+        .mobile_text li {
+            padding-top: 8px;
+        }
+        
+        .mobile_text li a {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Gotham";
+            padding-bottom: 3px;
+            /* border-bottom: 3px solid #00A862; */
+            color: rgba(0, 0, 0, 0.87);
+        }
+        
+        .mobile_text li a:visited {
+            border-bottom: 3px solid #00A862;
+        }
+        
+        .mobile_login {
+            height: 40px;
+            display: inline-block;
+        }
+        
+        .mobile_login_icon {
+            margin-top: 6px;
+            cursor: pointer;
+        }
+        
+        .mobile_login_text {
+            color: #00a862;
+            font-size: 16px;
+            line-height: 40px;
+        }
+        
+        .mobile_regist_text {
+            color: #00a862;
+            font-size: 16px;
+            border: solid 1px #00a862;
+            border-radius: 20px;
+            padding: 4px 10px;
+            line-height: 40px;
+            margin-left: 20px;
+        }
+        
+        .mobile_side_all_menu {
+            display: none;
+            overflow-y: auto;
+            height: 100%;
+        }
+        
+        .mobile_menu_close {
+            float: right;
+            margin-top: 30px;
+            margin-right: 22px;
+            cursor: pointer;
+        }
+        
+        .mobile_menu_parent {
+            box-sizing: border-box;
+            padding: 0px 24px 0px 84px;
+        }
+        
+        .mobile_menu_parent li {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: '黑体';
+            display: inline-block;
+            padding-bottom: 10px;
+            color: #000;
+            display: block;
+            height: 28px;
+            cursor: pointer;
+        }
+        
+        .mobile_menu_line {
+            height: 1px !important;
+            width: 100%;
+            background: #E0E0E0;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 0px !important;
+        }
+        
+        .mobile_menu_footer {
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 16px;
+        }
+        
+        .mobile_menu_footer span,
+        .mobile_gongan_a,
+        .mobile_copy {
+            font-size: 14px;
+            color: #9E9E9E;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+            line-height: 20px;
+        }
+        
+        .mobile_gongan {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+        /* *******************左侧导航区结束*********************** */
+        
+        .mobile_contain {
+            margin-left: 30%;
+            position: relative;
+            width: 70%;
+            background: #EFEBE8;
+            height: 100%;
+            overflow: auto;
+        }
+        
+        .mobile_load {
+            width: 100%;
+            height: 60%;
+            background: yellowgreen;
+            background: url(../images/mobile-bg-top.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            box-sizing: border-box;
+        }
+        
+        .mobile_title_top {
+            font-size: 32px;
+            color: white;
+            text-align: center;
+            padding-top: 70px;
+            font-family: "Gotham";
+            font-weight: 400;
+        }
+        
+        .mobile_text_top {
+            font-family: "Gotham";
+            font-size: 16px;
+            padding-right: 300px;
+            color: white;
+            width: 40%;
+            padding-left: 15%;
+            padding-top: 7%;
+            line-height: 160%;
+        }
+        
+        .mobile_media {
+            /* background: #00A862; */
+            width: 300px;
+            height: 590px;
+            position: absolute;
+            right: 10%;
+            top: 40%;
+        }
+        
+        .mobile_mockup_bg img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .mobile_mockup {
+            width: 258px;
+            padding: 0px 24px;
+            z-index: 2;
+            position: absolute;
+            bottom: 15px;
+        }
+        
+        .mobile_load_pic {
+            width: 160px;
+            position: absolute;
+            left: 15%;
+            top: 87%
+        }
+        
+        .mobile_load_pic img {
+            height: 52px;
+            padding-top: 20px;
+        }
+        
+        .mobile_bot {
+            margin: 280px 30px 0 30px;
+            background: #F7F7F7;
+            width: 100%;
+            /* height: auto; */
+            position: relative;
+        }
+        
+        .mobile_bot_contain {
+            width: 94%;
+            text-align: center;
+            height: 100%;
+        }
+        
+        .mobile_slide_list {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 160px;
+            left: 0;
+            right: 0;
+        }
+        
+        .mobile_slide_list li {
+            float: left;
+            width: 25%;
+            border-bottom: 1px solid #D9D9D9;
+            padding-bottom: 25px;
+        }
+        
+        .mobile_slide_list li:hover {
+            color: #00A862;
+            border-bottom: 2px solid #00A862;
+        }
+        
+        .mobile_list_contain span {
+            font-size: 30px !important;
+        }
+        
+        .mobile_list_contain p {
+            font-size: 16px;
+            color: #000;
+            font-family: "Gotham";
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            background: #F7F7F7;
+            position: absolute;
+            top: 300px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        .mobile_slide_text {
+            padding-top: 7%;
+            margin-bottom: 20px;
+            /* font-size: 22px;
+            color: black;
+            font-family: "Gotham" */
+        }
+        
+        .mobile_slide_text h2 {
+            font-size: 22px;
+            color: black;
+            font-family: "Gotham";
+            margin-bottom: 18px;
+        }
+        
+        .mobile_slide_text p {
+            font-size: 14px;
+            color: black;
+        }
+        
+        .mobile_bot_link {
+            /* background: pink; */
+            width: 100%;
+            position: absolute;
+            bottom: -105%;
+        }
+        
+        .mobile_link_store {
+            font-size: 18px;
+            color: #000;
+            font-family: "Gotham";
+            overflow: hidden;
+            /* padding-top: 8%; */
+        }
+        
+        .mobile_link_store a {
+            color: #00A862;
+        }
+        
+        .mobile_store_list {
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        
+        .mobile_store_list li {
+            float: left;
+            padding-left: 10px;
+        }
+        
+        .mobile_store_list li a {
+            font-size: 16px;
+            color: #00A862;
+        }
+        
+        .mobile_qr {
+            width: 160px;
+            height: 160px;
+            padding-top: 30px;
+        }
+        
+        .mobile_event_notice {
+            font-size: 18px;
+            color: #000;
+            padding-top: 30px;
+            font-family: "Gotham";
+            padding-bottom: 100px;
+        }

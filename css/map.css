@@ -36,12 +36,9 @@ body {
 
 .map_top_nav {
     height: 99px;
-    /* background: #00a862; */
 }
 
 .map_icon {
-    /* width: 36px;
-    height: 36px; */
     line-height: 72px;
     margin-top: 18px;
     margin-left: 16px;

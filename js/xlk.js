@@ -5,6 +5,14 @@ $('.xlk_icon').click(function() {
 
 });
 
+$('.xlk_home_link1').click(function() {
+    location.href = 'xlk_supervise.html';
+})
+
+$('.xlk_home_link2').click(function() {
+    location.href = 'xlk_bills.html';
+})
+
 //左侧栏右边的菜单按钮事件
 $('.xlk_menu_ic').click(function() {
 
@@ -14,6 +22,9 @@ $('.xlk_menu_ic').click(function() {
 
     // });
 });
+
+
+
 
 //左侧栏的关闭事件
 $('.xlk_menu_close').click(function() {

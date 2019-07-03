@@ -15,6 +15,15 @@ $('.xlk_menu_ic').click(function() {
     // });
 });
 
+$('.xlk_supervise_link1').click(function() {
+    location.href = 'xlk.html';
+})
+
+$('.xlk_supervise_link2').click(function() {
+    location.href = 'xlk_bills.html';
+})
+
+
 //左侧栏的关闭事件
 $('.xlk_menu_close').click(function() {
     $('.xlk_side_all_default').show();

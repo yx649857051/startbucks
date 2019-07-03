@@ -1,0 +1,156 @@
+@import url(starbucks_reserve.css);
+.reserve_part3 {
+  width: 100%;
+  background: #000000; }
+  .reserve_part3 .reserve_part3_p1 {
+    font-family: "Gotham";
+    color: #c48d69;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 48px; }
+  .reserve_part3 .reserve_part3_p2 {
+    font-family: "Gotham";
+    color: #c48d69;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 48px; }
+  .reserve_part3 .reserve_part3_ul {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 50px; }
+    .reserve_part3 .reserve_part3_ul .reserve_part3_ul_li {
+      float: left;
+      box-sizing: border-box;
+      width: 25%; }
+      .reserve_part3 .reserve_part3_ul .reserve_part3_ul_li .reserve_part3_ul_li_div {
+        width: 144px;
+        height: 144px;
+        border-radius: 72px;
+        background: #fff;
+        border: solid 1px #fff;
+        overflow: hidden;
+        margin-left: 24px; }
+        .reserve_part3 .reserve_part3_ul .reserve_part3_ul_li .reserve_part3_ul_li_div .reserve_part3_ul_li_div_img {
+          width: 144px;
+          height: 144px;
+          display: block; }
+      .reserve_part3 .reserve_part3_ul .reserve_part3_ul_li .reserve_part3_ul_li_p {
+        color: #fff;
+        padding-left: 20px;
+        width: 130px;
+        font-size: 16px;
+        font-family: "Gotham";
+        padding-top: 16px;
+        text-align: center;
+        margin-left: 10px; }
+  .reserve_part3 .reserve_part3_img {
+    width: 100%;
+    height: 244px;
+    display: block; }
+
+.reserve_part4 {
+  width: 100%; }
+  .reserve_part4 .reserve_part4_p {
+    font-size: 22px;
+    font-family: "Gotham";
+    text-align: center;
+    margin-bottom: 18px; }
+  .reserve_part4 .reserve_part4_1 .reserve_part4_img1 {
+    width: 40%;
+    float: left;
+    padding: 12px;
+    height: 274px; }
+  .reserve_part4 .reserve_part4_1 .reserve_part4_p1 {
+    width: 50%;
+    float: left;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "Gotham";
+    color: #272727;
+    line-height: 26px;
+    padding-left: 5%;
+    height: 274px; }
+  .reserve_part4 .reserve_part4_1 .reserve_part4_1_div {
+    width: 40%;
+    float: left;
+    padding: 12px;
+    padding-left: 5%;
+    padding-right: 3%; }
+    .reserve_part4 .reserve_part4_1 .reserve_part4_1_div .reserve_part4_1_div_h3 {
+      font-size: 16px;
+      font-family: "Gotham";
+      padding: 12px 0; }
+    .reserve_part4 .reserve_part4_1 .reserve_part4_1_div .reserve_part4_1_div_p {
+      font-size: 16px;
+      font-family: "Gotham";
+      color: #272727;
+      line-height: 26px; }
+  .reserve_part4 .reserve_part4_2 {
+    padding-left: 8%;
+    padding-right: 15%; }
+    .reserve_part4 .reserve_part4_2 .reserve_part4_2_h3 {
+      font-size: 16px;
+      font-family: "Gotham";
+      padding: 12px 0; }
+    .reserve_part4 .reserve_part4_2 .reserve_part4_2_p {
+      font-size: 16px;
+      font-family: "Gotham";
+      color: #272727;
+      line-height: 26px; }
+  .reserve_part4 .reserve_part4_3 {
+    padding-top: 50px; }
+    .reserve_part4 .reserve_part4_3 .reserve_part4_3_img {
+      width: 40%;
+      float: left;
+      padding: 12px;
+      height: 270px; }
+    .reserve_part4 .reserve_part4_3 .reserve_part4_3_div {
+      width: 40%;
+      float: left;
+      padding: 12px;
+      padding-left: 5%;
+      padding-right: 3%;
+      height: 270px; }
+      .reserve_part4 .reserve_part4_3 .reserve_part4_3_div .reserve_part4_3_h3 {
+        font-size: 16px;
+        font-family: "Gotham";
+        padding: 12px 0; }
+      .reserve_part4 .reserve_part4_3 .reserve_part4_3_div .reserve_part4_3_p {
+        font-size: 16px;
+        font-family: "Gotham";
+        color: #272727;
+        line-height: 26px; }
+    .reserve_part4 .reserve_part4_3 .reserve_part4_last_div {
+      width: 40%;
+      float: left;
+      padding: 12px;
+      padding-left: 8%;
+      padding-right: 5%; }
+      .reserve_part4 .reserve_part4_3 .reserve_part4_last_div .reserve_part4_last_div_h3 {
+        font-size: 16px;
+        font-family: "Gotham";
+        padding: 12px 0; }
+      .reserve_part4 .reserve_part4_3 .reserve_part4_last_div .reserve_part4_last_div_p {
+        font-size: 16px;
+        font-family: "Gotham";
+        color: #272727;
+        line-height: 26px; }
+    .reserve_part4 .reserve_part4_3 .reserve_part4_last_img {
+      width: 40%;
+      float: left;
+      padding: 12px;
+      height: 274px; }
+  .reserve_part4 .reserve_end_div {
+    width: 100%;
+    height: 356px;
+    position: relative;
+    background: url("../images/reserve_part4_bg .jpg") no-repeat;
+    overflow: hidden;
+    background-size: cover; }
+    .reserve_part4 .reserve_end_div .reserve_end_div_img {
+      width: 288px;
+      height: 78px;
+      display: block;
+      position: absolute;
+      top: 248px;
+      left: 43px; }

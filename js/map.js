@@ -87,7 +87,7 @@ $('.map_search_btn').click(function() {
             // console.log(locate_result);
         $('.map_locate_list').html(locate_result);
     });
-})
+});
 
 //输入提示功能
 AMap.plugin('AMap.Autocomplete', function() {
@@ -219,12 +219,11 @@ $('.map_menu_parent').on('click', "li", function() {
 $('.map_filter_btn').click(function() {
     $('.map_overlay_inner').show();
     $('.map_locate_body').hide();
-})
-
+});
 $('.map_close_btn').click(function() {
     $('.map_overlay_inner').hide();
     $('.map_locate_body').show();
-})
+});
 
 //给筛选项目li添加点击事件（勾选 清除 确认）
 
@@ -239,7 +238,7 @@ $('.map_coffee_clear').on('click', function() {
     // alert(11);
 
     console.log($('.map_coffer_list').children().children().eq(2));
-})
+});
 
 
 //从json获取筛选点击弹出框中的信息
@@ -261,5 +260,5 @@ $(function() {
             });
             $('.map_coffer_list').html(result);
         }
-    })
+    });
 });

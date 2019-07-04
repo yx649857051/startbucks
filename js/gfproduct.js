@@ -159,11 +159,17 @@ $(function() {
                 case 'product_menu_module':
                     location.href = 'gfMenu.html';
                     break;
-                case 'product_menu_kaikuai':
+                case 'product_menu_kakuai':
                     location.href = 'kakuai.html';
                     break;
-                case 'producte_about_starbucks':
+                case 'product_about_starbucks':
                     location.href = 'xlk_inChina.html';
+                    break;
+                case 'product_coffer_xjt':
+                    location.href = 'Lxz-1912.html';
+                    break;
+                case 'product_shanghai_hpf':
+                    location.href = 'Lxz-roastery.html';
                     break;
                 default:
                     alert($(target).text());

@@ -128,6 +128,9 @@ $(function() {
                 case 'menu_about_starbucks':
                     location.href = 'xlk_inChina.html';
                     break;
+                case 'menu_coffer_xjt':
+                    location.href = 'Lxz-1912.html';
+                    break;
                 default:
                     alert($(target).text());
                     break;

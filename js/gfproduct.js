@@ -19,7 +19,7 @@ $('.product_subcas').on('click', 'li', function(even) {
     })
     // 点击菜单返回
 $('.product_blank').click(function() {
-    console.log("000000000000")
+    // console.log("000000000000")
     window.location.href = '../html/gfMenu.html';
 
 })

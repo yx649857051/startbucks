@@ -15,28 +15,24 @@ $(function() {
         type: 'get',
         dataType: 'json',
         success: function(json) {
-            // console.log(json);这是一个数组
-            // console.log(json)
-            var result = ''
-            for (var i = 0; i < 8; i++) {
-                var a = json[i];
-                console.log(a);
-
-                result += '<li><a href="" class="product_thumb"><img src="' + json[i].phoh + '" alt=""class="product_pho"><p>' + json[i].explain + '</p></a></li>';
-
-                //     console.log(result)
-                // }
-                // var json = JSON.stringify(json);
-                // console.log(json)h;
-                // var result = '';
-                // $.each(json, function(index, val) {
-                //     // console.log(index, val);
-
-                //     result += ' <li><a href="" class="product_thumb"><div class="product_pho">' + val.photograph + '</div><p>' + val.explain + '</p></a></li>';
-                //     console.log(result);
-                // // });
-                $('.product_capt').html(result);
+            // console.log(json);
+            var result = '';
+            // var reuslli = '';
+            var gfarr = [];
+            for (var i = 0; i < json.length; i++) {
+                // console.log(json[i].title);
+                result += '<h3 class="product_caption">' + json[i]['title'] + '</h3><ul class="product_gather">'
+                    // console.log(json[i]['list']);
+                var menusJ = json[i]['list'];
+                for (var j = 0; j < menusJ.length; j++) {
+                    // console.log(menusJ[j]['explain']);
+                    result += '<li><a href="" class="product_thumb"><img src="' + menusJ[j]['phoh'] + '" alt=""class="product_pho"><p>' + menusJ[j]['explain'] + '</p></a></li>';
+                }
+                result += '</ul><hr/>'
+                    // $('.product_gather').eq(i).html(reuslli);
+                    // console.log($('.product_gather').eq(i).html());
             }
+            $('.product_margin').html(result);
         }
     })
 })

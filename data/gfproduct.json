@@ -1,17 +1,59 @@
- [
-     { "id": 1, "phoh": "../images/product_mezzo_a.jpg", "explain": "星巴克®凤舞祥云综合咖啡豆" },
-     { "id": 2, "phoh": "../images/product_mezzo_b.png", "explain": "星巴克®派克市场烘焙咖啡豆" },
-     { "id": 3, "phoh": "../images/product_mezzo_c.png", "explain": "星巴克®肯亚咖啡豆" },
-     { "id": 4, "phoh": "../images/product_mezzo_d.jpg", "explain": "星巴克®首选咖啡豆" },
-     { "id": 5, "phoh": "../images/product_mezzo_e.jpg", "explain": "星巴克®危地马拉安提瓜咖啡豆" },
-     { "id": 6, "phoh": "../images/product_mezzo_f.png", "explain": "星巴克®埃塞俄比亚咖啡豆" },
-     { "id": 7, "phoh": "../images/product_mezzo_h.png", "explain": "星巴克®哥伦比亚咖啡豆" },
-     { "id": 8, "phoh": "../images/product_mezzo-g.jpg", "explain": "星巴克®早餐综合咖啡豆" },
-     { "id": 9, "phoh": "../images/porduct_depth_a.png", "explain": "星巴克®苏门答腊咖啡豆" },
-     { "id": 10, "phoh": "../images/porduct_depth_b.png", "explain": "星巴克®低因祥龙综合咖啡豆" },
-     { "id": 2, "phoh": "../images/porduct_depth_c.png", "explain": "星巴克®意式烘焙咖啡豆" },
-     { "id": 2, "phoh": "../images/porduct_depth_d.png", "explain": "星巴克®浓缩烘焙咖啡豆" },
-     { "id": 2, "phoh": "../images/porduct_depth_e.png", "explain": "星巴克®佛罗娜咖啡豆" },
-     { "id": 2, "phoh": "../images/product_dalry_a.jpg", "explain": "星巴克VIA®香草拿铁风味免煮咖啡固体饮料" },
-     { "id": 2, "phoh": "../images/product_dalry_b.jpg", "explain": "星巴克VIA®摩卡风味免煮咖啡固体饮料" }
+ [{
+         "title": "中度烘焙",
+         "list": [{ "id": 1, "phoh": "../images/product_mezzo_a.jpg", "explain": "星巴克®凤舞祥云综合咖啡豆" },
+             { "id": 2, "phoh": "../images/product_mezzo_b.png", "explain": "星巴克®派克市场烘焙咖啡豆" },
+             { "id": 3, "phoh": "../images/product_mezzo_c.png", "explain": "星巴克®肯亚咖啡豆" },
+             { "id": 4, "phoh": "../images/product_mezzo_d.jpg", "explain": "星巴克®首选咖啡豆" },
+             { "id": 5, "phoh": "../images/product_mezzo_e.jpg", "explain": "星巴克®危地马拉安提瓜咖啡豆" },
+             { "id": 6, "phoh": "../images/product_mezzo_f.png", "explain": "星巴克®埃塞俄比亚咖啡豆" },
+             { "id": 7, "phoh": "../images/product_mezzo_h.png", "explain": "星巴克®哥伦比亚咖啡豆" },
+             { "id": 8, "phoh": "../images/product_mezzo-g.jpg", "explain": "星巴克®早餐综合咖啡豆" }
+         ]
+     },
+     {
+         "title": "深度烘焙",
+         "list": [
+             { "id": 9, "phoh": "../images/porduct_depth_a.png", "explain": "星巴克®苏门答腊咖啡豆" },
+             { "id": 10, "phoh": "../images/porduct_depth_b.png", "explain": "星巴克®低因祥龙综合咖啡豆" },
+             { "id": 11, "phoh": "../images/porduct_depth_c.png", "explain": "星巴克®意式烘焙咖啡豆" },
+             { "id": 12, "phoh": "../images/porduct_depth_d.png", "explain": "星巴克®浓缩烘焙咖啡豆" },
+             { "id": 13, "phoh": "../images/porduct_depth_e.png", "explain": "星巴克®佛罗娜咖啡豆" }
+         ]
+     },
+     {
+         "title": "VIA® DAIRY",
+         "list": [
+             { "id": 14, "phoh": "../images/product_dalry_a.jpg", "explain": "星巴克VIA®香草拿铁风味免煮咖啡固体饮料" },
+             { "id": 15, "phoh": "../images/product_dalry_b.jpg", "explain": "星巴克VIA®摩卡风味免煮咖啡固体饮料" },
+             { "id": 16, "phoh": "../images/product_dalry_b.jpg", "explain": "星巴克VIA®摩卡风味免煮咖啡固体饮料" }
+         ]
+     },
+     {
+         "title": "VIA® BLACK",
+         "list": [
+             { "id": 17, "phoh": "../images/product_black_a.jpg", "explain": "星巴克VIA®意式烘焙免煮咖啡" },
+             { "id": 18, "phoh": "../images/product_black_b.jpg", "explain": "星巴克VIA®哥伦比亚免煮咖啡" }
+         ]
+     },
+     {
+         "title": "星巴克臻选™咖啡",
+         "list": [
+             { "id": 19, "phoh": "../images/product_sift-a.jpg", "explain": "星巴克臻选™ 日晒巴西格兰玛瀑布农场" },
+             { "id": 20, "phoh": "../images/product_sift-b.jpg", "explain": "星巴克臻选™ 夏威夷卡乌咖啡豆" },
+             { "id": 21, "phoh": "../images/product_sift-c.jpg", "explain": "星巴克臻选™ 哥伦比亚佩德雷加尔" },
+             { "id": 22, "phoh": "../images/product_sift-d.jpg", "explain": "星巴克臻选™ 臻选2018圣诞专享咖啡豆" }
+         ]
+     },
+     {
+         "title": "中度烘焙",
+         "list": [
+             { "id": 23, "phoh": "../images/product_pike-place.jpg", "explain": "星巴克ORIGAMI™便携式滴滤咖啡（研磨咖啡粉）星巴克®派克市场烘焙咖啡系列" }
+         ]
+     },
+     {
+         "title": "深度烘焙",
+         "list": [
+             { "id": 24, "phoh": "../images/product_origami-verona.jpg", "explain": "星巴克ORIGAMI™便携式滴滤咖啡（研磨咖啡粉）星巴克®佛罗娜烘焙咖啡系列" }
+         ]
+     }
  ]

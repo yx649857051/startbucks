@@ -71,8 +71,7 @@
             left: 50%;
             transform: translate(-50%, -90%);
         }
-        
-        .menu_slogan {
+        /* .menu_slogan {
             font-size: 26px;
             font-weight: 700;
             font-family: 'Gotham';
@@ -108,6 +107,59 @@
             line-height: 40px;
             margin-left: 20px;
             cursor: pointer;
+        } */
+        
+        .menus_diplay1 {
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 140%;
+            margin-bottom: 12px;
+            display: block;
+        }
+        
+        .menus_tabs {
+            padding-left: 2px;
+            line-height: 140%;
+            display: inline-block;
+        }
+        
+        .menus_jingxu {
+            color: rgba(0, 0, 0, 0.85);
+            padding-bottom: 1px;
+            margin-bottom: 2px;
+            border-bottom: 3px solid #00A862;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 6px 0;
+            display: inline-block;
+        }
+        
+        .menus_yinl {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: inline-block;
+            font-size: 18px;
+        }
+        
+        .menus_meis {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: inline-block;
+            font-size: 18px;
+        }
+        
+        .mensu_chanp {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: inline-block;
+            font-size: 18px;
+        }
+        
+        .menus_shanp {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: inline-block;
+            font-size: 18px;
         }
         
         .menu_side_all_menu {

@@ -69,41 +69,43 @@ body {
 }
 
 .product_left_side_content {
-    width: 100%;
-    position: relative;
-    height: 100%;
-    min-height: 300px;
-}
-
-.product_content {
     width: 270px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -90%);
+    /* height: calc(100% - 98px); */
 }
 
-.product_login_and_regist_parent {
+
+/* .menu_slogan {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Gotham';
+    color: #212121;
+}
+
+.menu_login_and_regist_parent {
     margin-top: 24px;
 }
 
-.product_login {
+.menu_login {
     height: 40px;
     display: inline-block;
     cursor: pointer;
 }
 
-.product_login_icon {
+.menu_login_icon {
     margin-top: 6px;
 }
 
-.product_login_text {
+.menu_login_text {
     color: #00a862;
     font-size: 16px;
     line-height: 40px;
 }
 
-.product_regist_text {
+.menu_regist_text {
     color: #00a862;
     font-size: 16px;
     border: solid 1px #00a862;
@@ -112,14 +114,69 @@ body {
     line-height: 40px;
     margin-left: 20px;
     cursor: pointer;
+} */
+
+
+/* .menus_diplay1 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 140%;
+    margin-bottom: 12px;
+    display: block;
 }
+
+.menus_tabs {
+    padding-left: 2px;
+    line-height: 140%;
+    display: inline-block;
+}
+
+.menus_jingxu {
+    color: rgba(0, 0, 0, 0.85);
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    border-bottom: 3px solid #00A862;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 6px 0;
+    display: inline-block;
+}
+
+.menus_yinl {
+    padding: 6px 0;
+    color: rgba(0, 0, 0, 0.56);
+    display: inline-block;
+    font-size: 18px;
+}
+
+.menus_meis {
+    padding: 6px 0;
+    color: rgba(0, 0, 0, 0.56);
+    display: inline-block;
+    font-size: 18px;
+}
+
+.mensu_chanp {
+    padding: 6px 0;
+    color: rgba(0, 0, 0, 0.56);
+    display: inline-block;
+    font-size: 18px;
+}
+
+.menus_shanp {
+    padding: 6px 0;
+    color: rgba(0, 0, 0, 0.56);
+    display: inline-block;
+    font-size: 18px;
+} */
 
 .product_blank {
     margin-bottom: 12px;
     font-weight: bold;
     display: inline-block;
-    color: rgba(0, 0, 0, 0.56);
+    color: rgba(0, 0, 0, 0.60);
     font-size: 18px;
+    cursor: pointer;
 }
 
 .product_chanp {
@@ -127,11 +184,7 @@ body {
     margin-bottom: 12px;
     font-weight: 900;
     color: rgba(0, 0, 0, 0.87);
-<<<<<<< HEAD
     cursor: pointer;
-=======
-    font-family: "Gotham";
->>>>>>> 0c947866f6b08ad7db65432e8ce2886d6be15bbe
 }
 
 .product_blank img {
@@ -327,7 +380,7 @@ padding-top: 24px; */
 
 .product_thumb {
     /* margin-right: 16px; */
-    vertical-align: top;
+    /* vertical-align: top; */
     text-align: center;
     display: block;
 }
@@ -496,7 +549,7 @@ hr {
     box-sizing: border-box;
     float: left;
     width: 25%;
-    -webkit-transition: all 0.3s
+    transition: all 0.3s
 }
 
 .product_grid li:hover {

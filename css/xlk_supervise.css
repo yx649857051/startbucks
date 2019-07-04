@@ -446,5 +446,6 @@ body {
     font-weight: 600;
     color: #999999;
     box-shadow: 0 2px 2px 1px #cccccc;
-    margin: 50px 0 20px 620px;
+    margin: 50px 0 20px 0;
+    margin-left: 85%;
 }

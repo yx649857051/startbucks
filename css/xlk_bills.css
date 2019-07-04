@@ -410,7 +410,8 @@ body {
     font-weight: 600;
     color: #999999;
     box-shadow: 0 2px 2px 1px #cccccc;
-    margin: 35px 0 20px 605px;
+    margin: 35px 0 20px 0;
+    margin-left: 82%;
 }
 
 .bills_right_warmPrompt {

@@ -41,28 +41,42 @@ $('.xlk_three_nav').on('click', 'li', function(event) {
     console.log(target);
 
     switch (target.getAttribute('class')) {
-        case 'xlk_mendian':
+        case 'sup_mendian':
             // alert($(target).text());
             location.href = "map.html";
             break;
-        case 'xlk_my_account':
+        case 'sup_my_account':
 
-            alert($(target).text());
+            // alert($(target).text());
+            location.href = "cqLogin2.html";
             break;
-        case 'xlk_menu':
-            alert($(target).text());
+        case 'sup_menu':
+            // alert($(target).text());
+            location.href = "gfMenu.html";
             break;
     }
 });
 
 //登录事件
-$('.xlk_login').click(function() {
-    alert('login');
+$('.xlk_login' || '.xlk_login_2').click(function() {
+    // alert('login');
+    location.href = "cqLogin2.html";
+});
+
+$('.xlk_login_2').click(function() {
+    // alert('login');
+    location.href = "cqLogin2.html";
 });
 
 //注册事件
-$('.xlk_regist_text').click(function() {
-    alert('regist');
+$('.xlk_regist_text' || ".xlk_regist_2").click(function() {
+    // alert('regist');
+    location.href = "cqNew.html";
+});
+
+$(".xlk_regist_2").click(function() {
+    // alert('regist');
+    location.href = "cqNew.html";
 });
 
 //左侧竖排导航栏事件
@@ -70,19 +84,36 @@ $('.xlk_menu_parent').on('click', "li", function() {
     var target = event.target;
     if (target.getAttribute('class') != 'home_menu_line') {
         switch (target.getAttribute('class')) {
-            case 'xlk_menu_mendian':
-                alert($(target).text());
+            case 'sup_menu_mendian':
+                // alert($(target).text());
                 location.href = "map.html";
                 break;
-            case 'xlk_menu_xxjlb':
+            case 'sup_menu_xxjlb':
 
-                alert($(target).text());
+                // alert($(target).text());
+                location.href = "cqLogin1.html";
                 break;
-            case 'xlk_menu':
-                alert($(target).text());
+            case 'sup_menu_app':
+                // alert($(target).text());
+                location.href = "mobile.html";
                 break;
-            case 'xlk_menu_xlk':
+            case 'sup_menu_xlk':
                 location.href = 'xlk.html';
+                break;
+            case 'sup_menu_reserve':
+                location.href = 'starbucks_reserve.html';
+                break;
+            case 'sup_menu_roastery':
+                location.href = 'lxz-roastery.html';
+                break;
+            case 'sup_menu_gyxbk':
+                location.href = 'xlk_inChina.html';
+                break;
+            case 'sup_menu_xjt':
+                location.href = 'lxz-1912.html';
+                break;
+            case 'sup_menu_module':
+                location.href = 'gfMenu.html';
                 break;
             default:
                 alert($(target).text());

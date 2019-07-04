@@ -1,26 +1,16 @@
 /**
- * author:yx 
+ * author:yx
  * 2019/6/28
  */
-
-
-
-
 var data = null;
 var leftTmp = 0;
 var left = 0;
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     init();
 
     function init() {
-
-        $(".home_content_part4_div").scrollLeft(9999);
-        setTimeout(function() {
-            $(".home_content_part4_div").scrollLeft(0);
-        }, 50);
-
         if (getCookie("cqUserName1") && getCookie("cqPassWord1")) {
             var user = getCookie("cqUserName1");
             var password = getCookie("cqPassWord1");
@@ -49,7 +39,7 @@ $(document).ready(function() {
     }
 
     function getData() {
-        $.getJSON('../data/home.json', function(data) {
+        $.getJSON('../data/home.json', function (data) {
             // console.log(data, $('.swiper-slide'));
             window.data = data;
             console.log(data);
@@ -95,7 +85,7 @@ $(document).ready(function() {
             $('.home_content_part3_wrapper_p').text(starbucksSelection.description);
 
             var starbucksSelectionHtml = '';
-            $.each(starbucksSelection.content, function(index, value) {
+            $.each(starbucksSelection.content, function (index, value) {
                 starbucksSelectionHtml += '<li class="home_content_part3_wrapper_ul_li" tag="' + index + '"><img class="home_content_part3_wrapper_ul_li_img" src="' + value.imgUrl + '"></img><div class="home_content_part3_wrapper_ul_li_div"><p class="home_content_part3_wrapper_ul_li_div_name">' + value.name + '</p><p class="home_content_part3_wrapper_ul_li_div_text">' + value.text + '</p><p class="home_content_part3_wrapper_ul_li_div_more">' + value.more + '</i></div></li>';
 
             });
@@ -106,21 +96,27 @@ $(document).ready(function() {
             $('.home_content_part4_wrapper_h2').text(coffeeKnowledge.title);
             $('.home_content_part4_wrapper_p').text(coffeeKnowledge.description);
 
-            $.each(coffeeKnowledge.content, function(index, val) {
+            $.each(coffeeKnowledge.content, function (index, val) {
                 coffeeKnowledgeHtml += '<li class="home_content_part4_div_ul_li" tag="' + index + '"><img class="home_content_part4_div_ul_li_img" src="' + val.imgUrl + '" /><p class="home_content_part4_div_ul_li_p"> ' + val.text + '</p> </li>'
             });
             $('.home_content_part4_div_ul').html(coffeeKnowledgeHtml);
+
+            //移动到数据请求回来，ul渲染后
+            $(".home_content_part4_div").scrollLeft(9999);
+            setTimeout(function () {
+                $(".home_content_part4_div").scrollLeft(0);
+            }, 50);
         });
     }
 
     //logo点击事件
-    $('.home_icon').click(function() {
+    $('.home_icon').click(function () {
         // alert('首页');
         location.href = "starbucks_home.html";
     });
 
     //左侧栏右边的菜单按钮事件
-    $('.home_menu_ic').click(function() {
+    $('.home_menu_ic').click(function () {
 
         $('.home_side_all_default').hide();
         $('.home_side_all_menu').show();
@@ -130,7 +126,7 @@ $(document).ready(function() {
     });
 
     //左侧栏的关闭事件
-    $('.home_menu_close').click(function() {
+    $('.home_menu_close').click(function () {
         $('.home_side_all_default').show();
         $('.home_side_all_menu').hide();
         // $('.home_side_all_menu').hide('easeOutQuad', function() {
@@ -140,7 +136,7 @@ $(document).ready(function() {
     });
 
     //logo右边的三个导航栏点击事件
-    $('.home_three_nav').on('click', 'li', function(event) {
+    $('.home_three_nav').on('click', 'li', function (event) {
 
         var target = event.target;
         console.log(target);
@@ -163,29 +159,29 @@ $(document).ready(function() {
     });
 
     //登录事件  以下有两遍是因为有不一样的样式
-    $('.home_login' || '.home_login_2').click(function() {
+    $('.home_login' || '.home_login_2').click(function () {
         // alert('login');
         location.href = "cqLogin2.html";
     });
 
-    $('.home_login_2').click(function() {
+    $('.home_login_2').click(function () {
         // alert('login');
         location.href = "cqLogin2.html";
     });
 
     //注册事件
-    $('.home_regist_text' || ".home_regist_2").click(function() {
+    $('.home_regist_text' || ".home_regist_2").click(function () {
         // alert('regist');
         location.href = "cqNew.html";
     });
 
-    $(".home_regist_2").click(function() {
+    $(".home_regist_2").click(function () {
         // alert('regist');
         location.href = "cqNew.html";
     });
 
     //左侧竖排导航栏事件
-    $('.home_menu_parent').on('click', "li", function(event) {
+    $('.home_menu_parent').on('click', "li", function (event) {
         var target = event.target;
         if (target.getAttribute('class') != 'home_menu_line') {
             switch (target.getAttribute('class')) {
@@ -238,13 +234,13 @@ $(document).ready(function() {
     /**
      * banner点击事件
      */
-    $('.swiper-container').on('click', 'div', function(event) {
+    $('.swiper-container').on('click', 'div', function (event) {
 
         location.href = data.banner[$(this).attr("tag")].toUrl;
 
     });
 
-    $(".home_content_part1").on('click', "li", function(event) {
+    $(".home_content_part1").on('click', "li", function (event) {
 
 
         // alert($(this).attr("tag"));
@@ -259,9 +255,9 @@ $(document).ready(function() {
             case "2":
                 location.href = "http://www.baidu.com";
                 break;
-                // default:
-                //     location.href = "http://www.baidu.com";
-                //     break;
+            // default:
+            //     location.href = "http://www.baidu.com";
+            //     break;
         }
     });
 
@@ -271,13 +267,13 @@ $(document).ready(function() {
     //     alert($(target).text());
     // });
 
-    $('.home_content_part3_wrapper_ul').on('click', "li", function(event) {
+    $('.home_content_part3_wrapper_ul').on('click', "li", function (event) {
 
         // alert($(this).attr("tag"));
         window.open(data.starbucksSelection.content[$(this).attr("tag")].toUrl, "_blank")
     });
 
-    $(".home_content_part4_div").scroll(function() {
+    $(".home_content_part4_div").scroll(function () {
         leftTmp = $(".home_content_part4_div_ul").position().left;
         console.log("scroll leftTmp", leftTmp)
         left = Math.abs(leftTmp) > Math.abs(left) ? Math.abs(leftTmp) : Math.abs(left);
@@ -303,23 +299,23 @@ $(document).ready(function() {
         console.log("scroll left", left)
     });
 
-    $('.home_content_part4_div_span_left').click(function() {
+    $('.home_content_part4_div_span_left').click(function () {
 
         leftTmp += 200;
         // $('.home_content_part4_div_span_right').show();
         // $(".home_content_part4_div").scrollLeft(-leftTmp);
-        $(".home_content_part4_div").animate({ scrollLeft: -leftTmp }, 500);
+        $(".home_content_part4_div").animate({scrollLeft: -leftTmp}, 500);
     });
 
-    $('.home_content_part4_div_span_right').click(function() {
+    $('.home_content_part4_div_span_right').click(function () {
 
         leftTmp -= 200;
         // $('.home_content_part4_div_span_left').show();
-        $(".home_content_part4_div").animate({ scrollLeft: -leftTmp }, 500);
+        $(".home_content_part4_div").animate({scrollLeft: -leftTmp}, 500);
         // $(".home_content_part4_div").scrollLeft(-leftTmp);
     });
 
-    $('.home_content_part4_div_ul').on('click', 'li', function(event) {
+    $('.home_content_part4_div_ul').on('click', 'li', function (event) {
 
         // alert($(this).attr("tag"));
         window.open(data.coffeeKnowledge.content[$(this).attr("tag")].toUrl, "_blank")

@@ -15,12 +15,35 @@ $(document).ready(function() {
     init();
 
     function init() {
+
         $(".home_content_part4_div").scrollLeft(9999);
         setTimeout(function() {
             $(".home_content_part4_div").scrollLeft(0);
         }, 50);
 
+        if (getCookie("cqUserName1")) {
+            var user = getCookie("cqUserName1");
+            console.log(user);
+            $('.home_login_and_regist_parent').hide();
+            $('.home_slogan').text("hello," + user);
+        } else {
+            $('.home_login_and_regist_parent').show();
+            $('.home_slogan').text("心情惬意，来杯咖啡吧 ☕");
+        }
+
         getData();
+
+    }
+
+    function getCookie(key) {
+        var arr1 = document.cookie.split('; ');
+        for (var i = 0, len = arr1.length; i < len; i++) {
+            var arr2 = arr1[i].split('='); //['user2','xc']
+            if (arr2[0] == key) {
+                return arr2[1];
+            }
+        }
+        return '';
     }
 
     function getData() {

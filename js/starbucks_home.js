@@ -190,6 +190,12 @@ $(document).ready(function() {
                 case 'home_menu_module':
                     location.href = 'gfMenu.html';
                     break;
+                case 'home_menu_kaikuai':
+                    location.href = 'kakuai.html';
+                    break;
+                case 'home_about_starbucks':
+                    location.href = 'xlk_inChina.html';
+                    break;
                 default:
                     alert($(target).text());
                     break;

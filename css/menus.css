@@ -20,6 +20,14 @@
         }
         /* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         
+        .menu_content {
+            width: 270px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+        }
+        
         .menu_side_all_default {
             width: 100%;
             height: 100%;
@@ -65,49 +73,11 @@
         }
         
         .menu_left_side_content {
-            width: 270px;
+            width: 100%;
             position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -90%);
+            height: 100%;
+            min-height: 300px;
         }
-        /* .menu_slogan {
-            font-size: 26px;
-            font-weight: 700;
-            font-family: 'Gotham';
-            color: #212121;
-        }
-        
-        .menu_login_and_regist_parent {
-            margin-top: 24px;
-        }
-        
-        .menu_login {
-            height: 40px;
-            display: inline-block;
-            cursor: pointer;
-        }
-        
-        .menu_login_icon {
-            margin-top: 6px;
-        }
-        
-        .menu_login_text {
-            color: #00a862;
-            font-size: 16px;
-            line-height: 40px;
-        }
-        
-        .menu_regist_text {
-            color: #00a862;
-            font-size: 16px;
-            border: solid 1px #00a862;
-            border-radius: 20px;
-            padding: 4px 10px;
-            line-height: 40px;
-            margin-left: 20px;
-            cursor: pointer;
-        } */
         
         .menus_diplay1 {
             font-size: 26px;
@@ -115,6 +85,7 @@
             line-height: 140%;
             margin-bottom: 12px;
             display: block;
+            margin-top: 100px;
         }
         
         .menus_tabs {
@@ -221,6 +192,37 @@
             width: 16px;
             height: 16px;
             display: inline-block;
+        }
+        
+        .menu_login_and_regist_parent {
+            margin-top: 24px;
+        }
+        
+        .menu_login {
+            height: 40px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .menu_login_icon {
+            margin-top: 6px;
+        }
+        
+        .menu_login_text {
+            color: #00a862;
+            font-size: 16px;
+            line-height: 40px;
+        }
+        
+        .menu_regist_text {
+            color: #00a862;
+            font-size: 16px;
+            border: solid 1px #00a862;
+            border-radius: 20px;
+            padding: 4px 10px;
+            line-height: 40px;
+            margin-left: 20px;
+            cursor: pointer;
         }
         /* 左侧菜单栏样式~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         /* 右边栏 */

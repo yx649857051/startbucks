@@ -355,6 +355,18 @@ $(".cqWord .cqKeJian").click(function () {
                                                 var str = JSON.parse(xhr.responseText);
                                                 // console.log(str);
                                                 alert(str.msg);
+
+                                                // ****** 发布消息 *********
+                                                $.ajax({
+                                                    type: 'get',
+                                                    url: '../php/login.php/',
+                                                    data: 'act=login&user=' + cqUserName.value + '&pass=' + cqPassWord.value,
+                                                    dataType: 'json',
+                                                    success: function (data) {
+                                                        loginEvent.trigger('loginSucc', data); // 发布登录成功消息
+                                                    }
+                                                });
+                                                // ********发布消息end********
                                             }
                                         }
                                     }
@@ -436,48 +448,43 @@ cqZhuceOver.onclick = function () {
 
 
 
-/********************************* 发布订阅者 ************************************ */
+/********************************* 发布订阅者模式 ************************************ */
 
-// var loginEvent = { //登录成功的消息事件
-//     clientList: {}, //缓存列表，存放订阅者的回调函数
-//     addlisten: function (key,fn) { //添加订阅者
-//         if (!this.clientList[key]) { //未订阅过此类消息，创建一个缓存列表
-//             this.clientList[key] = [];
-//         }
-//         this.clientList[key].push(fn); //订阅的消息添加进消息缓存列表
-//     },
-//     trigger: function (key,msg) { //发布消息方法
-//         var fnArr = this.clientList[key]; //取出该消息对应的回调函数集合
-//         if (!fnArr || fnArr.length == 0) {
-//             return false; // 如果未订阅该消息，则返回
-//         }
-//         for (var i = 0; i < fnArr.length; i++) {
-//             fnArr[i](msg); //执行所有回调函数
-//         }
-//     }
-// }
+var loginEvent = { //登录成功的消息事件
+    clientList: {}, //缓存列表，存放订阅者的回调函数
+    addlisten: function (key,fn) { //添加订阅者
+        if (!this.clientList[key]) { //未订阅过此类消息，创建一个缓存列表
+            this.clientList[key] = [];
+        }
+        this.clientList[key].push(fn); //订阅的消息添加进消息缓存列表
+    },
+    trigger: function (key,msg) { //发布消息方法
+        var fnArr = this.clientList[key]; //取出该消息对应的回调函数集合
+        if (!fnArr || fnArr.length == 0) {
+            return false; // 如果未订阅该消息，则返回
+        }
+        for (var i = 0; i < fnArr.length; i++) {
+            fnArr[i](msg); //执行所有回调函数
+        }
+    }
+}
 
-// $.ajax({
-//     type: 'get',
-//     url: '../php/login.php',
-//     data: 'act=login&user=' + cqUserName.value + '&pass=' + cqPassWord.value,
-//     dataType: 'json',
-//     success: function (data) {
-//         loginEvent.trigger('loginSucc', data); // 发布登录成功消息
-//     }
-// })
-// var header = (function () { // 头部模块
-//     loginEvent.addlisten('loginSucc', function (data) { //订阅登录成功的消息
-//         header.setAvatar(data.avatar);
-//     });
-//     return {
-//         setAvatar: function (data) {
-//             console.log('设置头部模块头像');
-//         }
-//     }
-// })();
-
-
+var header = (function () { // 订阅者
+    loginEvent.addlisten('loginSucc', function (data) { //订阅登录成功的消息
+        header.setAvatar(data.avatar);
+    });
+    return {
+        setAvatar: function (data) {//  这里写登录成功后要执行的函数
+            // console.log('收到设置头部模块头像');
+            $('.cqLogindiffcut1').hide();
+            $('.cqForm').hide();
+            $('.cqLoginOver').hide();
+            $('.cqPWlogin p').text(cqUserName.value+' 您好');
+            $('.cqPWlogin').attr('onclick', '').unbind('click');
+            $('.cqyanzhenghou').text('尊敬的 ' + cqUserName.value + ' ,您已登录成功!');
+        }
+    }
+})();
 
 
 /************************************ 记住密码 ****************************************/

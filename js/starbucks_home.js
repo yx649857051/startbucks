@@ -21,10 +21,12 @@ $(document).ready(function() {
             $(".home_content_part4_div").scrollLeft(0);
         }, 50);
 
-        if (getCookie("cqUserName1")) {
+        if (getCookie("cqUserName1") && getCookie("cqPassWord1")) {
             var user = getCookie("cqUserName1");
-            console.log(user);
+            var password = getCookie("cqPassWord1");
+            // console.log(user);
             $('.home_login_and_regist_parent').hide();
+            $('.home_login_and_regist_parent_2').hide();
             $('.home_slogan').text("hello," + user);
         } else {
             $('.home_login_and_regist_parent').show();

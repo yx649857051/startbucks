@@ -169,6 +169,9 @@
                 <div class="cqyanzhenghou iconfont green">
                     &#xe61a; 已验证
                 </div>
+                <div class="cqLogout">
+                    注销
+                </div>
                 <!-- *********** 登陆按钮 ************* -->
                 <div class="cqLoginOver">登陆</div>
             </div>
@@ -189,5 +192,43 @@
 <script src="../js/cqL1.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/starbucks_home.js"></script>
+<script>
+    if (getCookie("cqUserName1")) {
+        $('.cqLogindiffcut1').hide();
+        // $('.cqForm').hide();
+        $('.cqLoginOver').hide();
+        $('.cqPWlogin p').text(cqUserName.value + ' 您好');
+        $('.cq_left_login span').text(cqUserName.value + ',您已登录成功');
+        $('.cq_left_new').text('再注册一个新的用户');
+        $('.cqcontainer').hide();
+        $('.cqyanzhenghou').show();
+        $('.cqPWlogin').attr('onclick', '').unbind('click');
+        $('.cqyanzhenghou').text('尊敬的 ' + cqUserName.value + ' ,您已登录成功!');
+        $(".cqRemenber").labelauty("cqRemenber", "check");
+        $('.cq_Remenber_or_Forget').hide();
+        $('.cqLogout').show();
+    }
+    var uVal = cqUserName.value;
+    var pVal = cqPassWord.value;
+    var date = new Date();
+    function setCookie(key, val, day) { //设置cookie
+        if (day) {
+            var d = new Date();
+            d.setDate(d.getDate() + day);
+            document.cookie = key + '=' + val + '; expires=' + d;
+        } else {
+            document.cookie = key + '=' + val;
+        }
+    }
+    function removeCookie(key) { //删除cookie
+        setCookie(key, '123', -10);
+    }
+    $('.cqLogout').on('click', function () {
+        removeCookie("cqUserName1");
+        removeCookie("cqPassWord1");
+        removeCookie("time1");
+        location.reload();
+    });
+</script>
 
 </html>

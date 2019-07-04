@@ -4,9 +4,9 @@ var map = new AMap.Map('container', {
 });
 var options = {
     'showButton': true, //是否显示定位按钮
-    'buttonPosition': 'RB', //定位按钮的位置
+    'buttonPosition': 'LB', //定位按钮的位置
     /* LT LB RT RB */
-    'buttonOffset': new AMap.Pixel(14, 140), //定位按钮距离对应角落的距离
+    'buttonOffset': new AMap.Pixel(14, 10), //定位按钮距离对应角落的距离
     'showMarker': true, //是否显示定位点
     'markerOptions': { //自定义定位点样式，同Marker的Options
         'offset': new AMap.Pixel(-18, -36),
@@ -14,7 +14,7 @@ var options = {
     },
     'showCircle': true, //是否显示定位精度圈
     'circleOptions': { //定位精度圈的样式
-        'strokeColor': '#0093FF',
+        'strokeColor': '#045D38',
         'noSelect': true,
         'strokeOpacity': 0.5,
         'strokeWeight': 1,
@@ -58,12 +58,36 @@ AMap.service(["AMap.PlaceSearch"], function() {
 
 });
 
-//实现输入地点进行星巴克搜索
+//实现输入地点进行星巴克搜索并返回地址数据进行显示
 $('.map_search_btn').click(function() {
     // placeSearch.search().html($('.map_ipt_search').val() + "星巴克");
     // console.log($('.map_ipt_search').val() + "星巴克咖啡");
     placeSearch.search($('.map_ipt_search').val() + "星巴克咖啡");
-})
+
+
+
+    var search_words = $('.map_ipt_search').val() + "星巴克咖啡";
+    // var placeSearch = new AMap.PlaceSearch({
+    //     // city 指定搜索所在城市，支持传入格式有：城市名、citycode和adcode
+    //     city: '全国'
+    // })
+
+    placeSearch.search(search_words, function(status, result) {
+        // 查询成功时，result即对应匹配的POI信息
+        // console.log(result);
+        // console.log(result.poiList.pois);
+        var locate_result = '';
+        var resultJson = result.poiList.pois;
+        // console.log(resultJson);
+        var i = 0;
+        $.each(resultJson, function(index, val) {
+                i++;
+                locate_result += '<li><div class="number"><span>' + i + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.name + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.tel + '</span></div></li>';
+            })
+            // console.log(locate_result);
+        $('.map_locate_list').html(locate_result);
+    });
+});
 
 //输入提示功能
 AMap.plugin('AMap.Autocomplete', function() {
@@ -76,21 +100,7 @@ AMap.plugin('AMap.Autocomplete', function() {
     // 无需再手动执行search方法，autoComplete会根据传入input对应的DOM动态触发search
 })
 
-
-
-// 获取输入提示信息
-
-
-
-
-
-
-
-
-
 // 地图JS结束-->-->-->地图JS结束-->-->-->地图JS结束-->-->-->地图JS结束-->-->-->
-
-
 
 // 左侧导航js
 $('.map_icon').click(function() {
@@ -176,6 +186,26 @@ $('.map_menu_parent').on('click', "li", function() {
                 location.href = "mobile.html";
                 // alert($(target).text());
                 break;
+            case 'map_menu_reserve':
+                location.href = "starbucks_reserve.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_Lxz-roastery':
+                location.href = "Lxz-roastery.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_kakuai':
+                location.href = "kakuai.html";
+                // alert($(target).text());
+                break;
+            case 'map_meun_Lxz1912':
+                location.href = "Lxz-1912.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_xlk_inChina':
+                location.href = "xlk_inChina.html";
+                // alert($(target).text());
+                break;
             default:
                 alert($(target).text());
                 break;
@@ -185,56 +215,19 @@ $('.map_menu_parent').on('click', "li", function() {
 });
 
 
-
-// 添加定位信息列表，从json获取数据
-$(function() {
-
-    $.ajax({
-        url: '../data/map.json',
-        type: 'get',
-        dataType: 'json',
-        success: function(json) {
-            // console.log(json);
-            var map_locate = json.map_locate;
-            var result = '';
-            $.each(map_locate, function(index, val) {
-                // console.log(index, val);
-                result += '<li><div class="number"><span>' + val.code + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.title + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.distance + '</span></div><i class="iconfont notice">&#xe613;</i></li>';
-
-                // console.log(result);
-            });
-            $('.map_locate_list').html(result);
-        }
-    })
-});
-
-
 // 给筛选内容区添加点击显示隐藏事件
 $('.map_filter_btn').click(function() {
     $('.map_overlay_inner').show();
     $('.map_locate_body').hide();
-})
-
+});
 $('.map_close_btn').click(function() {
     $('.map_overlay_inner').hide();
     $('.map_locate_body').show();
-})
+});
 
 //给筛选项目li添加点击事件（勾选 清除 确认）
-// var i = 0
+
 $('.map_coffer_list').on('click', 'li', function() {
-
-    // var target = event.target;
-    // var index = $(target).index();
-    // console.log(index);
-    // i++
-    // console.log(i)
-    // if (i % 2 == 1) {
-    //     ($(this).children())[2].style.display = 'block'
-    // } else {
-    //     ($(this).children())[2].style.display = 'none'
-    // }
-
     $(this).children().eq(2).toggle();
     // console.log($(this).children().eq(2));
     $('.map_coffee_clear').show();
@@ -245,7 +238,7 @@ $('.map_coffee_clear').on('click', function() {
     // alert(11);
 
     console.log($('.map_coffer_list').children().children().eq(2));
-})
+});
 
 
 //从json获取筛选点击弹出框中的信息
@@ -267,5 +260,5 @@ $(function() {
             });
             $('.map_coffer_list').html(result);
         }
-    })
+    });
 });

@@ -15,12 +15,35 @@ $(document).ready(function() {
     init();
 
     function init() {
+
         $(".home_content_part4_div").scrollLeft(9999);
         setTimeout(function() {
             $(".home_content_part4_div").scrollLeft(0);
         }, 50);
 
+        if (getCookie("cqUserName1")) {
+            var user = getCookie("cqUserName1");
+            console.log(user);
+            $('.home_login_and_regist_parent').hide();
+            $('.home_slogan').text("hello," + user);
+        } else {
+            $('.home_login_and_regist_parent').show();
+            $('.home_slogan').text("心情惬意，来杯咖啡吧 ☕");
+        }
+
         getData();
+
+    }
+
+    function getCookie(key) {
+        var arr1 = document.cookie.split('; ');
+        for (var i = 0, len = arr1.length; i < len; i++) {
+            var arr2 = arr1[i].split('='); //['user2','xc']
+            if (arr2[0] == key) {
+                return arr2[1];
+            }
+        }
+        return '';
     }
 
     function getData() {
@@ -173,10 +196,7 @@ $(document).ready(function() {
                     // alert($(target).text());
                     location.href = "cqLogin1.html";
                     break;
-                case 'home_menu':
-                    // alert($(target).text());
-                    location.href = "gfMenu.html";
-                    break;
+
                 case 'home_menu_xlk':
                     location.href = 'xlk.html';
                     break;
@@ -187,7 +207,21 @@ $(document).ready(function() {
                 case 'home_menu_reserve':
                     location.href = 'starbucks_reserve.html';
                     break;
-
+                case 'home_menu_mobile':
+                    location.href = 'mobile.html';
+                    break;
+                case 'home_menu_module':
+                    location.href = 'gfMenu.html';
+                    break;
+                case 'home_menu_kaikuai':
+                    location.href = 'kakuai.html';
+                    break;
+                case 'home_about_starbucks':
+                    location.href = 'xlk_inChina.html';
+                    break;
+                case 'home_coffer_xjt':
+                    location.href = 'Lxz-1912.html';
+                    break;
                 default:
                     alert($(target).text());
                     break;

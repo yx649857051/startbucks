@@ -37,7 +37,7 @@
 
                         <!-- 登录、注册、关于星享俱乐部 begain-->
                         <br><br>
-                        <p><a href="cqLogin2.html" class="cq_left_new">登陆</a></p>
+                        <p><a href="cqLogin2.html" class="cq_left_new cq1">登陆</a></p>
                         <p><a href="cqNew.html" class="cq_left_about">注册</a></p>
                         <p class="cq_left_login"><span>关于星享俱乐部</span></p>
                         <!-- end -->
@@ -512,6 +512,17 @@
                 </div>
             </div>
 
+            <!-- **********************  这段实际作用，就是为了解决报错问题  ******************** -->
+        <div class="cqcontainer" style="display: none;">
+                <a href="https://support.qq.com/products/2136?clientInfo=chrome&clientVersion=75.0.3770.100&os=other&osVersion=pc&netType=1253432169&imei=0&customInfo=custominfo:clientIP:1903446519"
+                    class="cqFankui" style="color: #bcbcbd;">反馈</a>
+                <div class="cqrefreshIcon">刷新</div>
+                <div id="captcha" style="position: relative"></div>
+                <div id="msg"></div>
+            </div>
+            <div class="cqZhuceOver" style="display: none;">注册</div>
+            <!-- **********************  这段实际作用，就是为了解决报错问题  ******************** -->
+
             <!-- ***********************************底部**************************************** -->
             <div class="cqfooter">
                 <p>详情以<a class="cqwhite" target='_blank'
@@ -537,4 +548,10 @@
 <script src="../js/cqL1.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/starbucks_home.js"></script>
+<script>
+    if (getCookie("cqUserName1")) {
+        $('.cq_left_new').text(getCookie("cqUserName1") + ", 您已登录成功");
+        $('.cq_left_about').text("再注册一个新的用户");
+    }
+</script>
 </html>

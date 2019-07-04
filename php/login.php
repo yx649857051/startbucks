@@ -6,7 +6,7 @@
 
 	   url: login.php?act=xxx&user=用户名&pass=密码
 					 act=add——注册用户
-						 login——登陆
+						 login——登录
 		
 	return:	{err: 0/1, msg: 文字描述信息}
 			 err:
@@ -70,7 +70,7 @@ switch($act){
 		$row = mysql_fetch_array($res);
 		
 		if((int)$row[0]>0){
-			echo '{"err":"0","msg":"登陆成功"}';
+			echo '{"err":"0","msg":"登录成功"}';
 			exit();
 		}else{
 			echo '{"err":"1","msg":"用户名或密码有误"}';

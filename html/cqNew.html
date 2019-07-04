@@ -113,17 +113,39 @@
             <div class="cqNewMain">
                 <div class="cqNewMainLeft">
                     <h2>使用星巴克App进行注册</h2>
-                    <p>现在就下载<a href='https://www.starbucks.com.cn/apps/' class="green">星巴克App</a>便可直接用手机进行注册、支付、查看消费记录及管理卡片。</p>
+                    <p>现在就下载<a href='mobile.html' class="green">星巴克App</a>便可直接用手机进行注册、支付、查看消费记录及管理卡片。</p>
                 </div>
                 <div class="cqNewMainRight">
-                    <img src="../images/cqregister-download-app-image-cn.png" alt="" class="cqregister_download_app_image_cn">
+                    <img src="../images/cqregister-download-app-image-cn.png" alt=""
+                        class="cqregister_download_app_image_cn">
                 </div>
             </div>
         </div>
         <!-- 右侧内容栏 -->
+
+        <!-- **********************  这段实际作用，就是为了解决报错问题  ******************** -->
+        <div class="cqcontainer" style="display: none;">
+            <a href="https://support.qq.com/products/2136?clientInfo=chrome&clientVersion=75.0.3770.100&os=other&osVersion=pc&netType=1253432169&imei=0&customInfo=custominfo:clientIP:1903446519"
+                class="cqFankui" style="color: #bcbcbd;">反馈</a>
+            <div class="cqrefreshIcon">刷新</div>
+            <div id="captcha" style="position: relative"></div>
+            <div id="msg"></div>
+        </div>
+        <div class="cqZhuceOver" style="display: none;">注册</div>
+        <!-- **********************  这段实际作用，就是为了解决报错问题  ******************** -->
+        
     </div>
 </body>
-<script src='../jquery-1.8.3/jquery-1.8.3.js'></script>
+<script src="../jquery-1.8.3/jquery-1.8.3.min.js"></script>
+<script src="../js/cqrount.min.js"></script>
+<script src="../js/cqL1.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/starbucks_home.js"></script>
+<script>
+    if (getCookie("cqUserName1")) {
+        $('.cq_left_new').text(getCookie("cqUserName1") + ',您已登录成功');
+        $('.cq_left_login span').text('再注册一个新的用户')
+    }
+</script>
+
 </html>

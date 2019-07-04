@@ -336,9 +336,9 @@ $(".cqWord .cqKeJian").click(function () {
                                         function removeCookie(key) { //删除cookie
                                             setCookie(key, '123', -10);
                                         }
-                                        removeCookie("cqUserName1");
+                                        // removeCookie("cqUserName1");
                                         removeCookie("cqPassWord1");
-                                        removeCookie("time1");
+                                        // removeCookie("time1");
                                     }
                                     //***** cookie 结束 ******
 
@@ -355,6 +355,21 @@ $(".cqWord .cqKeJian").click(function () {
                                                 var str = JSON.parse(xhr.responseText);
                                                 // console.log(str);
                                                 alert(str.msg);
+                                                $('.cqLogout').show();
+                                                // ****** 发布消息 *********
+                                                if(str.msg == '登录成功'){
+                                                    $.ajax({
+                                                        type: 'get',
+                                                        url: '../php/login.php/',
+                                                        data: 'act=login&user=' + cqUserName.value + '&pass=' + cqPassWord.value,
+                                                        dataType: 'json',
+                                                        success: function (data) {
+                                                            loginEvent.trigger('loginSucc', data); // 发布登录成功消息
+                                                        }
+                                                    });
+                                                }
+                                        
+                                                // ********发布消息end********
                                             }
                                         }
                                     }
@@ -433,6 +448,48 @@ cqZhuceOver.onclick = function () {
         }
     }
 }
+
+
+
+/********************************* 发布订阅者模式 ************************************ */
+
+var loginEvent = { //登录成功的消息事件
+    clientList: {}, //缓存列表，存放订阅者的回调函数
+    addlisten: function (key,fn) { //添加订阅者
+        if (!this.clientList[key]) { //未订阅过此类消息，创建一个缓存列表
+            this.clientList[key] = [];
+        }
+        this.clientList[key].push(fn); //订阅的消息添加进消息缓存列表
+    },
+    trigger: function (key,msg) { //发布消息方法
+        var fnArr = this.clientList[key]; //取出该消息对应的回调函数集合
+        if (!fnArr || fnArr.length == 0) {
+            return false; // 如果未订阅该消息，则返回
+        }
+        for (var i = 0; i < fnArr.length; i++) {
+            fnArr[i](msg); //执行所有回调函数
+        }
+    }
+}
+
+var header = (function () { // 订阅者
+    loginEvent.addlisten('loginSucc', function (data) { //订阅登录成功的消息
+        header.setAvatar(data.avatar);
+    });
+    return {
+        setAvatar: function (data) {//  这里写登录成功后要执行的函数
+            $('.cqLogindiffcut1').hide();
+            $('.cqLoginOver').hide();
+            $('.cqPWlogin p').text(cqUserName.value+' 您好');
+            $('.cq_left_login span').text(cqUserName.value +',您已登录成功');
+            $('.cq_left_new').text("再注册一个新用户");
+            $('.cqPWlogin').attr('onclick', '').unbind('click');
+            $('.cqyanzhenghou').text('尊敬的 ' + cqUserName.value + ' ,您已登录成功!');
+            $('.cq_Remenber_or_Forget').hide();
+        }
+    }
+})();
+
 
 /************************************ 记住密码 ****************************************/
 // 复选框点击事件

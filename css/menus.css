@@ -20,6 +20,14 @@
         }
         /* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         
+        .menu_content {
+            width: 270px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+        }
+        
         .menu_side_all_default {
             width: 100%;
             height: 100%;
@@ -65,49 +73,85 @@
         }
         
         .menu_left_side_content {
-            width: 270px;
+            width: 100%;
             position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -90%);
+            height: 100%;
+            min-height: 300px;
         }
         
-        .menu_slogan {
+        .menus_diplay1 {
             font-size: 26px;
-            font-weight: 700;
-            font-family: 'Gotham';
-            color: #212121;
+            font-weight: 900;
+            line-height: 140%;
+            margin-bottom: 12px;
+            display: block;
+            margin-top: 100px;
         }
         
-        .menu_login_and_regist_parent {
-            margin-top: 24px;
-        }
-        
-        .menu_login {
-            height: 40px;
+        .menus_tabs {
+            padding-left: 2px;
+            line-height: 140%;
             display: inline-block;
+        }
+        
+        .menus_jingxu {
+            color: rgba(0, 0, 0, 0.85);
+            padding-bottom: 1px;
+            margin-bottom: 2px;
+            border-bottom: 3px solid #00A862;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 6px 0;
+            display: block;
             cursor: pointer;
         }
         
-        .menu_login_icon {
-            margin-top: 6px;
-        }
-        
-        .menu_login_text {
-            color: #00a862;
-            font-size: 16px;
-            line-height: 40px;
-        }
-        
-        .menu_regist_text {
-            color: #00a862;
-            font-size: 16px;
-            border: solid 1px #00a862;
-            border-radius: 20px;
-            padding: 4px 10px;
-            line-height: 40px;
-            margin-left: 20px;
+        .menus_yinl {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: block;
+            font-size: 18px;
             cursor: pointer;
+        }
+        
+        .menus_yinl:hover {
+            color: rgba(0, 0, 0, 0.90);
+        }
+        
+        .menus_meis {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: block;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .menus_meis:hover {
+            color: rgba(0, 0, 0, 0.90);
+        }
+        
+        .mensu_chanp {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: block;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .mensu_chanp:hover {
+            color: rgba(0, 0, 0, 0.90);
+        }
+        
+        .menus_shanp {
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.56);
+            display: block;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .menus_shanp:hover {
+            color: rgba(0, 0, 0, 0.90);
         }
         
         .menu_side_all_menu {
@@ -169,6 +213,37 @@
             width: 16px;
             height: 16px;
             display: inline-block;
+        }
+        
+        .menu_login_and_regist_parent {
+            margin-top: 24px;
+        }
+        
+        .menu_login {
+            height: 40px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .menu_login_icon {
+            margin-top: 6px;
+        }
+        
+        .menu_login_text {
+            color: #00a862;
+            font-size: 16px;
+            line-height: 40px;
+        }
+        
+        .menu_regist_text {
+            color: #00a862;
+            font-size: 16px;
+            border: solid 1px #00a862;
+            border-radius: 20px;
+            padding: 4px 10px;
+            line-height: 40px;
+            margin-left: 20px;
+            cursor: pointer;
         }
         /* 左侧菜单栏样式~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         /* 右边栏 */

@@ -329,7 +329,7 @@
     padding-top: 140px;
 }
 .cqqrcode{
-    display: inline-block;
+    /* display: inline-block; */
     padding: 6px;
     border: 8px solid #ccc;
     float: left;
@@ -386,7 +386,7 @@
     display: none;
 }
 .cq_Remenber_jia{
-    display: inline-block;
+    /* display: inline-block; */
     border: #20b275 1px solid;
     color: #fff;
     width: 32px;
@@ -541,8 +541,8 @@
     color: #bcbcbd;
 }
 .cqyanzhenghou{
-    margin-left: 25%;
-    line-height: 204px;
+    margin-left: 10%;
+    margin-top: 30px;
     display: none;
 }
 
@@ -615,4 +615,25 @@
 .cq_left_about:hover{
     color: #333;
 }
-/* 注册 */
+
+/*******************  注销  *****************************/
+.cqLogout{
+    width: 82px; height: 52px;
+    display: inline-block;
+    border-radius: 48px;
+    background-color: #20b275;
+    box-shadow: 0 3px 4px 2px #ccc;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    line-height: 52px;
+    margin: 100px 0 0 50px;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    display: none;
+}
+.cqLogout:hover{
+    background-color: #9e020f;
+}

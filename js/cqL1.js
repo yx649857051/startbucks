@@ -336,9 +336,9 @@ $(".cqWord .cqKeJian").click(function () {
                                         function removeCookie(key) { //删除cookie
                                             setCookie(key, '123', -10);
                                         }
-                                        removeCookie("cqUserName1");
+                                        // removeCookie("cqUserName1");
                                         removeCookie("cqPassWord1");
-                                        removeCookie("time1");
+                                        // removeCookie("time1");
                                     }
                                     //***** cookie 结束 ******
 
@@ -355,17 +355,20 @@ $(".cqWord .cqKeJian").click(function () {
                                                 var str = JSON.parse(xhr.responseText);
                                                 // console.log(str);
                                                 alert(str.msg);
-
+                                                $('.cqLogout').show();
                                                 // ****** 发布消息 *********
-                                                $.ajax({
-                                                    type: 'get',
-                                                    url: '../php/login.php/',
-                                                    data: 'act=login&user=' + cqUserName.value + '&pass=' + cqPassWord.value,
-                                                    dataType: 'json',
-                                                    success: function (data) {
-                                                        loginEvent.trigger('loginSucc', data); // 发布登录成功消息
-                                                    }
-                                                });
+                                                if(str.msg == '登录成功'){
+                                                    $.ajax({
+                                                        type: 'get',
+                                                        url: '../php/login.php/',
+                                                        data: 'act=login&user=' + cqUserName.value + '&pass=' + cqPassWord.value,
+                                                        dataType: 'json',
+                                                        success: function (data) {
+                                                            loginEvent.trigger('loginSucc', data); // 发布登录成功消息
+                                                        }
+                                                    });
+                                                }
+                                        
                                                 // ********发布消息end********
                                             }
                                         }
@@ -475,13 +478,14 @@ var header = (function () { // 订阅者
     });
     return {
         setAvatar: function (data) {//  这里写登录成功后要执行的函数
-            // console.log('收到设置头部模块头像');
             $('.cqLogindiffcut1').hide();
-            $('.cqForm').hide();
             $('.cqLoginOver').hide();
             $('.cqPWlogin p').text(cqUserName.value+' 您好');
+            $('.cq_left_login span').text(cqUserName.value +',您已登录成功');
+            $('.cq_left_new').text("再注册一个新用户");
             $('.cqPWlogin').attr('onclick', '').unbind('click');
             $('.cqyanzhenghou').text('尊敬的 ' + cqUserName.value + ' ,您已登录成功!');
+            $('.cq_Remenber_or_Forget').hide();
         }
     }
 })();

@@ -106,6 +106,15 @@ $(document).ready(function() {
                 case 'reserve_menu_module':
                     location.href = 'gfMenu.html';
                     break;
+                case 'reserve_coffer_xjt':
+                    location.href = 'Lxz-1912.html';
+                    break;
+                case 'reserve_about_starbucks':
+                    location.href = 'xlk_inChina.html';
+                    break;
+                case 'reserve_menu_kakuai':
+                    location.href = 'kakuai.html';
+                    break;
                 default:
                     alert($(target).text());
                     break;

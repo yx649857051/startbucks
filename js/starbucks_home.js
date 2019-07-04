@@ -196,6 +196,9 @@ $(document).ready(function() {
                 case 'home_about_starbucks':
                     location.href = 'xlk_inChina.html';
                     break;
+                case 'home_coffer_xjt':
+                    location.href = 'Lxz-1912.html';
+                    break;
                 default:
                     alert($(target).text());
                     break;

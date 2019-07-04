@@ -156,6 +156,37 @@
         height: 16px;
         display: inline-block;
     }
+    
+    .reserve_login_and_regist_parent {
+        margin-top: 24px;
+    }
+    
+    .reserve_login {
+        height: 40px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .reserve_login_icon {
+        margin-top: 6px;
+    }
+    
+    .reserve_login_text {
+        color: #00a862;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    
+    .reserve_regist_text {
+        color: #00a862;
+        font-size: 16px;
+        border: solid 1px #00a862;
+        border-radius: 20px;
+        padding: 4px 10px;
+        line-height: 40px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
     /* 左侧菜单栏样式~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     
     .reserve_banner {

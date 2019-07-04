@@ -7,7 +7,7 @@ $('.xlk_icon').click(function() {
 
 $('.xlk_inChina_link1').click(function() {
 
-    location.href = "xlk.html";
+    location.href = "xlk_join.html";
 
 });
 

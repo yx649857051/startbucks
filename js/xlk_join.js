@@ -5,13 +5,15 @@ $('.xlk_icon').click(function() {
 
 });
 
-$('.xlk_contacts_link1').click(function() {
+$('.join_inChina_link1').click(function() {
+
     location.href = "xlk_inChina.html";
 
 });
 
-$('.xlk_contacts_link2').click(function() {
-    location.href = "xlk_join.html";
+$('.join_inChina_link2').click(function() {
+
+    location.href = "xlk_contacts.html";
 
 });
 
@@ -39,19 +41,19 @@ $('.xlk_menu_close').click(function() {
 $('.xlk_three_nav').on('click', 'li', function(event) {
 
     var target = event.target;
-    console.log(target);
+    // console.log(target);
 
     switch (target.getAttribute('class')) {
-        case 'con_mendian':
+        case 'join_mendian':
             // alert($(target).text());
             location.href = "map.html";
             break;
-        case 'con_my_account':
+        case 'join_my_account':
 
             // alert($(target).text());
             location.href = "cqLogin2.html";
             break;
-        case 'con_menu':
+        case 'join_menu':
             // alert($(target).text());
             location.href = "gfMenu.html";
             break;
@@ -85,35 +87,35 @@ $('.xlk_menu_parent').on('click', "li", function() {
     var target = event.target;
     if (target.getAttribute('class') != 'home_menu_line') {
         switch (target.getAttribute('class')) {
-            case 'con_menu_mendian':
+            case 'join_menu_mendian':
                 // alert($(target).text());
                 location.href = "map.html";
                 break;
-            case 'con_menu_xxjlb':
+            case 'join_menu_xxjlb':
 
                 // alert($(target).text());
                 location.href = "cqLogin1.html";
                 break;
-            case 'con_menu_app':
+            case 'join_menu_app':
                 // alert($(target).text());
                 location.href = "mobile.html";
                 break;
-            case 'con_menu_xlk':
+            case 'join_menu_xlk':
                 location.href = 'xlk.html';
                 break;
-            case 'con_menu_reserve':
+            case 'join_menu_reserve':
                 location.href = 'starbucks_reserve.html';
                 break;
-            case 'con_menu_roastery':
+            case 'join_menu_roastery':
                 location.href = 'lxz-roastery.html';
                 break;
-            case 'con_menu_gyxbk':
+            case 'join_menu_gyxbk':
                 location.href = 'xlk_inChina.html';
                 break;
-            case 'con_menu_xjt':
+            case 'join_menu_xjt':
                 location.href = 'lxz-1912.html';
                 break;
-            case 'con_menu_module':
+            case 'join_menu_module':
                 location.href = 'gfMenu.html';
                 break;
             default:

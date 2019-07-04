@@ -295,53 +295,6 @@ $(".cqWord .cqKeJian").click(function () {
                                 $('.cqLoginOver').css('cursor', 'pointer');
                                 $('.cqLoginOver').addClass('cqafter')
                                 $('.cqLoginOver').one('click', function () { //*** 登陆部分 ***
-
-                                    //***** cookie 开始 ******
-                                    if (cqRemenber.checked) {
-                                        var uVal = cqUserName.value;
-                                        var pVal = cqPassWord.value;
-                                        var date = new Date();
-
-                                        function setCookie(key, val, day) { //设置cookie
-                                            if (day) {
-                                                var d = new Date();
-                                                d.setDate(d.getDate() + day);
-                                                document.cookie = key + '=' + val + '; expires=' + d;
-                                            } else {
-                                                document.cookie = key + '=' + val;
-                                            }
-                                        }
-                                        setCookie("cqUserName1", uVal, 7);
-                                        setCookie("cqPassWord1", pVal, 7);
-                                        setCookie("time1", date, 7);
-
-                                    }
-                                    if (cqRemenber.checked == false) {
-                                        var uVal = cqUserName.value;
-                                        var pVal = cqPassWord.value;
-                                        var date = new Date();
-                                        function setCookie(key, val, day) { //设置cookie
-                                            if (day) {
-                                                var d = new Date();
-                                                d.setDate(d.getDate() + day);
-                                                document.cookie = key + '=' + val + '; expires=' + d;
-                                            } else {
-                                                document.cookie = key + '=' + val;
-                                            }
-                                        }
-                                        setCookie("cqUserName1", uVal, 7);
-                                        setCookie("cqPassWord1", pVal, 7);
-                                        setCookie("time1", date, 7);
-
-                                        function removeCookie(key) { //删除cookie
-                                            setCookie(key, '123', -10);
-                                        }
-                                        // removeCookie("cqUserName1");
-                                        removeCookie("cqPassWord1");
-                                        // removeCookie("time1");
-                                    }
-                                    //***** cookie 结束 ******
-
                                     if (window.XMLHttpRequest) {
                                         var xhr = new XMLHttpRequest();
                                     } else {
@@ -355,9 +308,9 @@ $(".cqWord .cqKeJian").click(function () {
                                                 var str = JSON.parse(xhr.responseText);
                                                 // console.log(str);
                                                 alert(str.msg);
-                                                $('.cqLogout').show();
                                                 // ****** 发布消息 *********
-                                                if(str.msg == '登录成功'){
+                                                if (str.msg == '登录成功') {
+                                                    $('.cqLogout').show();
                                                     $.ajax({
                                                         type: 'get',
                                                         url: '../php/login.php/',
@@ -367,8 +320,49 @@ $(".cqWord .cqKeJian").click(function () {
                                                             loginEvent.trigger('loginSucc', data); // 发布登录成功消息
                                                         }
                                                     });
+                                                    //***** cookie 开始 ******
+                                                    if (cqRemenber.checked) {
+                                                        var uVal = cqUserName.value;
+                                                        var pVal = cqPassWord.value;
+                                                        var date = new Date();
+
+                                                        function setCookie(key, val, day) { //设置cookie
+                                                            if (day) {
+                                                                var d = new Date();
+                                                                d.setDate(d.getDate() + day);
+                                                                document.cookie = key + '=' + val + '; expires=' + d;
+                                                            } else {
+                                                                document.cookie = key + '=' + val;
+                                                            }
+                                                        }
+                                                        setCookie("cqUserName1", uVal, 7);
+                                                        setCookie("cqPassWord1", pVal, 7);
+                                                        setCookie("time1", date, 7);
+                                                    }
+                                                    if (cqRemenber.checked == false) {
+                                                        var uVal = cqUserName.value;
+                                                        var pVal = cqPassWord.value;
+                                                        var date = new Date();
+                                                        function setCookie(key, val, day) { //设置cookie
+                                                            if (day) {
+                                                                var d = new Date();
+                                                                d.setDate(d.getDate() + day);
+                                                                document.cookie = key + '=' + val + '; expires=' + d;
+                                                            } else {
+                                                                document.cookie = key + '=' + val;
+                                                            }
+                                                        }
+                                                        setCookie("cqUserName1", uVal, 7);
+                                                    }
+                                                } else {
+                                                    function removeCookie(key) { //删除cookie
+                                                        setCookie(key, '123', -10);
+                                                    }
+                                                    removeCookie("cqUserName1");
+                                                    removeCookie("cqPassWord1");
+                                                    removeCookie("time1");
                                                 }
-                                        
+                                                //***** cookie 结束 ******
                                                 // ********发布消息end********
                                             }
                                         }
@@ -455,13 +449,13 @@ cqZhuceOver.onclick = function () {
 
 var loginEvent = { //登录成功的消息事件
     clientList: {}, //缓存列表，存放订阅者的回调函数
-    addlisten: function (key,fn) { //添加订阅者
+    addlisten: function (key, fn) { //添加订阅者
         if (!this.clientList[key]) { //未订阅过此类消息，创建一个缓存列表
             this.clientList[key] = [];
         }
         this.clientList[key].push(fn); //订阅的消息添加进消息缓存列表
     },
-    trigger: function (key,msg) { //发布消息方法
+    trigger: function (key, msg) { //发布消息方法
         var fnArr = this.clientList[key]; //取出该消息对应的回调函数集合
         if (!fnArr || fnArr.length == 0) {
             return false; // 如果未订阅该消息，则返回
@@ -477,11 +471,11 @@ var header = (function () { // 订阅者
         header.setAvatar(data.avatar);
     });
     return {
-        setAvatar: function (data) {//  这里写登录成功后要执行的函数
+        setAvatar: function (data) { //  这里写登录成功后要执行的函数
             $('.cqLogindiffcut1').hide();
             $('.cqLoginOver').hide();
-            $('.cqPWlogin p').text(cqUserName.value+' 您好');
-            $('.cq_left_login span').text(cqUserName.value +',您已登录成功');
+            $('.cqPWlogin p').text(cqUserName.value + ' 您好');
+            $('.cq_left_login span').text(cqUserName.value + ',您已登录成功');
             $('.cq_left_new').text("再注册一个新用户");
             $('.cqPWlogin').attr('onclick', '').unbind('click');
             $('.cqyanzhenghou').text('尊敬的 ' + cqUserName.value + ' ,您已登录成功!');

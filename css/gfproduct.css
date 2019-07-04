@@ -370,8 +370,8 @@ padding-top: 24px; */
     width: 25%;
     text-align: center;
     transition: all 0.3s ease;
-    height: 220px;
-    /* padding: 16px; */
+    height: 250px;
+    padding: 16px;
     box-sizing: border-box;
 }
 

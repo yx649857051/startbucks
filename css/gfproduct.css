@@ -69,12 +69,18 @@ body {
 }
 
 .product_left_side_content {
-    width: 270px;
+    width: 100%;
     position: relative;
+    height: 100%;
+    min-height: 300px;
+}
+
+.product_content {
+    width: 270px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -90%);
-    /* height: calc(100% - 98px); */
 }
 
 
@@ -183,6 +189,7 @@ body {
     margin-bottom: 12px;
     font-weight: 900;
     color: rgba(0, 0, 0, 0.87);
+    font-family: "Gotham";
 }
 
 .product_blank img {

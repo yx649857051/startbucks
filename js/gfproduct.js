@@ -8,6 +8,26 @@ $('.product_heade').click(function() {
     $('.product_btn').css('display', 'block');
 
 });
+// 点击咖啡选项
+$('.product_subcas').on('click', 'li', function(even) {
+        var target = event.target;
+        // console.log(target);
+        switch (target.getAttribute('class')) {
+            default: alert($(target).text());
+            break;
+        }
+    })
+    // 点击菜单返回
+$('.product_blank').click(function() {
+    console.log("000000000000")
+    window.location.href = '../html/gfMenu.html';
+
+})
+
+
+
+
+
 // 添加图片定位，从json获取
 $(function() {
     $.ajax({

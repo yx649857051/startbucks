@@ -25,18 +25,14 @@ $(function() {
 
     //左侧栏右边的菜单按钮事件
     $('.menu_menu_ic').click(function() {
-
         $('.menu_side_all_default').hide();
         $('.menu_side_all_menu').show();
-
     });
 
     //左侧栏的关闭事件
     $('.menu_menu_close').click(function() {
         $('.menu_side_all_default').show();
         $('.menu_side_all_menu').hide();
-
-
     });
 
     //logo右边的三个导航栏点击事件
@@ -58,6 +54,22 @@ $(function() {
                 break;
         }
     });
+    // 点击选项选择产品
+    $('.menus_tabs').on('click', 'li', function(even) {
+        var target = event.target;
+        console.log(target);
+        switch (target.getAttribute('class')) {
+
+            case 'mensu_chanp':
+                // alert(11);
+                location.href = "gfproduct.html";
+                break;
+
+            default:
+                alert($(target).text());
+                break;
+        }
+    })
 
     //登录事件  以下有两遍是因为有不一样的样式
     $('.menu_login' || '.menu_login_2').click(function() {

@@ -183,6 +183,7 @@ body {
     margin-bottom: 12px;
     font-weight: 900;
     color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
 }
 
 .product_blank img {
@@ -217,7 +218,8 @@ body {
     color: rgba(0, 0, 0, 0.56);
     padding: 6px 0;
     font-size: 16px;
-    display: inline-block;
+    display: block;
+    cursor: pointer;
 }
 
 .product_cof:hover {

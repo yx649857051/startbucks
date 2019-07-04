@@ -1,4 +1,4 @@
-.Lxz-1912-search{
+.Lxz-1912-search {
     width: 1080px;
     /* height: 60px; */
     margin: 0 auto;
@@ -6,14 +6,16 @@
     top: 0;
     z-index: 1000;
 }
-.Lxz-1912-search-zjk{
+
+.Lxz-1912-search-zjk {
     background-color: #fff;
     width: 1080px;
     height: 60px;
     position: absolute;
     top: 30px;
 }
-.Lxz-1912-search-zjk .iconfont{
+
+.Lxz-1912-search-zjk .iconfont {
     display: block;
     width: 60px;
     height: 60px;
@@ -24,11 +26,13 @@
     color: black;
     float: left;
 }
-.Lxz-1912-search-zjk img{
+
+.Lxz-1912-search-zjk img {
     margin-top: 9px;
     margin-left: 35%;
 }
-.Lxz-1912-search-zjk a{
+
+.Lxz-1912-search-zjk a {
     display: block;
     width: 60px;
     height: 60px;
@@ -40,86 +44,116 @@
     color: black;
     float: right;
 }
+
+
 /* 导航结束 */
-.Lxz-1912-banner{
+
+.Lxz-1912-banner {
     overflow: hidden;
-    width:100% ;
-    height:674px;
+    width: 100%;
+    height: 674px;
 }
-.Lxz-1912-banner-zjk{
+
+.Lxz-1912-banner-zjk {
     overflow: hidden;
     width: 100%;
     height: 100%;
 }
-.Lxz-1912-banner-bjt{
+
+.Lxz-1912-banner-bjt {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     background: url(../images/Lxz-1912\ -2.jpg) no-repeat;
     background-size: 100%;
-    background-position: 0,10px;
+    background-position: 0, 10px;
 }
-.Lxz-1912-banner-wz{
+
+.Lxz-1912-banner-wz {
     width: 1079px;
     height: 216px;
-    padding: 470px 135px;
+    margin: 0 auto;
+    padding-top: 470px;
     text-align: center;
     color: #fff;
     overflow: hidden;
 }
-.Lxz-1912-banner-wz .kfzs{
+
+.Lxz-1912-banner-wz .kfzs {
     font-size: 12px;
     font-weight: bolder;
 }
-.Lxz-1912-banner-wz h1{
+
+.Lxz-1912-banner-wz h1 {
     font-size: 52px;
     font-weight: bolder;
-    padding-top:10px; 
+    padding-top: 10px;
 }
-.Lxz-1912-banner-wz .gn{
+
+.Lxz-1912-banner-wz .gn {
     font-size: 28px;
     font-weight: bolder;
-    margin-top:10px; 
+    margin-top: 10px;
 }
+
+
 /* 图片结束 */
-.Lxz-1912-content{
+
+.Lxz-1912-content {
     height: 100%;
     width: 100%;
     background-color: #edebe9;
 }
-.Lxz-1912-content-top{
+
+.Lxz-1912-content-top {
     width: 1040px;
     height: 42px;
-    border-bottom:solid 2px #d5d3d1;
+    border-bottom: solid 2px #d5d3d1;
     text-align: center;
-    margin:0px 0 0 158px; 
-    padding-top:30px; 
+    margin: 0px 0 0 158px;
+    padding-top: 30px;
     font-size: 14px;
 }
-.Lxz-1912-content-top .a1{
+
+.Lxz-1912-content-top .a1 {
     color: #006241;
-    padding-right:15px; 
-    border-right:solid 2px #a6a6a6;
+    padding-right: 15px;
+    border-right: solid 2px #a6a6a6;
 }
-.Lxz-1912-content-top .a1:hover{text-decoration: underline;}
-.Lxz-1912-content-top .a2{
+
+.Lxz-1912-content-top .a1:hover {
+    text-decoration: underline;
+}
+
+.Lxz-1912-content-top .a2 {
     color: #a6a6a6;
-    padding-right:15px; 
-    border-right:solid 2px #a6a6a6;
+    padding-right: 15px;
+    border-right: solid 2px #a6a6a6;
 }
-.Lxz-1912-content-top .a2:hover{text-decoration: underline;}
-.Lxz-1912-content-top .a3{
+
+.Lxz-1912-content-top .a2:hover {
+    text-decoration: underline;
+}
+
+.Lxz-1912-content-top .a3 {
     color: #a6a6a6;
-    padding-right:15px; 
-    border-right:solid 2px #a6a6a6;
+    padding-right: 15px;
+    border-right: solid 2px #a6a6a6;
 }
-.Lxz-1912-content-top .a3:hover{text-decoration: underline;}
+
+.Lxz-1912-content-top .a3:hover {
+    text-decoration: underline;
+}
+
+
 /* content-top结束 */
-.Lxz-1912-content-zjk{
+
+.Lxz-1912-content-zjk {
     width: 1040px;
     height: 100%;
     margin: 0 auto;
 }
-.Lxz-1912-content-nr1{
+
+.Lxz-1912-content-nr1 {
     width: 460px;
     height: 444px;
     margin: 25px 0 0 36px;
@@ -127,11 +161,12 @@
     background-color: #fff;
 }
 
-.Lxz-1912-content-nr1 img{
+.Lxz-1912-content-nr1 img {
     width: 460px;
     height: 230px;
 }
-.Lxz-1912-content-wz1{
+
+.Lxz-1912-content-wz1 {
     width: 412px;
     height: 216px;
     background-color: #fff;
@@ -139,26 +174,33 @@
     padding: 24px;
     line-height: 30px;
 }
-.Lxz-1912-content-wz1 h3{
+
+.Lxz-1912-content-wz1 h3 {
     font-size: 30px;
-    margin:0 0 12px 0; 
+    margin: 0 0 12px 0;
 }
-.Lxz-1912-content-wz1 p{
+
+.Lxz-1912-content-wz1 p {
     font-size: 16px;
 }
+
+
 /* nr1结束 */
-.Lxz-1912-content-nr2{
+
+.Lxz-1912-content-nr2 {
     width: 460px;
     height: 444px;
     margin: -466px 0 0 555px;
     border: solid 12px #edebe9;
     background-color: #fff;
 }
-.Lxz-1912-content-nr2 img{
+
+.Lxz-1912-content-nr2 img {
     width: 460px;
     height: 230px;
 }
-.Lxz-1912-content-wz2{
+
+.Lxz-1912-content-wz2 {
     width: 412px;
     height: 216px;
     background-color: #fff;
@@ -166,25 +208,32 @@
     padding: 24px;
     line-height: 30px;
 }
-.Lxz-1912-content-wz2 h3{
+
+.Lxz-1912-content-wz2 h3 {
     font-size: 30px;
-    margin:0 0 12px 0; 
+    margin: 0 0 12px 0;
 }
-.Lxz-1912-content-wz2 p{
+
+.Lxz-1912-content-wz2 p {
     font-size: 16px;
 }
+
+
 /* nr2结束 */
-.Lxz-1912-content-btn{
+
+.Lxz-1912-content-btn {
     width: 100px;
     height: 40px;
-    margin: 50px  0 70px 640px;
+    margin: 50px 0 70px 640px;
 }
-.Lxz-1912-content-btn img{
+
+.Lxz-1912-content-btn img {
     width: 100px;
     height: 100px;
     display: none;
 }
-.Lxz-1912-content-btn button{
+
+.Lxz-1912-content-btn button {
     width: 98px;
     height: 38px;
     background-color: #edebe9;
@@ -193,33 +242,41 @@
     outline: none;
     cursor: pointer;
 }
-.Lxz-1912-content-btn button:hover{
+
+.Lxz-1912-content-btn button:hover {
     background-color: #f3f1f1;
 }
+
+
 /* content结束 */
-.Lxz-1912-bottom{
+
+.Lxz-1912-bottom {
     width: 100%;
     height: 100%;
     background-color: #36342f;
 }
-.Lxz-1912-bottom-zjk{
+
+.Lxz-1912-bottom-zjk {
     width: 1040px;
     height: 62px;
     margin: 0 auto;
     line-height: 62px;
 }
-.Lxz-1912-bottom-wz1{
+
+.Lxz-1912-bottom-wz1 {
     color: #fff;
     margin-left: 45px;
     font-size: 12px;
 }
-.Lxz-1912-bottom-wz2{
+
+.Lxz-1912-bottom-wz2 {
     color: #edebe9;
     margin-right: 30px;
     font-size: 12px;
     float: right;
 }
-.Lxz-1912-bottom-wz3{
+
+.Lxz-1912-bottom-wz3 {
     color: #edebe9;
     margin-right: 18px;
     font-size: 12px;

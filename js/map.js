@@ -81,11 +81,10 @@ $('.map_search_btn').click(function() {
         // console.log(resultJson);
         var i = 0;
         $.each(resultJson, function(index, val) {
-            i++;
-            locate_result += '<li><div class="number"><span>' + i + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.name + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.tel + '</span></div></li>';
-        });
-        // console.log(locate_result);
-
+                i++;
+                locate_result += '<li><div class="number"><span>' + i + '</span><i class="iconfont">&#xe6cb;</i></div><div class="map_text"><span class="map_store">' + val.name + '</span><img class="map_delivery" src="../images/map_delivery.png" alt=""><small class="map_address">' + val.address + '</small><span class="map_distance">' + val.tel + '</span></div></li>';
+            })
+            // console.log(locate_result);
         $('.map_locate_list').html(locate_result);
     });
 })
@@ -197,6 +196,14 @@ $('.map_menu_parent').on('click', "li", function() {
                 break;
             case 'map_menu_kakuai':
                 location.href = "kakuai.html";
+                // alert($(target).text());
+                break;
+            case 'map_meun_Lxz1912':
+                location.href = "Lxz-1912.html";
+                // alert($(target).text());
+                break;
+            case 'map_menu_xlk_inChina':
+                location.href = "xlk_inChina.html";
                 // alert($(target).text());
                 break;
             default:

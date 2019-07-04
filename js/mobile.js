@@ -94,6 +94,18 @@ $('.mobile_menu_parent').on('click', "li", function() {
                 location.href = "kakuai.html";
                 // alert($(target).text());
                 break;
+            case 'mobile_meun_Lxz1912':
+                location.href = "Lxz-1912.html";
+                // alert($(target).text());
+                break;
+            case 'mobile_menu_starbucks_reserve':
+                location.href = "starbucks_reserve.html";
+                // alert($(target).text());
+                break;
+            case 'mobile_menu_xlk_inChina':
+                location.href = "xlk_inChina.html";
+                // alert($(target).text());
+                break;
             default:
                 alert($(target).text());
                 break;

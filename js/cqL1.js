@@ -40,7 +40,6 @@ jQuery('.qrcode').qrcode({
             }
             rdochecked(tag);
         });
-
         function rdochecked(tag) {
             $('.' + tag).each(function (i) {
                 var rdobox = $('.' + tag).eq(i).next();
@@ -55,7 +54,6 @@ jQuery('.qrcode').qrcode({
         }
     }
 }(jQuery));
-
 
 /****************************** 登录方式切换 ********************************* */
 $('.cqQRlogin').on('click', function () {
@@ -75,7 +73,7 @@ $('.cqinput').on('focus', function () {
         display: 'show',
         top: -30,
         fontSize: 14
-    }, 200, 'swing', function () {});
+    }, 120, 'swing', function () {});
 });
 $('.cqinput').on('blur', function () {
     var $this = $(this).next().text();
@@ -83,13 +81,14 @@ $('.cqinput').on('blur', function () {
         $(this).next().animate({
             top: 0,
             fontSize: 16
-        }, 200, 'swing', function () {});
+        }, 120, 'swing', function () {});
         $(this).next().hide(1, 'swing', function () {
             $(this).prev().prop("placeholder", $this);
         });
         $(this).parent().children().eq(2).show();
     }
 });
+
 /***************************** 关于 input 框的密码是否可见 *****************************/
 var cqisShow = true;
 $(".cqWord .cqBuKeJian").click(function () {
@@ -113,18 +112,15 @@ $(".cqWord .cqKeJian").click(function () {
         h = 155,
         PI = Math.PI;
     const L = l + r * 2;
-
     function getRandomNumberByRange(start, end) {
         return Math.round(Math.random() * (end - start) + start);
     }
-
     function createCanvas(width, height) {
         const canvas = createElement('canvas');
         canvas.width = width;
         canvas.height = height;
         return canvas;
     }
-
     function createImg(onload) {
         const img = createElement('img');
         img.crossOrigin = "Anonymous";
@@ -135,23 +131,18 @@ $(".cqWord .cqKeJian").click(function () {
         img.src = getRandomImg();
         return img;
     }
-
     function createElement(tagName) {
         return document.createElement(tagName);
     }
-
     function addClass(tag, className) {
         tag.classList.add(className);
     }
-
     function removeClass(tag, className) {
         tag.classList.remove(className);
     }
-
     function getRandomImg() {
         return 'https://picsum.photos/300/150/?image=' + getRandomNumberByRange(0, 100);
     }
-
     function draw(ctx, operation, x, y) {
         ctx.beginPath();
         ctx.moveTo(x, y);
@@ -172,14 +163,13 @@ $(".cqWord .cqKeJian").click(function () {
         ctx.globalCompositeOperation = "xor";
         ctx.fill();
     }
-
     function sum(x, y) {
         return x + y
     }
-
     function square(x) {
         return x * x
     }
+
     class jigsaw {
         constructor(el, success, fail) {
             this.el = el;
@@ -288,7 +278,6 @@ $(".cqWord .cqKeJian").click(function () {
                     if (TuringTest) {
                         addClass(this.cqsliderContainer, 'cqsliderContainer_success');
                         this.success && this.success();
-
                         //******************登陆按钮的3个验证 ***************
                         $('.cqLoginOver').on('mouseover', function () {
                             if ($('.cqUserName').val() != '' && $('.cqPassWord').val() != '') {
@@ -325,7 +314,6 @@ $(".cqWord .cqKeJian").click(function () {
                                                         var uVal = cqUserName.value;
                                                         var pVal = cqPassWord.value;
                                                         var date = new Date();
-
                                                         function setCookie(key, val, day) { //设置cookie
                                                             if (day) {
                                                                 var d = new Date();
@@ -370,11 +358,12 @@ $(".cqWord .cqKeJian").click(function () {
                                 });
                             } else {
                                 $('.cqLoginOver').css('cursor', 'not-allowed');
+                                $('.cqLoginOver').removeClass('cqafter');
                             }
                         });
                         //-******************** 登陆按钮验证 end ***********
                     } else {
-                        addClass(this.cqsliderContainer, 'cqsliderContainer_fail');
+                        /* addClass */(this.cqsliderContainer, 'cqsliderContainer_fail');
                         this.text.innerHTML = '错误了呢!!';
                         this.reset();
                     }
@@ -413,6 +402,7 @@ $(".cqWord .cqKeJian").click(function () {
         }
     }
 }(window));
+
 //滑块验证
 jigsaw.init(document.getElementById('captcha'), function () {
     document.getElementsByClassName('cqcontainer')[0].innerHTML = ''
@@ -442,8 +432,6 @@ cqZhuceOver.onclick = function () {
         }
     }
 }
-
-
 
 /********************************* 发布订阅者模式 ************************************ */
 
@@ -483,7 +471,6 @@ var header = (function () { // 订阅者
         }
     }
 })();
-
 
 /************************************ 记住密码 ****************************************/
 // 复选框点击事件

@@ -189,13 +189,9 @@ var pro_span = document.getElementById('pro_span');
 }(window))
 
 jigsaw.init(document.getElementById('captcha'), function() {
-
     document.getElementById('mbc').style.display = 'block';
     setTimeout(function() {
         document.getElementById('con').style.display = 'none';
         document.getElementById('test_suc').style.display = 'block';
     }, 1000)
-
-
-
 })

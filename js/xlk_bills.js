@@ -1,63 +1,43 @@
 //logo点击事件
 $('.xlk_icon').click(function() {
-    // alert('首页');
     location.href = "starbucks_home.html";
-
 });
 
 $('.xlk_bills_link1').click(function() {
-    // alert('首页');
     location.href = "xlk.html";
 });
 
 $('.xlk_bills_link2').click(function() {
-    // alert('首页');
     location.href = "xlk_supervise.html";
 });
 
 $('.xlk_bills_link3').click(function() {
-    // alert('首页');
     location.href = "xlk_contacts.html";
 });
 
 //左侧栏右边的菜单按钮事件
 $('.xlk_menu_ic').click(function() {
-
     $('.xlk_side_all_default').hide();
     $('.xlk_side_all_menu').show();
-    // $('.home_side_all_menu').show(300, 'easeInQuad', function() {
-
-    // });
 });
 
 //左侧栏的关闭事件
 $('.xlk_menu_close').click(function() {
     $('.xlk_side_all_default').show();
     $('.xlk_side_all_menu').hide();
-    // $('.home_side_all_menu').hide('easeOutQuad', function() {
-
-    // });
-
 });
 
 //logo右边的三个导航栏点击事件
 $('.xlk_three_nav').on('click', 'li', function(event) {
-
     var target = event.target;
-    console.log(target);
-
     switch (target.getAttribute('class')) {
         case 'bills_mendian':
-            // alert($(target).text());
             location.href = "map.html";
             break;
         case 'bills_my_account':
-
-            // alert($(target).text());
             location.href = "cqLogin2.html";
             break;
         case 'bills_menu':
-            // alert($(target).text());
             location.href = "gfMenu.html";
             break;
     }
@@ -65,42 +45,34 @@ $('.xlk_three_nav').on('click', 'li', function(event) {
 
 //登录事件
 $('.xlk_login' || '.xlk_login_2').click(function() {
-    // alert('login');
     location.href = "cqLogin2.html";
 });
 
 $('.xlk_login_2').click(function() {
-    // alert('login');
     location.href = "cqLogin2.html";
 });
 
 //注册事件
 $('.xlk_regist_text' || ".xlk_regist_2").click(function() {
-    // alert('regist');
     location.href = "cqNew.html";
 });
 
 $(".xlk_regist_2").click(function() {
-    // alert('regist');
     location.href = "cqNew.html";
 });
 
 //左侧竖排导航栏事件
-$('.xlk_menu_parent').on('click', "li", function() {
+$('.xlk_menu_parent').on('click', "li", function(event) {
     var target = event.target;
     if (target.getAttribute('class') != 'home_menu_line') {
         switch (target.getAttribute('class')) {
             case 'bills_menu_mendian':
-                // alert($(target).text());
                 location.href = "map.html";
                 break;
             case 'bills_menu_xxjlb':
-
-                // alert($(target).text());
                 location.href = "cqLogin1.html";
                 break;
             case 'bills_menu_app':
-                // alert($(target).text());
                 location.href = "mobile.html";
                 break;
             case 'bills_menu_xlk':
@@ -126,7 +98,6 @@ $('.xlk_menu_parent').on('click', "li", function() {
                 break;
         }
     }
-
 });
 
 
@@ -151,10 +122,6 @@ var inp2_b = document.getElementsByClassName('inp2_b')[0];
 var p1_b = document.getElementsByClassName('p1_b')[0];
 var p2_b = document.getElementsByClassName('p2_b')[0];
 
-
-
-
-
 bills_right_option_a1.onclick = function() {
     aOnclick(bills_right_option_a1, bills_right_option_a2, bills_right_box1, bills_right_box2);
 }
@@ -163,14 +130,12 @@ bills_right_option_a2.onclick = function() {
     aOnclick(bills_right_option_a2, bills_right_option_a1, bills_right_box2, bills_right_box1);
 }
 
-
 function aOnclick(a1, a2, box1, box2) {
     a2.style.cssText = 'font-weight:400;color:#707070;border:none';
     a1.style.cssText = 'font-weight:600;color:#333;border-bottom:3px solid #00a862';
     box1.style.display = 'block';
     box2.style.display = 'none';
 }
-
 
 inp1.onfocus = function() {
     onFocus(lb1, inp1);
@@ -204,13 +169,11 @@ inp2_b.onblur = function() {
     onBlur(inp2_b, p2_b, lb2_b);
 };
 
-
 function onFocus(lb, inp) {
     animate(lb, -10 + 'px', 10);
     lb.style.color = '#9E9E9E';
     inp.style.borderBottom = '1px solid #00A862';
 }
-
 
 function onBlur(inp, p, lb) {
     inp.style.borderBottom = '1px solid #E0E0E0';
@@ -230,31 +193,15 @@ function onBlur(inp, p, lb) {
     }
 }
 
-// $('.divA').on('click', '.input', function() {
-//     alert(111);
-
-// })
-
 $(function() {
     $(document).on('click', '.inp1', function() {
         /*需要注意的就是事件里边的$(this)指的就是被点击的元素而不是$(document)*/
-        // alert(111);
-        // console.log(this);
-        // animate(lb, -10 + 'px', 10);
-        // lb1.style.top = -10 + 'px';
-        // lb1.style.color = '#9E9E9E';
         this.prev('label').css('color', '#9E9E9E')
         this.style.borderBottom = '1px solid #00A862';
-
     })
 })
 
-
-
-
-
 var timer = null;
-
 function animate(ele, target, speedTime) {
     clearInterval(timer);
     timer = setInterval(function() {
@@ -266,7 +213,6 @@ function animate(ele, target, speedTime) {
         }
     }, speedTime);
 }
-
 
 var addData = document.getElementById('addData');
 
@@ -283,6 +229,4 @@ addData.onclick = function() {
     var fm2 = bills_right_box1.children[0].children[3].cloneNode(true);
     bills_right_box1.children[0].appendChild(fm1);
     bills_right_box1.children[0].appendChild(fm2);
-    // p1.style.display = 'none';
-    // p2.style.display = 'none';
 }

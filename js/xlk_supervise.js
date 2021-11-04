@@ -1,18 +1,12 @@
 //logo点击事件
 $('.xlk_icon').click(function() {
-    // alert('首页');
     location.href = "starbucks_home.html";
-
 });
 
 //左侧栏右边的菜单按钮事件
 $('.xlk_menu_ic').click(function() {
-
     $('.xlk_side_all_default').hide();
     $('.xlk_side_all_menu').show();
-    // $('.home_side_all_menu').show(300, 'easeInQuad', function() {
-
-    // });
 });
 
 $('.xlk_supervise_link1').click(function() {
@@ -23,35 +17,23 @@ $('.xlk_supervise_link2').click(function() {
     location.href = 'xlk_bills.html';
 })
 
-
 //左侧栏的关闭事件
 $('.xlk_menu_close').click(function() {
     $('.xlk_side_all_default').show();
     $('.xlk_side_all_menu').hide();
-    // $('.home_side_all_menu').hide('easeOutQuad', function() {
-
-    // });
-
 });
 
 //logo右边的三个导航栏点击事件
 $('.xlk_three_nav').on('click', 'li', function(event) {
-
     var target = event.target;
-    console.log(target);
-
     switch (target.getAttribute('class')) {
         case 'sup_mendian':
-            // alert($(target).text());
             location.href = "map.html";
             break;
         case 'sup_my_account':
-
-            // alert($(target).text());
             location.href = "cqLogin2.html";
             break;
         case 'sup_menu':
-            // alert($(target).text());
             location.href = "gfMenu.html";
             break;
     }
@@ -59,42 +41,34 @@ $('.xlk_three_nav').on('click', 'li', function(event) {
 
 //登录事件
 $('.xlk_login' || '.xlk_login_2').click(function() {
-    // alert('login');
     location.href = "cqLogin2.html";
 });
 
 $('.xlk_login_2').click(function() {
-    // alert('login');
     location.href = "cqLogin2.html";
 });
 
 //注册事件
 $('.xlk_regist_text' || ".xlk_regist_2").click(function() {
-    // alert('regist');
     location.href = "cqNew.html";
 });
 
 $(".xlk_regist_2").click(function() {
-    // alert('regist');
     location.href = "cqNew.html";
 });
 
 //左侧竖排导航栏事件
-$('.xlk_menu_parent').on('click', "li", function() {
+$('.xlk_menu_parent').on('click', "li", function(event) {
     var target = event.target;
     if (target.getAttribute('class') != 'home_menu_line') {
         switch (target.getAttribute('class')) {
             case 'sup_menu_mendian':
-                // alert($(target).text());
                 location.href = "map.html";
                 break;
             case 'sup_menu_xxjlb':
-
-                // alert($(target).text());
                 location.href = "cqLogin1.html";
                 break;
             case 'sup_menu_app':
-                // alert($(target).text());
                 location.href = "mobile.html";
                 break;
             case 'sup_menu_xlk':
@@ -120,9 +94,7 @@ $('.xlk_menu_parent').on('click', "li", function() {
                 break;
         }
     }
-
 });
-
 
 var xlk_a1 = document.getElementById('xlk_a1');
 var xlk_a2 = document.getElementById('xlk_a2');
@@ -135,7 +107,6 @@ var p2 = document.getElementById('p2');
 var kh_p = document.getElementById('kh_p');
 var inquire_form1 = document.getElementById('inquire_form1');
 var inquire_form2 = document.getElementById('inquire_form2');
-
 
 xlk_a2.onclick = function() {
     xlk_a1.style.background = '#fff';
@@ -169,7 +140,6 @@ xlk_a1.onclick = function() {
     inp2.value = '';
 }
 
-
 var inp1Reg = /^(\d{16}|\d{19})$/;
 
 function checkInp1() {
@@ -181,7 +151,6 @@ inp1.onfocus = function() {
     animate(lb1, -10 + 'px', 10);
     lb1.style.color = '#9E9E9E';
     inp1.style.borderBottom = '1px solid #00A862';
-
 }
 
 inp1.onblur = function() {
@@ -194,18 +163,13 @@ inp1.onblur = function() {
         animate(lb1, 10 + 'px', 10)
         p1.style.display = 'block';
         lb1.style.color = '#E75D54';
-
     } else {
         p1.style.display = 'block';
         lb1.style.color = '#E75D54';
-
     }
 }
 
-
-
 var inp2Reg = /^\d{6}$/;
-
 function checkInp2() {
     var i1Va2 = inp2.value;
     return inp2Reg.test(i1Va2);
@@ -215,7 +179,6 @@ inp2.onfocus = function() {
     animate(lb2, -10 + 'px', 10);
     lb2.style.color = '#9E9E9E';
     inp2.style.borderBottom = '1px solid #00A862';
-
 }
 
 inp2.onblur = function() {
@@ -234,14 +197,9 @@ inp2.onblur = function() {
         p2.style.display = 'block';
         lb2.style.color = '#E75D54';
     }
-
 }
 
-
-
-
 var timer = null;
-
 function animate(ele, target, speedTime) {
     clearInterval(timer);
     timer = setInterval(function() {

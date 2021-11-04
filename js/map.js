@@ -162,58 +162,46 @@ $('.map_regist_text').click(function() {
 });
 
 //左侧竖排导航栏事件
-$('.map_menu_parent').on('click', "li", function() {
+$('.map_menu_parent').on('click', "li", function(event) {
     var target = event.target;
     if (target.getAttribute('class') != 'map_menu_line') {
         switch (target.getAttribute('class')) {
             case 'map_menu_mendian':
-                // alert($(target).text());
                 location.href = "map.html";
                 break;
             case 'map_menu_xxjlb':
                 location.href = "cqlogin1.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_module':
                 location.href = "gfMenu.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_xlk':
                 location.href = "xlk.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_mobile':
                 location.href = "mobile.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_reserve':
                 location.href = "starbucks_reserve.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_Lxz-roastery':
                 location.href = "Lxz-roastery.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_kakuai':
                 location.href = "kakuai.html";
-                // alert($(target).text());
                 break;
             case 'map_meun_Lxz1912':
                 location.href = "Lxz-1912.html";
-                // alert($(target).text());
                 break;
             case 'map_menu_xlk_inChina':
                 location.href = "xlk_inChina.html";
-                // alert($(target).text());
                 break;
             default:
                 alert($(target).text());
                 break;
         }
     }
-
 });
-
 
 // 给筛选内容区添加点击显示隐藏事件
 $('.map_filter_btn').click(function() {
@@ -226,37 +214,28 @@ $('.map_close_btn').click(function() {
 });
 
 //给筛选项目li添加点击事件（勾选 清除 确认）
-
 $('.map_coffer_list').on('click', 'li', function() {
     $(this).children().eq(2).toggle();
-    // console.log($(this).children().eq(2));
     $('.map_coffee_clear').show();
     $('.map_coffee_confirm').show();
 });
+
 //点击清除，将所有勾选清除
 $('.map_coffee_clear').on('click', function() {
-    // alert(11);
-
     console.log($('.map_coffer_list').children().children().eq(2));
 });
 
-
 //从json获取筛选点击弹出框中的信息
 $(function() {
-
     $.ajax({
         url: '../data/map.json',
         type: 'get',
         dataType: 'json',
         success: function(json) {
-            // console.log(json);
             var map_coffee = json.map_coffee;
             var result = '';
             $.each(map_coffee, function(index, val) {
-                // console.log(index, val);
-                // console.log(val.url);
                 result += "<li><img src=" + val.url + "><span>" + val.text + "</span><i class=" + "iconfont" + " id=" + "map_coffee_check" + ">&#xe630;</i></li>"
-                    // console.log(result)
             });
             $('.map_coffer_list').html(result);
         }

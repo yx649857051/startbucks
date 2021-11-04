@@ -434,7 +434,6 @@ cqZhuceOver.onclick = function () {
 }
 
 /********************************* 发布订阅者模式 ************************************ */
-
 var loginEvent = { //登录成功的消息事件
     clientList: {}, //缓存列表，存放订阅者的回调函数
     addlisten: function (key, fn) { //添加订阅者

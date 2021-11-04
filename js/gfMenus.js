@@ -54,6 +54,7 @@ $(function() {
                 break;
         }
     });
+
     // 点击选项选择产品
     $('.menus_tabs').on('click', 'li', function(even) {
         var target = event.target;
@@ -73,23 +74,19 @@ $(function() {
 
     //登录事件  以下有两遍是因为有不一样的样式
     $('.menu_login' || '.menu_login_2').click(function() {
-
         location.href = "cqLogin2.html";
     });
 
     $('.menu_login_2').click(function() {
-
         location.href = "cqLogin2.html";
     });
 
     //注册事件
     $('.menu_regist_text' || ".menu_regist_2").click(function() {
-
         location.href = "cqNew.html";
     });
 
     $(".menu_regist_2").click(function() {
-
         location.href = "cqNew.html";
     });
 
@@ -102,14 +99,11 @@ $(function() {
                     location.href = "map.html";
                     break;
                 case 'menu_menu_xxjlb':
-
                     location.href = "cqLogin1.html";
                     break;
-
                 case 'menu_menu_xlk':
                     location.href = 'xlk.html';
                     break;
-
                 case 'menu_shanghai_hpf':
                     location.href = 'Lxz-roastery.html';
                     break;
@@ -136,22 +130,8 @@ $(function() {
                     break;
             }
         }
-
     });
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 搜索菜单点击
 // 点击取消

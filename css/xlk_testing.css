@@ -32,7 +32,7 @@
     height: 38px;
     top: -1px;
     border: 1px solid#52ccba;
-    background-color: #52ccba!important
+    background-color: #52ccba !important
 }
 
 .sliderContainer_success .sliderMask {
@@ -42,14 +42,14 @@
 }
 
 .sliderContainer_success.sliderIcon {
-    background-position: 0 0!important
+    background-position: 0 0 !important
 }
 
 .sliderContainer_fail.slider {
     height: 38px;
     top: -1px;
     border: 1px solid #f57a7a;
-    background-color: #f57a7a!important
+    background-color: #f57a7a !important
 }
 
 .sliderContainer_fail.sliderMask {
@@ -59,7 +59,7 @@
 }
 
 .sliderContainer_fail.sliderIcon {
-    background-position: 0-83px!important
+    background-position: 0-83px !important
 }
 
 .sliderContainer_active.sliderText,

@@ -27,12 +27,9 @@ body {
 
 .kakuai_top_nav {
     height: 99px;
-    /* background: #00a862; */
 }
 
 .kakuai_icon {
-    /* width: 36px;
-height: 36px; */
     line-height: 72px;
     margin-top: 18px;
     margin-left: 16px;
@@ -90,7 +87,6 @@ height: 36px; */
     font-weight: 400;
     font-family: "Gotham";
     padding-bottom: 3px;
-    /* border-bottom: 3px solid #00A862; */
     color: rgba(0, 0, 0, 0.87);
 }
 

@@ -7,12 +7,9 @@ body {
 
 .xlk_wrap {
     width: 100%;
-    /* height: 100%; */
 }
 
-
 /* -------------xlk_wrap end----------------- */
-
 
 /* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -36,8 +33,6 @@ body {
 }
 
 .xlk_icon {
-    /* width: 36px;
-    height: 36px; */
     line-height: 72px;
     margin-top: 18px;
     margin-left: 16px;
@@ -46,7 +41,6 @@ body {
 }
 
 .xlk_three_nav {
-    /* display: inline-block; */
     width: 200px;
     height: 72px;
     margin-right: 10px;
@@ -217,15 +211,11 @@ body {
 
 /*--------------------- xlk_sideNav end ---------------------*/
 
-
 /*----------------------- 右侧内容区 start --------------------*/
 
 .xlk_bills_right_content {
     margin-left: 30%;
     position: relative;
-    /* left: auto;
-    padding-bottom: 24px;
-    padding-top: 24px; */
     width: 70%;
     background: #F7F7F7;
     height: 100%;
@@ -237,7 +227,6 @@ body {
     width: 68%;
     height: 100%;
     background: #ffffff;
-    /* box-shadow: 0 2px 2px #cccccc; */
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     margin: 0 auto;
@@ -286,20 +275,14 @@ body {
 }
 
 .bills_right_box1 {
-    /* background: #cccccc; */
     width: 100%;
-    /* height: 500px; */
     margin-top: 22px;
     overflow: hidden;
-    /* position: absolute; */
 }
 
 .bills_right_box2 {
     width: 100%;
-    /* height: 500px; */
     margin-top: 22px;
-    /* background: #E75D54; */
-    /* position: absolute; */
     display: none;
     overflow: hidden;
 }
@@ -328,7 +311,6 @@ body {
     border-bottom: 1px solid#E0E0E0;
     width: 100%;
     display: block;
-    /* margin: 0 auto; */
     outline: none;
     font-size: 16px;
     height: 20px;
@@ -344,17 +326,7 @@ body {
     position: relative;
     left: 0;
     top: 18px;
-    /* display: none; */
 }
-
-
-/* .bills_right_p1,
-.bills_right_p2 {
-   
-   
-    margin: 5px 0 0 25px;
-    display: none;
-} */
 
 .bills_right_box2 form p {
     margin: 5px 0 0 0;
@@ -416,8 +388,6 @@ body {
 
 .bills_right_warmPrompt {
     width: 93%;
-    /* height: 100px; */
-    /* background: #999999; */
     margin: 0 auto;
     border-bottom: 1px solid #E0E0E0;
 }

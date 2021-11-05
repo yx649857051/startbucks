@@ -204,7 +204,6 @@ body {
     margin-left: 20px;
     padding: 4px 0;
     margin-bottom: 15px;
-    /* width: 300px; */
 }
 
 .map_ipt .map_search_btn {
@@ -220,7 +219,6 @@ body {
     outline: none;
     border-radius: 0;
     box-sizing: border-box;
-    /* padding: 4px 0; */
     font-size: 16px;
 }
 
@@ -405,13 +403,9 @@ body {
     display: none;
 }
 
-
-/* .map_coffer_list li .iconfont  */
-
 #map_coffee_check {
     float: right;
     padding-right: 10%;
-    /* padding-top: 5px; */
     font-size: 16px;
     color: #00A862;
     font-family: "Gotham", Helvetica, Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -436,9 +430,7 @@ body {
     display: none;
 }
 
-
 /*右侧高德地图css */
-
 #container {
     width: 100%;
     height: 100%;

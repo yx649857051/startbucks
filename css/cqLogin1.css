@@ -1,186 +1,235 @@
-.cqHead_a{
+.cqHead_a {
     width: 100%;
 }
-.cqHead_a_pic,.cqBanner_tip_pic,.cqVipGift,.cqPower,.cqStarParty,.cqQuestion{
+
+.cqHead_a_pic,
+.cqBanner_tip_pic,
+.cqVipGift,
+.cqPower,
+.cqStarParty,
+.cqQuestion {
     width: 100%;
 }
 
 /**************************欢迎来到星享俱乐部*******************************/
-.cqBanner,.cqRound{
+.cqBanner,
+.cqRound {
     background-color: #252525;
     color: #ffffff;
 }
-.cqBanner_tit_pic,.cqVipGift_tit_pic{
+
+.cqBanner_tit_pic,
+.cqVipGift_tit_pic {
     width: 80%;
     margin-top: 55px;
     margin-left: 12%;
 }
-.cqmain{
+
+.cqmain {
     overflow: hidden;
     padding-top: 50px;
 }
-.cqItem_padded,.cqitem{
+
+.cqItem_padded,
+.cqitem {
     width: 24.5%;
     float: left;
     text-align: center;
 }
-.image img,.CQstar,.CQStarcn,.CQsrkit{
+
+.image img,
+.CQstar,
+.CQStarcn,
+.CQsrkit {
     width: 55%;
     margin-bottom: 10px;
 }
-.cqBanner h2{
+
+.cqBanner h2 {
     line-height: 30px;
 }
-.cqBanner .cqBanner_main .cqItem_padded p{
+
+.cqBanner .cqBanner_main .cqItem_padded p {
     width: 170px;
     display: inline-block;
     line-height: 18px;
 }
-.cqwhite{
+
+.cqwhite {
     text-align: center;
     margin-top: 35px;
     padding-bottom: 10px;
 }
-.cqwhite a,.cqQueAueser a{
+
+.cqwhite a,
+.cqQueAueser a {
     color: #20b275;
 }
-.cqBanner p{
+
+.cqBanner p {
     line-height: 18px;
 }
 
 /***************************************积星升级******************************************/
-.cqVipGift,.cqStarParty,.cqinpor{
+.cqVipGift,
+.cqStarParty,
+.cqinpor {
     background-color: #f0eeec;
 }
-.cqitem{
+
+.cqitem {
     width: 33%;
     float: left;
 }
-.cqStarP{
+
+.cqStarP {
     font-size: 16px;
     line-height: 28px;
 }
-.green{
+
+.green {
     color: #20b275;
 }
-.gold{
+
+.gold {
     color: #d4b868;
 }
-.silver{
+
+.silver {
     color: #bcbcbd;
 }
 
 /**************************************会员权益*******************************************/
-.cqPower{
+.cqPower {
     background-color: #f8f6f4;
 }
-.cqPowerUl{
+
+.cqPowerUl {
     margin-left: 30%;
     margin-top: 20px;
     width: 54%;
 }
-.cqPowerUl li{
+
+.cqPowerUl li {
     list-style-type: disc;
     text-align: left;
     font-size: 16px;
     line-height: 26px;
 }
-.cqPowerUl li span,.cqStarPartyUl li span{
+
+.cqPowerUl li span,
+.cqStarPartyUl li span {
     color: #000;
 }
 
 /* *********************************星享俱乐部会员星礼包******************************** */
-.cqStarPartyUl li{
+.cqStarPartyUl li {
     list-style-type: disc;
     text-align: left;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
 }
-.cqStarPartyUl{
+
+.cqStarPartyUl {
     margin-left: 10%;
     width: 80%;
 }
-.cqStarPartyUl h3{
+
+.cqStarPartyUl h3 {
     text-align: left;
     line-height: 22px;
     margin-bottom: 20px;
     font-size: 16px;
 }
-.cqsmall{
+
+.cqsmall {
     font-size: 12px;
     text-align: left;
     width: 80%;
     margin-left: 10%;
     margin-top: 15px;
 }
-.cqStarParty_pic1{
+
+.cqStarParty_pic1 {
     margin-top: 45%;
     width: 80%;
 }
-.cqStarParty_pic2{
+
+.cqStarParty_pic2 {
     margin-top: 40%;
     width: 95%;
 }
 
 /* **************************************获得星星的各种途径***************************************** */
-.cqRoundLfet{
+.cqRoundLfet {
     height: 196px;
     width: 60%;
     float: left;
     padding-top: 10px;
 }
-.cqRoundRight{
+
+.cqRoundRight {
     height: 196px;
     width: 39%;
     float: left;
     padding-top: 10px;
     border-left: #d4b868 1px solid;
 }
-.cqRoundLfet h2,.cqRoundRight h2{
+
+.cqRoundLfet h2,
+.cqRoundRight h2 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
 }
-.cq5Rou{
+
+.cq5Rou {
     float: left;
     margin-left: 5%;
 }
-.cq5RouR{
+
+.cq5RouR {
     margin-left: 12%;
 }
-.cq5Rou p{
+
+.cq5Rou p {
     text-align: center;
     font-size: 16px;
 }
-.cq5Rou_pic{
+
+.cq5Rou_pic {
     margin-bottom: 14px;
 }
 
 /* **********************************轻松注册会员****************************************** */
-.cqinporLeft{
+.cqinporLeft {
     width: 50%;
     float: left;
     text-align: center;
 }
-.cqinporRight{
+
+.cqinporRight {
     text-align: center;
     width: 49.5%;
     float: left;
     border-left: #252525 1px solid;
 }
-.cqinporH2{
+
+.cqinporH2 {
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.cqinporP{
+
+.cqinporP {
     line-height: 20px;
     color: #333;
     font-size: 16px;
 }
-.cqNewButtom{
+
+.cqNewButtom {
     display: inline-block;
     width: 102px;
     height: 38px;
@@ -195,55 +244,70 @@
 }
 
 /* *********************************常见问题*************************************** */
-.cqQuestion{
+.cqQuestion {
     background-color: #ffffff;
 }
-.cqFaq{
+
+.cqFaq {
     width: 6%;
     margin: 0 4%;
     line-height: 130px;
     margin-top: 20px;
     float: left;
 }
-.cqQuestion_wrap h2{
+
+.cqQuestion_wrap h2 {
     line-height: 130px;
     font-size: 20px;
     float: left;
 }
-.cqQuestion_wrap span{
+
+.cqQuestion_wrap span {
     float: right;
     margin-right: 4%;
     line-height: 130px;
 }
-.cqQuestion1,.cqQuestion2,.cqQuestion3{
+
+.cqQuestion1,
+.cqQuestion2,
+.cqQuestion3 {
     display: block;
-    width: 100%; height: 130px;
+    width: 100%;
+    height: 130px;
 }
-.cqQuestion2,.cqQueAueser2{
+
+.cqQuestion2,
+.cqQueAueser2 {
     background-color: #ece9e7
 }
-.cqQueAueser{
+
+.cqQueAueser {
     padding: 0 4% 20px 4%;
     display: none;
 }
-.cqQueAueser p,.cqQueAueser ul{
+
+.cqQueAueser p,
+.cqQueAueser ul {
     line-height: 28px;
     margin-bottom: 30px;
     font-size: 16px;
 }
-.cqQueAueser ul li{
+
+.cqQueAueser ul li {
     list-style: disc;
     margin-left: 16px;
 }
-.cqpadding2em{
+
+.cqpadding2em {
     margin-left: 4%;
 }
-.cqclickQuestion{
+
+.cqclickQuestion {
     cursor: pointer;
 }
 
 /*****************************************底部**********************************************/
-.cqfooter{
+.cqfooter {
     width: 100%;
     background: url(../images/CQfooter.png);
     background-size: 100%;
@@ -252,83 +316,108 @@
     text-align: center;
     padding: 50px 0;
 }
-.cqfooter a{
+
+.cqfooter a {
     color: #fff;
     font-size: 14px;
 }
-.cqfooter p{
+
+.cqfooter p {
     margin-bottom: 14px;
 }
-.cqfooter b{
+
+.cqfooter b {
     font-weight: 100;
 }
-.cqfooter img{
+
+.cqfooter img {
     margin-top: 3px;
 }
 
 
 /*************************************注册页面********************************************/
-.cqNewHeaderPic,.cqNewHeaderPic_pic,.cqNewMain{
+.cqNewHeaderPic,
+.cqNewHeaderPic_pic,
+.cqNewMain {
     width: 100%;
 }
-.cqNewMainLeft,.cqNewMainRight{
+
+.cqNewMainLeft,
+.cqNewMainRight {
     float: left;
 }
-.cqNewMainLeft{
+
+.cqNewMainLeft {
     width: 65%;
     padding-top: 180px;
 }
-.cqNewMainRight{
+
+.cqNewMainRight {
     width: 35%;
     padding: 32px 0 56px 0;
 }
-.cqregister_download_app_image_cn{
+
+.cqregister_download_app_image_cn {
     width: 58%;
 }
-.cqNewMainLeft h2,.cqNewMainLeft p{
+
+.cqNewMainLeft h2,
+.cqNewMainLeft p {
     margin: 0 5% 0 20%;
 }
-.cqNewMainLeft h2{
+
+.cqNewMainLeft h2 {
     margin-bottom: 28px;
     font-size: 22px;
 }
-.cqNewMainLeft p{
+
+.cqNewMainLeft p {
     font-size: 16px;
 }
 
 
 /************************************** 登录页面 ********************************/
 /*************************二维码**********************/
-.cqLogindiffcut1{
+.cqLogindiffcut1 {
     padding-left: 28%;
     overflow: hidden;
     display: none;
 }
-.cqLogindiffcut1 h2{
+
+.cqLogindiffcut1 h2 {
     font-size: 16px;
     margin-top: 30px;
     float: left;
 }
-.cqQRlogin{
+
+.cqQRlogin {
     background: url(../images/cqemail-login-tip.png) no-repeat;
 }
-.cqPWlogin{
+
+.cqPWlogin {
     background: url(../images/cqqrcode-login-tip.png) no-repeat;
 }
-.cqQRlogin,.cqPWlogin{
-    width: 100px; height: 100px;
+
+.cqQRlogin,
+.cqPWlogin {
+    width: 100px;
+    height: 100px;
     background-size: 100%;
     float: right;
     cursor: pointer;
 }
-.cqQRlogin p,.cqPWlogin p{
+
+.cqQRlogin p,
+.cqPWlogin p {
     margin: 5px 0 0 38px;
-    -webkit-user-select:none;
+    -webkit-user-select: none;
 }
-.cqErweima{
+
+.cqErweima {
     padding-top: 140px;
 }
-.cqqrcode{
+
+.cqqrcode {
     /* display: inline-block; */
     padding: 6px;
     border: 8px solid #ccc;
@@ -336,56 +425,71 @@
     margin-top: 16px;
     margin-right: 6%;
 }
-.cqphone_with_scanner{
+
+.cqphone_with_scanner {
     float: left;
     width: 23%;
     margin-bottom: 100px;
 }
+
 /************************账户 密码*************************/
-.cqLogindiffcut2{
+.cqLogindiffcut2 {
     padding-left: 26%;
     padding-bottom: 25px;
     overflow: hidden;
 }
-.cqForm{
+
+.cqForm {
     margin-top: 30px;
 }
-.cqUser,.cqWord,.cq_Remenber_or_Forget{
+
+.cqUser,
+.cqWord,
+.cq_Remenber_or_Forget {
     padding-top: 25px;
     overflow: hidden;
 }
-.cqUserName,.cqPassWord{
-    width: 432px; height: 34px;
+
+.cqUserName,
+.cqPassWord {
+    width: 432px;
+    height: 34px;
     padding: 4px 0 0 0;
-    background:none; 
+    background: none;
     border: 0;
     outline: none;
     border-bottom: 1px solid #ccc;
     font-size: 16px;
 }
-.cqinput::-webkit-input-placeholder{
+
+.cqinput::-webkit-input-placeholder {
     font-size: 16px;
     color: #aaa;
 }
-.cqinput::-ms-input-placeholder{
+
+.cqinput::-ms-input-placeholder {
     font-size: 16px;
     color: #aaa;
 }
-.cqinput{
+
+.cqinput {
     font-size: 18px;
     color: #333;
 }
-.cqForm label{
+
+.cqForm label {
     font-size: 16px;
     position: relative;
     left: -438px;
     color: #999;
-    display:none;
-}
-.cqRemenber{
     display: none;
 }
-.cq_Remenber_jia{
+
+.cqRemenber {
+    display: none;
+}
+
+.cq_Remenber_jia {
     /* display: inline-block; */
     border: #20b275 1px solid;
     color: #fff;
@@ -395,55 +499,65 @@
     border-radius: 8px;
     float: left;
     cursor: pointer;
-    -webkit-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+
 .checked {
     background-color: #20b275;
 }
-.cq_Remenber_or_Forget{
+
+.cq_Remenber_or_Forget {
     width: 432px;
 }
-.cq_Remenber_or_Forget b{
+
+.cq_Remenber_or_Forget b {
     color: #777;
     float: left;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 100;
     cursor: pointer;
-    -webkit-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
-.cq_Remenber_or_Forget a{
+
+.cq_Remenber_or_Forget a {
     float: right;
     font-size: 16px;
     margin-top: 6px;
 }
-.cqNoEmpty{
+
+.cqNoEmpty {
     font-size: 16px;
     color: #777;
     margin-top: 8px;
     display: none;
 }
-.cqcha{
+
+.cqcha {
     color: rgb(247, 56, 56);
 }
-.cqWord i{
+
+.cqWord i {
     font-size: 22px;
     color: #777;
     cursor: pointer;
-    -webkit-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
-.cqWord{
+
+.cqWord {
     position: relative;
 }
-.cqWord .cqBuKeJian{
+
+.cqWord .cqBuKeJian {
     position: absolute;
     left: 400px;
     top: 34px;
 }
-.cqWord .cqKeJian{
+
+.cqWord .cqKeJian {
     position: absolute;
     left: 400px;
     top: 34px;
@@ -452,7 +566,7 @@
 
 
 /************* 登录页面 底部 ******************/
-.cqfootLogin2{
+.cqfootLogin2 {
     background: url(../images/cqaccount-join-bg.png) no-repeat;
     background-size: 100%;
     padding-left: 10%;
@@ -460,17 +574,21 @@
     padding-bottom: 50px;
     color: #fff;
 }
-.cqfootLogin2 h3{
+
+.cqfootLogin2 h3 {
     font-size: 22px;
     font-weight: 400;
 }
-.cqfootLogin2 p{
+
+.cqfootLogin2 p {
     line-height: 60px;
     font-size: 16px;
 }
-.cqfootLogin2 a{
+
+.cqfootLogin2 a {
     display: block;
-    width: 50px; height: 28px;
+    width: 50px;
+    height: 28px;
     padding: 10px 0 0 18px;
     border: 1px solid #d4b868;
     border-radius: 19px;
@@ -481,74 +599,85 @@
 /************* 滑块验证 *****************/
 .cqcontainer {
     width: 310px;
-    margin-left : 9%;
+    margin-left: 9%;
     margin-top: 20px;
-  }
+}
+
 #msg {
     width: 100%;
     line-height: 40px;
     font-size: 14px;
     text-align: center;
 }
+
 .cqblock {
-	position: absolute;
-	left: 15px;
-	top: 0;
+    position: absolute;
+    left: 15px;
+    top: 0;
 }
+
 .cqsliderContainer {
-	position: relative;
-	width: 310px;
-	height: 14px;
-	border-radius: 7px;
-	margin-top: 16px;
-	background: #eee;
+    position: relative;
+    width: 310px;
+    height: 14px;
+    border-radius: 7px;
+    margin-top: 16px;
+    background: #eee;
 }
+
 .cqsliderContainer_fail .cqslider {
-	width: 54px;
-	height: 34px;
-	top: -10px;
-	border-radius: 17px;
-	background-color: rgb(228, 23, 23);
-	box-shadow: 0 0 24px rgba(165, 5, 5, 1);
+    width: 54px;
+    height: 34px;
+    top: -10px;
+    border-radius: 17px;
+    background-color: rgb(228, 23, 23);
+    box-shadow: 0 0 24px rgba(165, 5, 5, 1);
 }
+
 .cqsliderContainer_active .cqsliderText,
 .cqsliderContainer_success .cqsliderText,
 .cqsliderContainer_fail .cqsliderText {
-	display: none;
+    display: none;
 }
-.cqslider {/*滑块阴影*/
-	position: absolute;
-	top: -10px;
-	left: 15px;
-	width: 52px;
-	height: 34px;
-	border-radius: 17px;
-	background: #20b275;
-	box-shadow: 0 0 12px rgba(0, 141, 59, 0.795);
-	cursor: pointer;
+
+.cqslider {
+    /*滑块阴影*/
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 52px;
+    height: 34px;
+    border-radius: 17px;
+    background: #20b275;
+    box-shadow: 0 0 12px rgba(0, 141, 59, 0.795);
+    cursor: pointer;
 }
+
 .cqsliderIcon {
-	position: absolute;
-	top: 12px;
-	left: 18px;
-	width: 14px;
-	height: 10px;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 14px;
+    height: 10px;
     background: url(http://cstaticdun.126.net//2.6.3/images/icon_light.f13cff3.png) 0 -13px;
 }
-.cqrefreshIcon{
+
+.cqrefreshIcon {
     cursor: pointer;
     float: right;
     color: #bcbcbd;
 }
-.cqyanzhenghou{
+
+.cqyanzhenghou {
     margin-left: 10%;
     margin-top: 30px;
     display: none;
 }
 
 /******************** 登陆按钮 *****************************/
-.cqLoginOver{
-    width: 82px; height: 52px;
+.cqLoginOver {
+    width: 82px;
+    height: 52px;
     display: inline-block;
     margin-left: 50%;
     margin-top: 20px;
@@ -561,11 +690,13 @@
     text-align: center;
     line-height: 52px;
     cursor: not-allowed;
-    -webkit-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
-.cqZhuceOver{
-    width: 82px; height: 52px;
+
+.cqZhuceOver {
+    width: 82px;
+    height: 52px;
     display: inline-block;
     border-radius: 48px;
     background-color: #20b275;
@@ -577,16 +708,19 @@
     line-height: 52px;
     margin: 100px 0 0 50px;
     cursor: pointer;
-    -webkit-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
-.cqZhuceOver:hover{
+
+.cqZhuceOver:hover {
     background-color: #34bd84;
 }
-.cqafter{
+
+.cqafter {
     color: #999;
 }
-.cqafter:hover{
+
+.cqafter:hover {
     background-color: #34bd84;
     color: #fff;
 }
@@ -595,7 +729,7 @@
 /*********************** 左边导航--登录、注册、关于星享俱乐部  ********************/
 
 /* 登陆 */
-.cq_left_login span{
+.cq_left_login span {
     font-size: 16px;
     color: #333;
     border-bottom: #20b275 solid 3px;
@@ -604,21 +738,26 @@
     font-weight: 900;
     cursor: pointer;
 }
-.cq_left_new,.cq_left_about{
+
+.cq_left_new,
+.cq_left_about {
     font-size: 16px;
     color: #888;
     line-height: 36px;
 }
-.cq_left_new:hover{
+
+.cq_left_new:hover {
     color: #333;
 }
-.cq_left_about:hover{
+
+.cq_left_about:hover {
     color: #333;
 }
 
 /*******************  注销  *****************************/
-.cqLogout{
-    width: 82px; height: 52px;
+.cqLogout {
+    width: 82px;
+    height: 52px;
     display: inline-block;
     border-radius: 48px;
     background-color: #20b275;
@@ -630,10 +769,11 @@
     line-height: 52px;
     margin: 100px 0 0 50px;
     cursor: pointer;
-    -webkit-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     display: none;
 }
-.cqLogout:hover{
+
+.cqLogout:hover {
     background-color: #9e020f;
 }

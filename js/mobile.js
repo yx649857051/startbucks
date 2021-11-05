@@ -86,8 +86,6 @@ $('.mobile_menu_parent').on('click', "li", function(event) {
     }
 });
 
-
-
 // 初始化swiper
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',

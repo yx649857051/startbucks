@@ -10,12 +10,10 @@ body {
     height: 100%;
 }
 
-
 /* -------------xlk_wrap end----------------- */
 
 
 /* 左侧菜单栏样式~start~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 .xlk_side_nav {
     width: 30%;
     height: 100%;
@@ -36,8 +34,6 @@ body {
 }
 
 .xlk_icon {
-    /* width: 36px;
-    height: 36px; */
     line-height: 72px;
     margin-top: 18px;
     margin-left: 16px;
@@ -46,7 +42,6 @@ body {
 }
 
 .xlk_three_nav {
-    /* display: inline-block; */
     width: 200px;
     height: 72px;
     margin-right: 10px;
@@ -211,7 +206,6 @@ body {
     color: #333333;
 }
 
-
 /*--------------------- xlk_sideNav end ---------------------*/
 
 .xkl_SpliceBar {
@@ -219,22 +213,16 @@ body {
     display: block;
 }
 
-
 /*---------------------- xkl_SpliceBar end ------------------*/
 
 .xlk_contain {
     margin-left: 30%;
     position: relative;
-    /* left: auto;
-    padding-bottom: 24px;
-    padding-top: 24px; */
     width: 70%;
     background: #F7F7F7;
-    /* height: 100%; */
     overflow: hidden;
     border: solid 2px #F2F2F2;
 }
-
 
 /*---------------- xlk_contain end------------------ */
 
@@ -308,7 +296,6 @@ body {
     z-index: 200;
 }
 
-
 /*------------- xlk_net end -------------------*/
 
 .xlk_threeBloak {
@@ -356,7 +343,6 @@ body {
     color: #fff;
     text-align: center;
     line-height: 40px;
-    /* margin: 50px 0 0 107px; */
     margin: 0 auto;
     margin-top: 60px;
 }
@@ -440,7 +426,6 @@ body {
     background: rgba(47, 178, 95, 0.1);
 }
 
-
 /* ---------xlk_threeBloak end ---------------*/
 
 .xlk_cz {
@@ -449,7 +434,6 @@ body {
 }
 
 .xlk_cz h1 {
-    /* font-size: 20px; */
     font-weight: 100;
     margin: 50px 0 20px 0;
 }
@@ -458,7 +442,6 @@ body {
     font-size: 16px;
     color: #6C6C6C;
 }
-
 
 /* ------------xlk_cz end --------------*/
 
@@ -502,7 +485,6 @@ body {
 .xlk_ul a:hover {
     transform: translate(0, -5px);
 }
-
 
 /*--------- xlk_succession end -------------*/
 

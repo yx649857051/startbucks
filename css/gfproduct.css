@@ -74,101 +74,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -90%);
-    /* height: calc(100% - 98px); */
 }
-
-
-/* .menu_slogan {
-    font-size: 26px;
-    font-weight: 700;
-    font-family: 'Gotham';
-    color: #212121;
-}
-
-.menu_login_and_regist_parent {
-    margin-top: 24px;
-}
-
-.menu_login {
-    height: 40px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.menu_login_icon {
-    margin-top: 6px;
-}
-
-.menu_login_text {
-    color: #00a862;
-    font-size: 16px;
-    line-height: 40px;
-}
-
-.menu_regist_text {
-    color: #00a862;
-    font-size: 16px;
-    border: solid 1px #00a862;
-    border-radius: 20px;
-    padding: 4px 10px;
-    line-height: 40px;
-    margin-left: 20px;
-    cursor: pointer;
-} */
-
-
-/* .menus_diplay1 {
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 140%;
-    margin-bottom: 12px;
-    display: block;
-}
-
-.menus_tabs {
-    padding-left: 2px;
-    line-height: 140%;
-    display: inline-block;
-}
-
-.menus_jingxu {
-    color: rgba(0, 0, 0, 0.85);
-    padding-bottom: 1px;
-    margin-bottom: 2px;
-    border-bottom: 3px solid #00A862;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 6px 0;
-    display: inline-block;
-}
-
-.menus_yinl {
-    padding: 6px 0;
-    color: rgba(0, 0, 0, 0.56);
-    display: inline-block;
-    font-size: 18px;
-}
-
-.menus_meis {
-    padding: 6px 0;
-    color: rgba(0, 0, 0, 0.56);
-    display: inline-block;
-    font-size: 18px;
-}
-
-.mensu_chanp {
-    padding: 6px 0;
-    color: rgba(0, 0, 0, 0.56);
-    display: inline-block;
-    font-size: 18px;
-}
-
-.menus_shanp {
-    padding: 6px 0;
-    color: rgba(0, 0, 0, 0.56);
-    display: inline-block;
-    font-size: 18px;
-} */
 
 .product_blank {
     margin-bottom: 12px;
@@ -312,9 +218,6 @@ body {
 .product_contain {
     margin-left: 30%;
     position: relative;
-    /* left: auto;
-padding-bottom: 24px;
-padding-top: 24px; */
     width: 70%;
     left: auto;
     background: #f7f7f7;
@@ -380,8 +283,6 @@ padding-top: 24px; */
 }
 
 .product_thumb {
-    /* margin-right: 16px; */
-    /* vertical-align: top; */
     text-align: center;
     display: block;
 }
@@ -397,8 +298,6 @@ padding-top: 24px; */
 }
 
 .product_pho {
-    /* background-image: url(../images/porduct_depth_a.png); */
-    /* background-position: center center; */
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -417,7 +316,6 @@ hr {
 }
 
 .product_depth {
-    /* background-image: url(../images/porduct_depth_a.png); */
     height: 150px;
     max-width: 150px;
     background-size: cover;
